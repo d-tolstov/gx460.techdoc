@@ -1,0 +1,169 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000451O006X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>VEHICLE STABILITY CONTROL SYSTEM &gt; ABS Warning Light Remains ON</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM00000451O006X');return false;">Click here</a></h2></p><br clear="all"><a name="RM00000451O006X_01"></a><h2>DESCRIPTION</h2><font class="ptxt">If any of the following is detected, the ABS warning light remains on.</font><br><ol style="list-style-type: disc"><li class="itm">The skid control ECU connector is disconnected from the skid control ECU.<br></li><li class="itm">There is a malfunction in the skid control ECU internal circuit.<br></li><li class="itm">There is an open in the harness between the combination meter and skid control ECU.<br></li><li class="itm">The anti-lock brake system is defective.<br></li><li class="itm">The voltage at terminal IG1 is high.<br></li></ol><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">It may not be possible to use the intelligent tester when the skid control ECU is abnormal.</dd></dl></p><br clear="all"><a name="RM00000451O006X_02"></a><h2>WIRING DIAGRAM</h2><div class="full"><br><img src="../../img/c220883e01.png" name="C220883E01" alt="C220883E01" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM00000451O006X_03"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><dl class="caution"><dd class="caution">When replacing the master cylinder solenoid, perform calibration (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000452J006X');return false;">Click here</a>).</dd></dl></p><a name="RM00000451O006X_04_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.CHECK THAT SKID CONTROL ECU CONNECTOR IS SECURELY CONNECTED</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check the skid control ECU connector connection.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">The 2 connectors are securely connected.<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">CONNECT CONNECTOR TO ECU CORRECTLY</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000451O006X_04_0002"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.CHECK DTC</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check for DTCs (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000046KV003X');return false;">Click here</a>).</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="54%
+
+			"><col align=""></colgroup><colgroup align="" width="46%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td>DTC is not output<br></td><td align="center">A<br></td></tr><tr><td>DTC is output<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR CIRCUITS INDICATED BY OUTPUT DTCS (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000045Z6005X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000451O006X_04_0003"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.CHECK CAN COMMUNICATION LINE</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Turn the engine switch off.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Select CAN Bus Check from the System Selection Menu screen and follow the prompts on the screen to inspect the CAN bus (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000WIB07KX');return false;">Click here</a>).</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">CAN Bus Check indicates no malfunctions in CAN communication.<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO CAN COMMUNICATION SYSTEM (HOW TO PROCEED WITH TROUBLESHOOTING) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO031X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000451O006X_04_0030"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.READ VALUE USING INTELLIGENT TESTER (IG1 VOLTAGE VALUE)
+</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3. </font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Start the engine.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Enter the following menus: Chassis / ABS/VSC/TRC / Data List.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>ABS/VSC/TRC&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Display<br></td><td align="center">Measurement Item/Range <br></td><td align="center">Normal Condition <br></td><td align="center">Diagnostic Note<br></td></tr><tr><td align="center">IG1 Voltage Value<br></td><td>IG1 voltage value/ Min.: 0.00 V, Max.: 20.00 V<br></td><td>Engine switch on (IG): 11 to 14 V <br></td><td align="center">-<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Check the voltage output from the skid control ECU displayed on the intelligent tester.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">The output voltage displayed on the intelligent tester is within 11 to 14 V.<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM00000451O006X_04_0028">Go to step 7</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000451O006X_04_0005"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">5.CHECK TERMINAL VOLTAGE (EXI3)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the A7 skid control ECU connector.</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c214161e45.png" name="C214161E45" alt="C214161E45" border="1" class="half"><br></td></tr></table>
+<li value="2"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="39%
+
+			"><col align=""></colgroup><colgroup align="" width="28%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Switch Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">A7-40 (EXI3) - Body ground<br></td><td align="center">Engine switch on (IG)<br></td><td align="center">11 to 14 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Front view of wire harness connector<br>(to Skid Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM00000451O006X_04_0009">Go to step 9</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000451O006X_04_0006"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">6.READ VALUE USING INTELLIGENT TESTER (ABS WARNING LIGHT)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Turn the engine switch off.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Enter the following menus: Chassis / ABS/VSC/TRC / Data List.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>ABS/VSC/TRC&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="32%
+
+			"><col align=""></colgroup><colgroup align="" width="23%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Display<br></td><td align="center">Measurement Item/Range<br></td><td align="center">Normal Condition<br></td><td align="center">Diagnostic Note<br></td></tr><tr><td align="center">ABS Warning Light<br></td><td>ABS warning light/ ON or OFF<br></td><td align="center">OFF<br></td><td align="center">-<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">When performing the ABS Warning Light Active Test, check ABS Warning Light in the Data List (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001DWY016X');return false;">Click here</a>).</font><br></p></li></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>ABS/VSC/TRC&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Display<br></td><td align="center">Test Part<br></td><td align="center">Control Range<br></td><td align="center">Diagnostic Note<br></td></tr><tr><td align="center">ABS Warning Light<br></td><td align="center">ABS warning light<br></td><td align="center">Warning light ON/OFF<br></td><td align="center">Observe the combination meter.<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="24%
+
+			"><col align=""></colgroup><colgroup align="" width="55%
+
+			"><col align=""></colgroup><colgroup align="" width="21%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="79%
+
+			" align="center">Result<br></td><td rowspan="2" align="center">Proceed to<br></td></tr><tr><td align="center">Data List Display<br></td><td>Data List Display when Performing Active Test ON/OFF Operation<br></td></tr><tr><td rowspan="2" align="center">ON<br></td><td>Changes between ON and OFF<br></td><td align="center">A<br></td></tr><tr><td>Does not change between ON and OFF<br></td><td align="center">B<br></td></tr><tr><td rowspan="2" align="center">OFF<br></td><td>Changes between ON and OFF<br></td><td align="center">A<br></td></tr><tr><td>Does not change between ON and OFF<br></td><td align="center">B<br></td></tr></table><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE MASTER CYLINDER SOLENOID (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000171U011X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO METER / GAUGE SYSTEM (HOW TO PROCEED WITH TROUBLESHOOTING) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000002Z4L00TX');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM00000451O006X_04_0028"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">7.CHECK TERMINAL VOLTAGE (IG1)
+</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the A7 skid control ECU connector. </font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c214161e41.png" name="C214161E41" alt="C214161E41" border="1" class="half"><br></td></tr></table>
+<li value="2"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Switch Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">A7-46 (IG1) - Body ground<br></td><td align="center">Engine switch on (IG)<br></td><td align="center">11 to 14 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Front view of wire harness connector<br>(to Skid Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000451O006X_04_0029"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">8.CHECK HARNESS AND CONNECTOR (GND1, GND2 AND GND3 TERMINAL)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the A7 and A8 skid control ECU connectors.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="46%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="29%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">A7-1 (GND1) - Body ground<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr><tr><td align="center">A7-32 (GND2) - Body ground<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr><tr><td align="center">A8-4 (GND3) - Body ground<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE MASTER CYLINDER SOLENOID (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000171U011X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM00000451O006X_04_0009"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">9.CHECK HARNESS AND CONNECTOR (SKID CONTROL ECU EXI3 CIRCUIT)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the A7 skid control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the G41 four wheel drive control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="27%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">A7-40 (EXI3) - Body ground<br></td><td align="center">Always<br></td><td align="center">10 kΩ or higher<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000451O006X_04_0010"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">10.CHECK TERMINAL VOLTAGE (EXI3)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the A7 skid control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Connect the G41 four wheel drive control ECU connector.</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c214161e45.png" name="C214161E45" alt="C214161E45" border="1" class="half"><br></td></tr></table>
+<li value="3"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Switch Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">A7-40 (EXI3) - Body ground<br></td><td align="center">Engine switch on (IG)<br></td><td align="center">11 to 14 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Front view of wire harness connector<br>(to Skid Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE FOUR WHEEL DRIVE CONTROL ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000479S006X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE MASTER CYLINDER SOLENOID (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000171U011X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

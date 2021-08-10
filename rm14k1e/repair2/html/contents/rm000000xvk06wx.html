@@ -1,0 +1,547 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000XVK06WX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>CAN COMMUNICATION SYSTEM &gt; TERMINALS OF ECU</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000000XVK06WX');return false;"> Click here</a></h2></p><br clear="all" class="beforePng"><a name="RM000000XVK06WX_z0"></a><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">Operating the engine switch, any switches or any doors triggers related ECU and sensor communication with the CAN, which causes resistance variation.</dd></dl></p><br clear="all"><a name="RM14K0E___00003FU0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">DISCONNECT CABLE FROM NEGATIVE BATTERY TERMINAL</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire.</font><br><p><dl class="warning"><dt class="warningTitle">CAUTION:</dt><dt class="warningTitle"></dt></dl><dl class="warning"><dd class="warning">Wait at least 90 seconds after disconnecting the cable from the negative (-) battery terminal to disable the SRS system (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000KT109CX');return false;">Click here</a>).</dd></dl></p><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Before measuring the resistance, leave the vehicle for at least 1 minute and do not operate the engine switch, any switches or any doors. If doors need to be opened in order to check connectors, open the doors and leave them open.<br></li><li class="atten3">w/ Navigation System (for HDD):<br>After the engine switch is turned off, the display and navigation module display (HDD navigation system) records various types of memory and settings. As a result, after turning the engine switch off, be sure to wait for the time specified in the following table before disconnecting the cable from the negative (-) battery terminal.<br><br clear="all"><p><dl class="spec"><dt class="spec">Waiting Time before Disconnecting Cable from Negative (-) Battery Terminal:</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="79%"><colgroup align="" width="70%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><tr><td class="atten3" align="center">Condition<br></td><td class="atten3" align="center">Waiting Time<br></td></tr><tr><td class="atten3" align="center">Vehicle enrolled in G-BOOK system<br></td><td class="atten3" align="center">6 minutes<br></td></tr><tr><td class="atten3" align="center">Vehicle not enrolled in G-BOOK system<br></td><td class="atten3" align="center">1 minute<br></td></tr></table></dd></dl></p></li><li class="atten3">When disconnecting the cable, some systems need to be initialized after the cable is reconnected (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000004AQ3000X');return false;">Click here</a>).<br></li></ol></p></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">JUNCTION CONNECTOR</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">NO. 1 JUNCTION CONNECTOR</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">G82 No. 1 junction connector</font><br><div class="full"><br><img src="../../img/c219227e06.png" name="C219227E06" alt="C219227E06" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 2 Junction Connector<br></td><td align="center">*b<br></td><td>for Four Wheel Drive Control ECU<br></td></tr><tr><td align="center">*c<br></td><td>for Certification ECU<br></td><td align="center">*d<br></td><td>for Power Management Control ECU (V1 Bus)<br></td></tr><tr><td align="center">*e<br></td><td>for ECM (V1 Bus)<br></td><td align="center">-<br></td><td align="center">-<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 1 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G82-1 (CANH)<br></td><td align="center">GR<br></td><td rowspan="2">No. 2 junction connector<br></td></tr><tr><td align="center">G82-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G82-2 (CANH)<br></td><td align="center">G<br></td><td rowspan="2">Four wheel drive control ECU<br></td></tr><tr><td align="center">G82-13 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G82-3 (CANH)<br></td><td align="center">P<br></td><td rowspan="2">Certification ECU<br></td></tr><tr><td align="center">G82-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G82-4 (CANH)<br></td><td align="center">BR<br></td><td rowspan="2">Power management control ECU (V1 bus)<br></td></tr><tr><td align="center">G82-15 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G82-6 (CANH)<br></td><td align="center">R<br></td><td rowspan="2">ECM (V1 bus)<br></td></tr><tr><td align="center">G82-17 (CANL)<br></td><td align="center">W<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">G83 No. 1 junction connector</font><br><div class="full"><br><img src="../../img/c219227e07.png" name="C219227E07" alt="C219227E07" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 3 Junction Connector (V2 Bus)<br></td><td align="center">*b<br></td><td>for Power Management Control ECU (V2 Bus)<br></td></tr><tr><td align="center">*c<br></td><td>for Parking Assist ECU (w/ LEXUS Parking Assist-sensor System [w/ Parking Assist System and/or Side Monitor System])<br>for Clearance Warning ECU Assembly (w/ LEXUS Parking Assist-sensor System [w/o Parking Assist System and/or Side Monitor System])<br></td><td align="center">*d<br></td><td>for Driving Support ECU Assembly (w/ Pre-crash Safety System) (V2 Bus)<br></td></tr><tr><td align="center">*e<br></td><td>for ECM (Power Management Bus)<br></td><td align="center">*f<br></td><td>for Air Conditioning Amplifier Assembly<br></td></tr><tr><td align="center">*g<br></td><td>for Power Management Control ECU (Power Management Bus)<br></td><td align="center">-<br></td><td align="center">-<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 1 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G83-1 (CANH)<br></td><td align="center">P<br></td><td rowspan="2">No. 3 junction connector (V2 bus)<br></td></tr><tr><td align="center">G83-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G83-2 (CANH)<br></td><td align="center">V<br></td><td rowspan="2">Power management control ECU (V2 bus)<br></td></tr><tr><td align="center">G83-13 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G83-3 (CANH)<br></td><td align="center">B<br></td><td rowspan="2">Parking assist ECU*1 or clearance warning ECU assembly*2<br></td></tr><tr><td align="center">G83-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G83-4 (CANH)<br></td><td align="center">G<br></td><td rowspan="2">Driving support ECU assembly*3 (V2 bus)<br></td></tr><tr><td align="center">G83-15 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G83-9 (CANH)<br></td><td align="center">BR<br></td><td rowspan="2">ECM (power management bus)<br></td></tr><tr><td align="center">G83-20 (CANL)<br></td><td align="center">GR<br></td></tr><tr><td align="center">G83-10 (CANH)<br></td><td align="center">BR<br></td><td rowspan="2">Air conditioning amplifier assembly<br></td></tr><tr><td align="center">G83-21 (CANL)<br></td><td align="center">Y<br></td></tr><tr><td align="center">G83-11 (CANH)<br></td><td align="center">BR<br></td><td rowspan="2">Power management control ECU (power management bus) (V2 Bus)<br></td></tr><tr><td align="center">G83-22 (CANL)<br></td><td align="center">W<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*1: w/ LEXUS Parking Assist-sensor System (w/ Parking Assist System and/or Side Monitor System)<br></li><li class="itm">*2: w/ LEXUS Parking Assist-sensor System (w/o Parking Assist System and/or Side Monitor System)<br></li><li class="itm">*3: w/ Pre-crash Safety System<br></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">G84 No. 1 junction connector</font><br><div class="full"><br><img src="../../img/c219227e14.png" name="C219227E14" alt="C219227E14" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for Outer Mirror Control ECU Assembly RH<br></td><td align="center">*b<br></td><td>for Driving Support Switch Control ECU<br></td></tr><tr><td align="center">*c<br></td><td>for No. 6 Junction Connector<br></td><td align="center">*d<br></td><td>for No. 3 Junction Connector (MS Bus)<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 1 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G84-1 (CANH)<br></td><td align="center">G<br></td><td rowspan="2">Outer mirror control ECU assembly RH<br></td></tr><tr><td align="center">G84-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G84-2 (CANH)<br></td><td align="center">R<br></td><td rowspan="2">Driving support switch control ECU<br></td></tr><tr><td align="center">G84-13 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G84-3 (CANH)<br></td><td align="center">LG<br></td><td rowspan="2">No. 6 junction connector<br></td></tr><tr><td align="center">G84-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G84-4 (CANH)<br></td><td align="center">V<br></td><td rowspan="2">No. 3 junction connector (MS bus)<br></td></tr><tr><td align="center">G84-15 (CANL)<br></td><td align="center">W<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">NO. 2 JUNCTION CONNECTOR</font><br><div class="full"><br><img src="../../img/c219227e09.png" name="C219227E09" alt="C219227E09" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 1 Junction Connector (V1 Bus)<br></td><td align="center">*b<br></td><td>for Display and Navigation Module Display (w/ Navigation System)<br></td></tr><tr><td align="center">*c<br></td><td>for Spiral with Sensor Cable Sub-assembly<br></td><td align="center">*d<br></td><td>for Yaw Rate Sensor Assembly<br></td></tr><tr><td align="center">*e<br></td><td>for Center Airbag Sensor Assembly<br></td><td align="center">*f<br></td><td>for No. 3 Junction Connector (V1 Bus)<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 2 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G85-1 (CANH)<br></td><td align="center">GR<br></td><td rowspan="2">No. 1 junction connector (V1 bus)<br></td></tr><tr><td align="center">G85-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G85-2 (CANH)<br></td><td align="center">P<br></td><td rowspan="2">Display and navigation module display*<br></td></tr><tr><td align="center">G85-13 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G85-3 (CANH)<br></td><td align="center">G<br></td><td rowspan="2">Spiral with sensor cable sub-assembly<br></td></tr><tr><td align="center">G85-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G85-4 (CANH)<br></td><td align="center">R<br></td><td rowspan="2">Yaw rate sensor assembly<br></td></tr><tr><td align="center">G85-15 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G85-5 (CANH)<br></td><td align="center">Y<br></td><td rowspan="2">Center airbag sensor assembly<br></td></tr><tr><td align="center">G85-16 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G85-6 (CANH)<br></td><td align="center">LG<br></td><td rowspan="2">No. 3 junction connector (V1 bus)<br></td></tr><tr><td align="center">G85-17 (CANL)<br></td><td align="center">W<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*: w/ Navigation System<br></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">NO. 3 JUNCTION CONNECTOR</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">G79 No. 3 junction connector</font><br><div class="full"><br><img src="../../img/c219227e10.png" name="C219227E10" alt="C219227E10" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 2 Junction Connector<br></td><td align="center">*b<br></td><td>for Main Body ECU (Multiplex Network Body ECU) (V1 Bus)<br></td></tr><tr><td align="center">*c<br></td><td>for DLC3<br></td><td align="center">*d<br></td><td>for No. 4 Junction Connector (V1 Bus)<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 3 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G79-1 (CANH)<br></td><td align="center">LG<br></td><td rowspan="2">No. 2 junction connector<br></td></tr><tr><td align="center">G79-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G79-3 (CANH)<br></td><td align="center">L<br></td><td rowspan="2">Main body ECU (multiplex network body ECU) (V1 bus)<br></td></tr><tr><td align="center">G79-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G79-5 (CANH)<br></td><td align="center">R<br></td><td rowspan="2">DLC3<br></td></tr><tr><td align="center">G79-16 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G79-6 (CANH)<br></td><td align="center">B<br></td><td rowspan="2">No. 4 junction connector (V1 Bus)<br></td></tr><tr><td align="center">G79-17 (CANL)<br></td><td align="center">W<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">G80 No. 3 junction connector</font><br><div class="full"><br><img src="../../img/c219227e19.png" name="C219227E19" alt="C219227E19" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 1 Junction Connector (V2 Bus)<br></td><td align="center">*b<br></td><td>for No. 4 Junction Connector (V2 Bus)<br></td></tr><tr><td align="center">*c<br></td><td>for Stabilizer Control ECU<br></td><td align="center">*d<br></td><td>for Seat Belt Control ECU (w/ Pre-crash Safety System)<br></td></tr><tr><td align="center">*e<br></td><td>for Driving Support ECU Assembly (w/ Pre-crash Safety System) (Sensor Bus)<br></td><td align="center">*f<br></td><td>for Millimeter Wave Radar Sensor Assembly (w/ Pre-crash Safety System)<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 3 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G80-1 (CANH)<br></td><td align="center">P<br></td><td rowspan="2">No. 1 junction connector (V2 bus)<br></td></tr><tr><td align="center">G80-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G80-3 (CANH)<br></td><td align="center">B<br></td><td rowspan="2">No. 4 junction connector (V2 Bus)<br></td></tr><tr><td align="center">G80-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G80-5 (CANH)<br></td><td align="center">V<br></td><td rowspan="2">Stabilizer control ECU<br></td></tr><tr><td align="center">G80-16 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G80-6 (CANH)<br></td><td align="center">L<br></td><td rowspan="2">Seat belt control ECU*<br></td></tr><tr><td align="center">G80-17 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G80-9 (CANH)<br></td><td align="center">L<br></td><td rowspan="2">Driving support ECU assembly (sensor bus)*<br></td></tr><tr><td align="center">G80-20 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G80-11 (CANH)<br></td><td align="center">LG<br></td><td rowspan="2">Millimeter wave radar sensor assembly*<br></td></tr><tr><td align="center">G80-22 (CANL)<br></td><td align="center">W<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*: w/ Pre-crash Safety System<br></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">G81 No. 3 junction connector</font><br><div class="full"><br><img src="../../img/c219227e12.png" name="C219227E12" alt="C219227E12" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for Outer Mirror Control ECU Assembly LH<br></td><td align="center">*b<br></td><td>for Front Power Seat Switch LH<br></td></tr><tr><td align="center">*c<br></td><td>for Multiplex Tilt and Telescopic ECU<br></td><td align="center">*d<br></td><td>for Main Body ECU (Multiplex Network Body ECU) (MS Bus)<br></td></tr><tr><td align="center">*e<br></td><td>for No. 1 Junction Connector (MS Bus)<br></td><td align="center">-<br></td><td align="center">-<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 3 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G81-1 (CANH)<br></td><td align="center">B<br></td><td rowspan="2">Outer mirror control ECU assembly LH<br></td></tr><tr><td align="center">G81-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G81-2 (CANH)<br></td><td align="center">L<br></td><td rowspan="2">Front power seat switch LH<br></td></tr><tr><td align="center">G81-13 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G81-3 (CANH)<br></td><td align="center">GR<br></td><td rowspan="2">Multiplex tilt and telescopic ECU<br></td></tr><tr><td align="center">G81-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G81-4 (CANH)<br></td><td align="center">P<br></td><td rowspan="2">Main body ECU (multiplex network body ECU) (MS bus)<br></td></tr><tr><td align="center">G81-15 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">G81-5 (CANH)<br></td><td align="center">V<br></td><td rowspan="2">No. 1 junction connector (MS bus)<br></td></tr><tr><td align="center">G81-16 (CANL)<br></td><td align="center">W<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">NO. 4 JUNCTION CONNECTOR</font><br><div class="full"><br><img src="../../img/c219227e13.png" name="C219227E13" alt="C219227E13" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 5 Junction Connector<br></td><td align="center">*b<br></td><td>for No. 3 Junction Connector (V2 Bus)<br></td></tr><tr><td align="center">*c<br></td><td>for Suspension Control ECU<br></td><td align="center">*d<br></td><td>for Headlight Swivel ECU Assembly (AFS ECU)<br></td></tr><tr><td align="center">*e<br></td><td>for No. 3 Junction Connector (V1 Bus)<br></td><td align="center">*f<br></td><td>for Combination Meter Assembly<br></td></tr><tr><td align="center">*g<br></td><td>for Master Cylinder Solenoid (Skid Control ECU)<br></td><td align="center">-<br></td><td align="center">-<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 4 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">A59-1 (CANH)<br></td><td align="center">LG<br></td><td rowspan="2">No. 5 junction connector<br></td></tr><tr><td align="center">A59-12 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">A59-2 (CANH)<br></td><td align="center">B<br></td><td rowspan="2">No. 3 junction connector (V2 bus)<br></td></tr><tr><td align="center">A59-13 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">A59-3 (CANH)<br></td><td align="center">GR<br></td><td rowspan="2">Suspension control ECU<br></td></tr><tr><td align="center">A59-14 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">A59-4 (CANH)<br></td><td align="center">V<br></td><td rowspan="2">Headlight swivel ECU assembly (AFS ECU)<br></td></tr><tr><td align="center">A59-15 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">A59-9 (CANH)<br></td><td align="center">R<br></td><td rowspan="2">No. 3 junction connector (V1 bus)<br></td></tr><tr><td align="center">A59-20 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">A59-10 (CANH)<br></td><td align="center">LG<br></td><td rowspan="2">Combination meter assembly<br></td></tr><tr><td align="center">A59-21 (CANL)<br></td><td align="center">W<br></td></tr><tr><td align="center">A59-11 (CANH)<br></td><td align="center">B<br></td><td rowspan="2">Master cylinder solenoid (skid control ECU)<br></td></tr><tr><td align="center">A59-22 (CANL)<br></td><td align="center">W<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c210060e19.png" name="C210060E19" alt="C210060E19" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">NO. 5 JUNCTION CONNECTOR</font><br><table border="1" cellspacing="0" cellpadding="2" width="44.8%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 4 Junction Connector (V2 Bus)<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 5 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G86-2 (CANL)<br></td><td align="center">W<br></td><td rowspan="2">No. 4 junction connector (V2 bus)<br></td></tr><tr><td align="center">G86-3 (CANH)<br></td><td align="center">LG<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c210060e20.png" name="C210060E20" alt="C210060E20" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">NO. 6 JUNCTION CONNECTOR</font><br><table border="1" cellspacing="0" cellpadding="2" width="44.8%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>for No. 1 Junction Connector (MS Bus)<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">No. 6 Junction Connector<br></td><td align="center">Wiring Color<br></td><td align="center">Connect to<br></td></tr><tr><td align="center">G87-2 (CANN)<br></td><td align="center">W<br></td><td rowspan="2">No. 1 junction connector (MS bus)<br></td></tr><tr><td align="center">G87-3 (CANP)<br></td><td align="center">LG<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DLC3</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the cable from the negative (-) battery terminal before measuring the resistances of the main wire and the branch wire.</font><br><p><dl class="warning"><dt class="warningTitle">CAUTION:</dt><dt class="warningTitle"></dt></dl><dl class="warning"><dd class="warning">Wait at least 90 seconds after disconnecting the cable from the negative (-) battery terminal to disable the SRS system.</dd></dl></p><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">w/ Navigation System (for HDD):<br>After the engine switch is turned off, the display and navigation module display (HDD navigation system) records various types of memory and settings. As a result, after turning the engine switch off, be sure to wait for the time specified in the following table before disconnecting the cable from the negative (-) battery terminal.<br><br clear="all"><p><dl class="spec"><dt class="spec">Waiting Time before Disconnecting Cable from Negative (-) Battery Terminal:</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="79%"><colgroup align="" width="70%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><tr><td class="atten3" align="center">Condition<br></td><td class="atten3" align="center">Waiting Time<br></td></tr><tr><td class="atten3" align="center">Vehicle enrolled in G-BOOK system<br></td><td class="atten3" align="center">6 minutes<br></td></tr><tr><td class="atten3" align="center">Vehicle not enrolled in G-BOOK system<br></td><td class="atten3" align="center">1 minute<br></td></tr></table></dd></dl></p></li><li class="atten3">When disconnecting the cable, some systems need to be initialized after the cable is reconnected (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000004AQ3000X');return false;">Click here</a>).<br></li></ol></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/h102621e75.png" name="H102621E75" alt="H102621E75" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G37-6 (CANH) - G37-14 (CANL)<br></td><td>R - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G37-6 (CANH) - G37-4 (CG)<br></td><td>R - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G37-14 (CANL) - G37-4 (CG)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G37-6 (CANH) - G37-16 (BAT)<br></td><td>R - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G37-14 (CANL) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK ECM</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c216694e10.png" name="C216694E10" alt="C216694E10" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="9%
+
+			"><col align="left"></colgroup><colgroup align="" width="41%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>for V1 Bus<br></td><td align="center">*B<br></td><td>for Power Management Bus<br></td></tr></table>
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the C30, G44 and G45 ECM connectors.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for V1 Bus&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Terminal No. (Symbol)<br></td><td align="center">Wiring Color<br></td><td align="center">Switch Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">G45-32 (CANH) - G45-31 (CANL)<br></td><td align="center">R - W<br></td><td align="center">Engine switch off<br></td><td align="center">108 to 132 Ω<br></td></tr><tr><td align="center">G45-32 (CANH) - C30-12 (E1)<br></td><td align="center">R - BR<br></td><td align="center">Engine switch off<br></td><td align="center">200 Ω or higher<br></td></tr><tr><td align="center">G45-31 (CANL) - C30-12 (E1)<br></td><td align="center">W - BR<br></td><td align="center">Engine switch off<br></td><td align="center">200 Ω or higher<br></td></tr><tr><td align="center">G45-32 (CANH) - G44-24 (BATT)<br></td><td align="center">R - L<br></td><td align="center">Engine switch off<br></td><td align="center">6 kΩ or higher<br></td></tr><tr><td align="center">G45-31 (CANL) - G44-24 (BATT)<br></td><td align="center">W - L<br></td><td align="center">Engine switch off<br></td><td align="center">6 kΩ or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for Power Management Bus&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Terminal No. (Symbol)<br></td><td align="center">Wiring Color<br></td><td align="center">Switch Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">G45-34 (CANP) - G45-33 (CANN)<br></td><td align="center">BR - GR<br></td><td align="center">Engine switch off<br></td><td align="center">108 to 132 Ω<br></td></tr><tr><td align="center">G45-34 (CANP) - C30-12 (E1)<br></td><td align="center">BR - BR<br></td><td align="center">Engine switch off<br></td><td align="center">200 Ω or higher<br></td></tr><tr><td align="center">G45-33 (CANN) - C30-12 (E1)<br></td><td align="center">GR - BR<br></td><td align="center">Engine switch off<br></td><td align="center">200 Ω or higher<br></td></tr><tr><td align="center">G45-34 (CANP) - G44-24 (BATT)<br></td><td align="center">BR - L<br></td><td align="center">Engine switch off<br></td><td align="center">6 kΩ or higher<br></td></tr><tr><td align="center">G45-33 (CANN) - G44-24 (BATT)<br></td><td align="center">GR - L<br></td><td align="center">Engine switch off<br></td><td align="center">6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000015step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DRIVER SIDE JUNCTION BLOCK ASSEMBLY AND MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b238680e18.png" name="B238680E18" alt="B238680E18" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="9%
+
+			"><col align="left"></colgroup><colgroup align="" width="41%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>for V1 Bus<br></td><td align="center">*B<br></td><td>for MS Bus<br></td></tr></table>
+<ol class="s2">
+<li><p><font class="ptxt">Remove the main body ECU (multiplex network body ECU) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003WBO00KX');return false;">Click here</a>).</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for V1 Bus&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G47-14 (CANH) - G47-13 (CANL)<br></td><td>L - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G47-14 (CANH) - A-11 (GND1)<br></td><td>L - None<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G47-13 (CANL) - A-11 (GND1)<br></td><td>W - None<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G47-14 (CANH) - A-30 (BECU)<br></td><td>L - None<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G47-13 (CANL) - A-30 (BECU)<br></td><td>W - None<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for MS Bus&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G46-9 (CANP) - G46-10 (CANN)<br></td><td>P - W<br></td><td>Engine switch off<br></td><td>108 to 132 Ω<br></td></tr><tr><td>G46-9 (CANP) - A-11 (GND1)<br></td><td>P - None<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G46-10 (CANN) - A-11 (GND1)<br></td><td>W - None<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G46-9 (CANP) - A-30 (BECU)<br></td><td>P - None<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G46-10 (CANN) - A-30 (BECU)<br></td><td>W - None<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000016step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK COMBINATION METER ASSEMBLY</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/e161130e20.png" name="E161130E20" alt="E161130E20" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G3 combination meter assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G3-40 (CANH) - G3-39 (CANL)<br></td><td>LG - W<br></td><td>Engine switch off<br></td><td>108 to 132 Ω<br></td></tr><tr><td>G3-40 (CANH) - G3-1 (EP)<br></td><td>LG - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G3-39 (CANL) - G3-1 (EP)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G3-40 (CANH) - G3-25 (B)<br></td><td>LG - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G3-39 (CANL) - G3-25 (B)<br></td><td>W - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000017step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK CENTER AIRBAG SENSOR ASSEMBLY</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c216693e04.png" name="C216693E04" alt="C216693E04" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G1 center airbag sensor assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G1-13 (CANH) - G1-22 (CANL)<br></td><td>Y - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G1-13 (CANH) - G1-25 (E1)<br></td><td>Y - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G1-22 (CANL) - G1-25 (E1)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G1-13 (CANH) - G37-16 (BAT)<br></td><td>Y - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G1-22 (CANL) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000018step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK MASTER CYLINDER SOLENOID (SKID CONTROL ECU)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c215260e05.png" name="C215260E05" alt="C215260E05" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the A7 master cylinder solenoid (skid control ECU) connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>A7-11 (CANH) - A7-25 (CANL)<br></td><td>B - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>A7-11 (CANH) - A7-1 (GND1)<br></td><td>B - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A7-25 (CANL) - A7-1 (GND1)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A7-11 (CANH) - A7-2 (+BM1)<br></td><td>B - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>A7-25 (CANL) - A7-2 (+BM1)<br></td><td>W - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU0000019step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK SPIRAL WITH SENSOR CABLE SUB-ASSEMBLY</td></tr></table><font class="ptxt"></font><table class="float"><tr><td><img src="../../img/c201866e05.png" name="C201866E05" alt="C201866E05" border="1" class="half"><br></td></tr></table>
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G21 spiral with sensor cable sub-assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G21-4 (CANH) - G21-3 (CANL)<br></td><td>G - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G21-4 (CANH) - G21-2 (ESS)<br></td><td>G - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G21-3 (CANL) - G21-2 (ESS)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G21-4 (CANH) - G21-6 (BAT)<br></td><td>G - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G21-3 (CANL) - G21-6 (BAT)<br></td><td>W - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000110step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK YAW RATE SENSOR ASSEMBLY</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c213562e05.png" name="C213562E05" alt="C213562E05" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G40 yaw rate sensor assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G40-3 (CANH) - G40-2 (CANL)<br></td><td>R - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G40-3 (CANH) - G40-1 (GND)<br></td><td>R - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G40-2 (CANL) - G40-1 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G40-3 (CANH) - G37-16 (BAT)<br></td><td>R - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G40-2 (CANL) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000111step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK CERTIFICATION ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b197893e26.png" name="B197893E26" alt="B197893E26" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G26 certification ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G26-9 (CANH) - G26-10 (CANL)<br></td><td>P - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G26-9 (CANH) - G26-15 (E)<br></td><td>P - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G26-10 (CANL) - G26-15 (E)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G26-9 (CANH) - G26-1 (+B)<br></td><td>P - V<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G26-10 (CANL) - G26-1 (+B)<br></td><td>W - V<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000112step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK POWER MANAGEMENT CONTROL ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c201247e13.png" name="C201247E13" alt="C201247E13" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>for V1 Bus<br></td><td align="center">*B<br></td><td>for V2 Bus<br></td></tr><tr><td align="center">*C<br></td><td>for Power Management Bus<br></td><td align="center">-<br></td><td align="center">-<br></td></tr></table>
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G39 power management control ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for V1 Bus&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G39-14 (CA1H) - G39-13 (CA1L)<br></td><td>BR - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G39-14 (CA1H) - G39-6 (GND)<br></td><td>BR - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G39-13 (CA1L) - G39-6 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G39-14 (CA1H) - G39-1 (AM22)<br></td><td>BR - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G39-13 (CA1L) - G39-1 (AM22)<br></td><td>W - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for V2 Bus&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G39-26 (CA2H) - G39-25 (CA2L)<br></td><td>V - W<br></td><td>Engine switch off<br></td><td>108 to 132 Ω<br></td></tr><tr><td>G39-26 (CA2H) - G39-6 (GND)<br></td><td>V - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G39-25 (CA2L) - G39-6 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G39-26 (CA2H) - G39-1 (AM22)<br></td><td>V - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G39-25 (CA2L) - G39-1 (AM22)<br></td><td>W - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for Power Management Bus&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G39-12 (CA3P) - G39-11 (CA3N)<br></td><td>BR - W<br></td><td>Engine switch off<br></td><td>108 to 132 Ω<br></td></tr><tr><td>G39-12 (CA3P) - G39-6 (GND)<br></td><td>BR - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G39-11 (CA3N) - G39-6 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G39-12 (CA3P) - G39-1 (AM22)<br></td><td>BR - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G39-11 (CA3N) - G39-1 (AM22)<br></td><td>W - B<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000113step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DISPLAY AND NAVIGATION MODULE DISPLAY (w/ Navigation System)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/e194844e09.png" name="E194844E09" alt="E194844E09" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the H4 display and navigation module display connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>H4-21 (CANH) - H4-22 (CANL)<br></td><td>W - P<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>H4-21 (CANH) - H4-10 (GND1)<br></td><td>W - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>H4-22 (CANL) - H4-10 (GND1)<br></td><td>P - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>H4-21 (CANH) - H4-1 (+B1)<br></td><td>W - SB<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>H4-22 (CANL) - H4-1 (+B1)<br></td><td>P - SB<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000114step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK FOUR WHEEL DRIVE CONTROL ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c213564e04.png" name="C213564E04" alt="C213564E04" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G41 and G42 four wheel drive control ECU connectors.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G41-19 (CANH) - G41-20 (CANL)<br></td><td>G - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G41-19 (CANH) - G42-4 (GND)<br></td><td>G - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G41-20 (CANL) - G42-4 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G41-19 (CANH) - G37-16 (BAT)<br></td><td>G - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G41-20 (CANL) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000115step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK SUSPENSION CONTROL ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/g028232e03.png" name="G028232E03" alt="G028232E03" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the A40 suspension control ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>A40-7 (CANH) - A40-8 (CANL)<br></td><td>GR - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>A40-7 (CANH) - A40-5 (GND)<br></td><td>GR - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A40-8 (CANL) - A40-5 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A40-7 (CANH) - A40-3 (B)<br></td><td>GR - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>A40-8 (CANL) - A40-3 (B)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000116step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK STABILIZER CONTROL ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c214235e04.png" name="C214235E04" alt="C214235E04" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G57 stabilizer control ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G57-29 (CANH) - G57-28 (CANL)<br></td><td>V - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G57-29 (CANH) - G57-22 (GND)<br></td><td>V - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G57-28 (CANL) - G57-22 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G57-29 (CANH) - G37-16 (BAT)<br></td><td>V - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G57-28 (CANL) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000117step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK SEAT BELT CONTROL ECU (w/ Pre-crash Safety System)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c210024e02.png" name="C210024E02" alt="C210024E02" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G34 and G35 seat belt control ECU connectors.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G35-1 (CANH) - G35-2 (CANL)<br></td><td>L - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G35-1 (CANH) - G34-8 (PGND)<br></td><td>L - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G35-2 (CANL) - G34-8 (PGND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G35-1 (CANH) - G34-7 (+B)<br></td><td>L - W<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G35-2 (CANL) - G34-7 (+B)<br></td><td>W - W<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000118step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DRIVING SUPPORT ECU ASSEMBLY (w/ Pre-crash Safety System)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c220129e04.png" name="C220129E04" alt="C220129E04" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align="left"></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>for V2 Bus<br></td><td align="center">*B<br></td><td>for Sensor Bus<br></td></tr></table><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">As disconnecting the connector to perform inspections may cause DTCs to be stored, clear DTCs after performing inspections.<br></li><li class="atten3">As the connector may be damaged if a load of more than 10 kg (22 lb) is applied to it, do not apply any more load than necessary to the connector.<br></li></ol></p>
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G43 driving support ECU assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for V2 Bus&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G43-39 (CA2H) - G43-17 (CA2L)<br></td><td>G - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G43-39 (CA2H) - G43-25 (GND)<br></td><td>G - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G43-17 (CA2L) - G43-25 (GND)<br></td><td>W - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G43-39 (CA2H) - G37-16 (BAT)<br></td><td>G - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G43-17 (CA2L) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>for Sensor Bus&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G43-40 (CA1P) - G43-18 (CA1N)<br></td><td>L - W<br></td><td>Engine switch off<br></td><td>108 to 132 Ω<br></td></tr><tr><td>G43-40 (CA1P) - G43-25 (GND)<br></td><td>L - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G43-18 (CA1N) - G43-25 (GND)<br></td><td>W - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G43-40 (CA1P) - G37-16 (BAT)<br></td><td>L - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G43-18 (CA1N) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000119step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK PARKING ASSIST ECU (w/ LEXUS Parking Assist-sensor System [w/ Parking Assist System and/or Side Monitor System])</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/e159063e14.png" name="E159063E14" alt="E159063E14" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the I3 parking assist ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>I3-22 (CANH) - I3-21 (CANL)<br></td><td>B - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>I3-22 (CANH) - I3-3 (GND1)<br></td><td>B - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>I3-21 (CANL) - I3-3 (GND1)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>I3-22 (CANH) - I3-1 (+B)<br></td><td>B - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>I3-21 (CANL) - I3-1 (+B)<br></td><td>W - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000120step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK CLEARANCE WARNING ECU ASSEMBLY (w/ LEXUS Parking Assist-sensor System [w/o Parking Assist System and/or Side Monitor System])</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c217402e03.png" name="C217402E03" alt="C217402E03" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the I1 clearance warning ECU assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>I1-3 (R1) - I1-5 (R2)<br></td><td>B - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>I1-3 (R1) - I1-17 (E)<br></td><td>B - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>I1-5 (R2) - I1-17 (E)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>I1-3 (R1) - G37-16 (BAT)<br></td><td>B - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>I1-5 (R2) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000121step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK HEADLIGHT SWIVEL ECU ASSEMBLY (AFS ECU)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c217403e03.png" name="C217403E03" alt="C217403E03" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the A46 headlight swivel ECU assembly (AFS ECU) connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>A46-12 (CANH) - A46-13 (CANL)<br></td><td>V - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>A46-12 (CANH) - A46-22 (E1)<br></td><td>V - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A46-13 (CANL) - A46-22 (E1)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A46-12 (CANH) - G37-16 (BAT)<br></td><td>V - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>A46-13 (CANL) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000122step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK MULTIPLEX TILT AND TELESCOPIC ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c215995e03.png" name="C215995E03" alt="C215995E03" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G33 multiplex tilt and telescopic ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G33-5 (CANP) - G33-14 (CANN)<br></td><td>GR - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G33-5 (CANP) - G33-11 (GND)<br></td><td>GR - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G33-14 (CANN) - G33-11 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G33-5 (CANP) - G33-2 (+B)<br></td><td>GR - G<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G33-14 (CANN) - G33-2 (+B)<br></td><td>W - G<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000123step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK FRONT POWER SEAT SWITCH LH</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b219506e12.png" name="B219506E12" alt="B219506E12" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the b4 and b5 front power seat switch LH connectors.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>b5-8 (CANP) - b5-7 (CANN)<br></td><td>L - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>b5-8 (CANP) - b4-2 (GND1)<br></td><td>L - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>b5-7 (CANN) - b4-2 (GND1)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>b5-8 (CANP) - b4-7 (+B1)<br></td><td>L - W<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>b5-7 (CANN) - b4-7 (+B1)<br></td><td>W - W<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000124step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DRIVING SUPPORT SWITCH CONTROL ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/e194339e04.png" name="E194339E04" alt="E194339E04" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G60 driving support switch control ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G60-9 (CANP) - G60-10 (CANN)<br></td><td>R - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G60-9 (CANP) - G60-16 (GND)<br></td><td>R - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G60-10 (CANN) - G60-16 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G60-9 (CANP) - G60-6 (+B)<br></td><td>R - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G60-10 (CANN) - G60-6 (+B)<br></td><td>W - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000125step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK OUTER MIRROR CONTROL ECU ASSEMBLY RH</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b209687e21.png" name="B209687E21" alt="B209687E21" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the J8 outer mirror control ECU assembly RH connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>J8-9 (CANP) - J8-8 (CANN)<br></td><td>G - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>J8-9 (CANP) - J8-7 (GND)<br></td><td>G - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>J8-8 (CANN) - J8-7 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>J8-9 (CANP) - J8-6 (CPUB)<br></td><td>G - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>J8-8 (CANN) - J8-6 (CPUB)<br></td><td>W - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000126step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK OUTER MIRROR CONTROL ECU ASSEMBLY LH</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b209687e16.png" name="B209687E16" alt="B209687E16" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the K8 outer mirror control ECU assembly LH connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>K8-9 (CANP) - K8-8 (CANN)<br></td><td>B - W<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>K8-9 (CANP) - K8-7 (GND)<br></td><td>B - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>K8-8 (CANN) - K8-7 (GND)<br></td><td>W - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>K8-9 (CANP) - K8-6 (CPUB)<br></td><td>B - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>K8-8 (CANN) - K8-6 (CPUB)<br></td><td>W - L<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000127step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK MILLIMETER WAVE RADAR SENSOR ASSEMBLY (w/ Pre-crash Safety System)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c207482e03.png" name="C207482E03" alt="C207482E03" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the A12 millimeter wave radar sensor assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>A12-4 (CA1P) - A12-3 (CA1N)<br></td><td>LG - W<br></td><td>Engine switch off<br></td><td>108 to 132 Ω<br></td></tr><tr><td>A12-4 (CA1P) - A12-2 (SGND)<br></td><td>LG - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A12-3 (CA1N) - A12-2 (SGND)<br></td><td>W - BR<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>A12-4 (CA1P) - G37-16 (BAT)<br></td><td>LG - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>A12-3 (CA1N) - G37-16 (BAT)<br></td><td>W - GR<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br clear="all"><a name="RM14K0E___00003FU00000128step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK AIR CONDITIONING AMPLIFIER ASSEMBLY</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c215955e05.png" name="C215955E05" alt="C215955E05" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G13 air conditioning amplifier assembly connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G13-11 (CANH) - G13-12 (CANL)<br></td><td>BR - Y<br></td><td>Engine switch off<br></td><td>54 to 69 Ω<br></td></tr><tr><td>G13-11 (CANH) - G13-14 (GND)<br></td><td>BR - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G13-12 (CANL) - G13-14 (GND)<br></td><td>Y - W-B<br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G13-11 (CANH) - G13-21 (B)<br></td><td>BR - V<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr><tr><td>G13-12 (CANL) - G13-21 (B)<br></td><td>Y - V<br></td><td>Engine switch off<br></td><td>6 kΩ or higher<br></td></tr></table></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

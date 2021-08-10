@@ -1,0 +1,309 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000013HC01FX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; P2440 &nbsp;&nbsp; Secondary Air Injection System Switching Valve Stuck Open Bank1</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; P2442 &nbsp;&nbsp; Secondary Air Injection System Switching Valve Stuck Open Bank 2</h3></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM0000013HC01FX');return false;">Click here</a></h2></p><br clear="all"><a name="RM0000013HC01FX_02"></a><h2>DESCRIPTION</h2><font class="ptxt">Refer to DTC P0412 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000012FY01IX_01');return false;">Click here</a>).</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">DTC No.<br></td><td align="center">DTC Detection Condition<br></td><td align="center">Trouble Area<br></td></tr><tr><td rowspan="2" align="center">P2440<br></td><td>The air switching valve (for Bank 1) is stuck open for approximately 60 seconds after the engine is started cold (1 trip detection logic).<br></td><td rowspan="2"><ol style="list-style-type: disc"><li class="itm">Air switching valve assembly<br></li><li class="itm">Open or short in air switching valve circuit<br></li><li class="itm">Air injection system piping<br></li><li class="itm">Pressure sensor<br></li><li class="itm">Pressure sensor circuit<br></li><li class="itm">Air injection control driver<br></li><li class="itm">ECM<br></li></ol></td></tr><tr><td>The air switching valve (for Bank 1) is stuck open for 5 seconds or more while the engine is running (1 trip detection logic).<br></td></tr><tr><td rowspan="2" align="center">P2442<br></td><td>The air switching valve (for Bank 2) is stuck open for approximately 60 seconds after the engine is started cold (1 trip detection logic).<br></td><td rowspan="2"><ol style="list-style-type: disc"><li class="itm">Air switching valve assembly<br></li><li class="itm">Open or short in air switching valve circuit<br></li><li class="itm">Air injection system piping<br></li><li class="itm">Pressure sensor<br></li><li class="itm">Pressure sensor circuit<br></li><li class="itm">Air injection VSV relay (AI-VSV)<br></li><li class="itm">ECM<br></li></ol></td></tr><tr><td>The air switching valve (for Bank 2) is stuck open for 5 seconds or more while the engine is running (1 trip detection logic).<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">Air switching valve normal operation:</dd></dl><dl class="reference"><dd class="reference">When the air switching valve is open, exhaust gas pulsation occurs in the secondary air passage.</dd></dl><dl class="reference"><dd class="reference">When the air switching valve is closed, exhaust gas pulsation does not occur in the secondary air passage.</dd></dl></p><br clear="all"><a name="RM0000013HC01FX_03"></a><h2>MONITOR DESCRIPTION</h2><font class="ptxt">DTCs P2440 and P2442 indicate that the air switching valve is stuck open. The ECM performs diagnosis of the secondary air injection system based on the pressure pulsation when the system is not operating. If a malfunction is detected, the ECM illuminates the MIL and stores a DTC.</font><br><br clear="all"><a name="RM0000013HC01FX_04"></a><h2>MONITOR STRATEGY</h2><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>Required Sensors/Components<br></td><td>Pressure sensor<br></td></tr><tr><td>Frequency of Operation<br></td><td>Once per drive cycle<br></td></tr></table><br clear="all"><a name="RM0000013HC01FX_06"></a><h2>TYPICAL MALFUNCTION THRESHOLDS</h2><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>P2440 Air Switching Valve is Stuck Open (Case 1)&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>One of the following conditions is met<br></td><td>(a), (b) or (c)<br></td></tr><tr><td>(a) Condition 2 (secondary air injection ON) and Condition 2 (secondary air injection OFF)<br></td><td>Met<br></td></tr><tr><td>(b) Condition 1 (secondary air injection ON), Condition 1 (secondary air injection OFF), no pressure change detected when secondary air injection ON and pressure pulsation detected when secondary air injection OFF<br></td><td>Met<br></td></tr><tr><td>(c) Condition 1 (secondary air injection ON), Condition 2 (secondary air injection OFF), no pressure change detected when secondary air injection ON and pressure pulsation detected when secondary air injection OFF<br></td><td>Met<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>P2442 Air Switching Valve is Stuck Open (Case 1)&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>One of the following conditions is met<br></td><td>(a), (b) or (c)<br></td></tr><tr><td>(a) Condition 2 (secondary air injection ON) and Condition 2 (secondary air injection OFF)<br></td><td>Met<br></td></tr><tr><td>(b) Condition 1 (secondary air injection ON) and Condition 1 (secondary air injection OFF)<br></td><td>Met<br></td></tr><tr><td>(c) Condition 1 (secondary air injection ON) and Condition 2 (secondary air injection OFF)<br></td><td>Met<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>P2440, P2442 Air Switching Valve is Stuck Open (Case 2)&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>Cumulative pressure pulsation<br></td><td>100 kPa or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Secondary Air Injection ON (Condition 1)&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>Both conditions are met during secondary air injection ON<br></td><td>-<br></td></tr><tr><td>Cumulative pressure pulsation<br></td><td>12 kPa or higher<br></td></tr><tr><td>Secondary air injection pressure<br></td><td>1 kPa or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Secondary Air Injection ON (Condition 2)&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>Both conditions are met during secondary air injection ON<br></td><td>-<br></td></tr><tr><td>Cumulative pressure pulsation<br></td><td>12 kPa or higher<br></td></tr><tr><td>Secondary air injection pressure<br></td><td>Below 1 kPa<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Secondary Air Injection OFF (Condition 1)&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>Both conditions are met during secondary air injection OFF<br></td><td>-<br></td></tr><tr><td>Cumulative pressure pulsation<br></td><td>20 kPa or higher<br></td></tr><tr><td>Secondary air injection pressure<br></td><td>2.5 kPa or higher<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Secondary Air Injection OFF (Condition 2)&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>Both conditions are met during secondary air injection OFF<br></td><td>-<br></td></tr><tr><td>Cumulative pressure pulsation<br></td><td>20 kPa or higher<br></td></tr><tr><td>Secondary air injection pressure<br></td><td>Below 2.5 kPa<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">Refer to "Data List / Active Test" [Air Pump Pressure (Absolute), Air Pump2 Pressure (Absolute) and Air Pump Pulsation Pressure] (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000SXS02LX');return false;">Click here</a>).</dd></dl></p><br clear="all"><a name="RM0000013HC01FX_11"></a><h2>CONFIRMATION DRIVING PATTERN</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">This Air Injection Check only allows technicians to operate the AIR system for a maximum of 5 seconds. Furthermore, the check can only be performed up to 4 times per trip. If the test is repeated, intervals of at least 30 seconds are required between checks. While AIR system operation using the intelligent tester is prohibited, the intelligent tester display indicates the prohibition (WAIT or ERROR). If ERROR is displayed on the intelligent tester during the test, stop the engine for 10 minutes, and then try again.<br></li><li class="atten3">Performing Air Injection Check repeatedly may cause damage to the secondary air injection system. If it is necessary to repeat the check, leave an interval of several minutes between System Check operations to prevent the system from overheating.<br></li><li class="atten3">When performing the Air Injection Check operation after the battery cable has been reconnected, wait for 7 minutes with the engine switch turned on (IG) or the engine running.<br></li><li class="atten3">Turn the engine switch off when the Air Injection Check operation finishes.<br></li></ol></p><ol style="list-style-type: decimal"><li class="itm">Start the engine and warm it up.<br></li><li class="itm">Turn the engine switch off.<br></li><li class="itm">Connect the intelligent tester to the DLC3.<br></li><li class="itm">Turn the engine switch on (IG).<br></li><li class="itm">Turn the tester on.<br></li><li class="itm">Clear DTCs (even if no DTCs are stored, perform the clear DTC operation) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000PDK0H3X');return false;">Click here</a>).<br></li><li class="itm">Turn the engine switch off and wait for at least 30 seconds.<br></li><li class="itm">Turn the engine switch on (IG) and turn the tester on.<br></li><li class="itm">Enter the following menus: Powertrain / Engine and ECT / Utility / Air injection check / Automatic Mode.<br></li><li class="itm">Start the engine after the intelligent tester initialization is finished.<br></li><li class="itm">Perform the System Check operation by pressing ENTER (Next).<br></li><li class="itm">Perform the following to confirm the AIR system pending codes: Press ENTER (Exit).<br></li><li class="itm">Check for pending DTCs.<br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">No pending DTC is output.<br></dd></dl></p></li><li class="itm">After "Air injection check" is completed, check for All Readiness by entering the following menus: Powertrain / Engine and ECT / Utility / All Readiness.<br></li><li class="itm">Input the DTC: P2440 or P2442.<br></li><li class="itm">Check the DTC judgment result.<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Display<br></td><td align="center">Description<br></td></tr><tr><td align="center">NORMAL<br></td><td><ol style="list-style-type: disc"><li class="itm">DTC judgment completed<br></li><li class="itm">System normal<br></li></ol></td></tr><tr><td align="center">ABNORMAL<br></td><td><ol style="list-style-type: disc"><li class="itm">DTC judgment completed<br></li><li class="itm">System abnormal<br></li></ol></td></tr><tr><td align="center">INCOMPLETE<br></td><td><ol style="list-style-type: disc"><li class="itm">DTC judgment not completed<br></li><li class="itm">Perform driving pattern after confirming DTC enabling conditions<br></li></ol></td></tr><tr><td align="center">UNKNOWN<br></td><td><ol style="list-style-type: disc"><li class="itm">Unable to perform DTC judgment<br></li><li class="itm">Number of DTCs which do not fulfill DTC preconditions has reached ECU memory limit<br></li></ol></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If the judgment result shows NORMAL, the system is normal.<br></li><li class="atten4">If the judgment result shows ABNORMAL, the system has a malfunction.<br></li></ol></p></li><li class="itm">Turn the engine switch off.<br></li></ol><br clear="all"><a name="RM0000013HC01FX_08"></a><h2>WIRING DIAGRAM</h2><font class="ptxt">Refer to DTC P0412 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000012FY01IX_07');return false;">Click here</a>).</font><br><br clear="all"><a name="RM0000013HC01FX_09"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">This Air Injection Check only allows technicians to operate the secondary air injection system for a maximum of 5 seconds. Furthermore, the check can only be performed up to 4 times per trip. If the test is repeated, intervals of at least 30 seconds are required between checks. While secondary air injection system operation using the intelligent tester is prohibited, the tester display indicates the prohibition (WAIT or ERROR). If ERROR is displayed on the tester during the test, stop the engine for 10 minutes, and then try again.<br></li><li class="atten3">Performing Air Injection Check repeatedly may cause damage to the secondary air injection system. If it is necessary to repeat the check, leave an interval of several minutes between System Check operations to prevent the system from overheating.<br></li><li class="atten3">When performing the Air Injection Check operation after the battery cable has been reconnected, wait for 7 minutes with the engine switch turned on (IG) or the engine running.<br></li><li class="atten3">Turn the engine switch off when the Air Injection Check operation finishes.<br></li></ol></p><a name="RM0000013HC01FX_10_0002"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.CHECK FOR ANY OTHER DTCS OUTPUT (IN ADDITION TO SECONDARY AIR INJECTION SYSTEM DTCS)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / DTC.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Read DTCs and freeze frame data.</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="65%
+
+			"><col align=""></colgroup><colgroup align="" width="35%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td align="center">P2440 and/or P2442<br></td><td align="center">A<br></td></tr><tr><td align="center">P2440 and P0412<br></td><td align="center">B<br></td></tr><tr><td align="center">P2442 and P0416 and/or P0417<br></td><td align="center">C<br></td></tr><tr><td align="center">P2440, P2442 and other DTCs (except P0412, P0416 and P0417) are output<br></td><td align="center">D<br></td></tr></table></p></li></ol><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">If any DTCs other than P0412, P0416, P0417, P2440 and/or P2442 are output, troubleshoot those DTCs first.</dd></dl></p><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO AIR SWITCHING VALVE INSPECTION PROCEDURE (P0412) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000012FY01IX_08');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO AIR SWITCHING VALVE INSPECTION PROCEDURE (P0416 AND P0417)</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">D</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO DTC CHART (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000032SF00UX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0003"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.PERFORM ACTIVE TEST USING INTELLIGENT TESTER (SECONDARY AIR INJECTION SYSTEM OPERATION)</td></tr></table><table class="float"><tr><td><img src="../../img/a211728e02.png" name="A211728E02" alt="A211728E02" border="1" class="half"><br></td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Perform a visual check:</font><br>
+<ol class="s3">
+<li><p><font class="ptxt">Start the engine and warm it up.</font><br></p></li>
+<li><p><font class="ptxt">Turn the engine switch off.</font><br></p></li>
+<li><p><font class="ptxt">Disconnect the No. 1 and No. 2 air injection system hoses.</font><br></p></li>
+<li><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li>
+<li><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li>
+<li><p><font class="ptxt">Turn the tester on.</font><br></p></li>
+<li><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / Utility / Air Injection Check / Manual Mode / AIR PUMP: ON, ASV1: OPEN, ASV2: OPEN.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">When Manual Mode is selected, the intelligent tester initialization (atmospheric pressure measurement) is performed automatically. The initialization takes 10 seconds. After the initialization, AIR PUMP and ASV operation can be selected.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Start the engine.</font><br></p></li>
+<li><p><font class="ptxt">Perform the secondary air injection system forced operation while the engine is idling.</font><br></p></li>
+<li><p><font class="ptxt">Place your hand near the air switching valve port and check that the exhaust gas pressure pulsates when the air switching valve is turned on.</font><br><p><dl class="warning"><dt class="warningTitle">CAUTION:</dt><dt class="warningTitle"></dt></dl><dl class="warning"><dd class="warning">To avoid the danger of being burned by the exhaust gas, bring your hand close to the valve port slowly.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / Utility / Air Injection Check / Manual Mode / AIR PUMP: ON, ASV1: OPEN, ASV2: OPEN and AIR PUMP: ON, ASV1: CLOSE, ASV2: CLOSE.</font><br></p></li>
+<li><p><font class="ptxt">Check that the exhaust gas does not pulsate when the ASV is turned off.</font><br></p></li>
+<li><p><font class="ptxt">Turn the engine switch off.</font><br><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">This Air Injection Check only allows technicians to operate the secondary air injection system for a maximum of 5 seconds. Furthermore, the check can only be performed up to 4 times per trip. If the test is repeated, intervals of at least 30 seconds are required between checks. While secondary air injection system operation using the intelligent tester is prohibited, the tester display indicates the prohibition (WAIT or ERROR). If ERROR is displayed on the tester during the test, stop the engine for 10 minutes, and then try again.<br></li><li class="atten3">Performing Air Injection Check repeatedly may cause damage to the secondary air injection system. If it is necessary to repeat the check, leave an interval of several minutes between System Check operations to prevent the system from overheating.<br></li><li class="atten3">When performing the Air Injection Check operation after the battery cable has been reconnected, wait for 7 minutes with the engine switch turned on (IG) or the engine running.<br></li><li class="atten3">Turn the engine switch off when the Air Injection Check operation finishes.<br></li></ol></p><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="40.8%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Air Pump Operation<br></td><td align="center">Air Switching Valve Operation<br></td><td align="center">Exhaust Gas Pulsation<br></td></tr><tr><td align="center">ON<br></td><td align="center">OFF<br></td><td align="center">Not detected<br></td></tr><tr><td align="center">ON<br></td><td align="center">ON<br></td><td align="center">Detected<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="center"></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td>*A<br></td><td>Bank 1<br></td></tr><tr><td>*B<br></td><td>Bank 2<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM0000013HC01FX_10_0004">Go to step 4</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0027"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.INSPECT AIR SWITCHING VALVE ASSEMBLY (PRESSURE SENSOR)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / Data List / Air pump pressure (Absolute) and Air Pump2 Pressure (Absolute).</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Check the pressure displayed on the tester.</font><br><p><dl class="spec"><dt class="spec">Standard pressure:</dt><dd class="spec">45 to 135 kPa<br></dd></dl></p><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The tester displays the air pump pressure as absolute pressure.</dd></dl></p></p></li></ol><table border="1" cellspacing="0" cellpadding="2" width="48%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td align="center">OK<br></td><td align="center">A<br></td></tr><tr><td align="center">NG (for Bank 1)<br></td><td align="center">B<br></td></tr><tr><td align="center">NG (for Bank 2)<br></td><td align="center">C<br></td></tr></table><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE AIR SWITCHING VALVE ASSEMBLY (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000030WH00QX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE AIR SWITCHING VALVE ASSEMBLY (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000040KD005X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">END&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM0000013HC01FX_10_0004"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.INSPECT AIR TUBE (BLOCKAGE AND LEAK)</td></tr></table><table class="float"><tr><td><img src="../../img/a211729e02.png" name="A211729E02" alt="A211729E02" border="1" class="half"><br></td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check that the No. 3 and No. 4 air tubes are securely connected to both the exhaust manifold and the air switching valve.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Inspect the air tube for blockages and damage.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">No blockages in or damage to air tubes.<br></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="center"></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td>*A<br></td><td>Bank 1<br></td></tr><tr><td>*B<br></td><td>Bank 2<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE AIR TUBE</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0005"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">5.INSPECT AIR SWITCHING VALVE ASSEMBLY</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Inspect the air switching valve assembly for bank 1 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000030WF00QX');return false;">Click here</a>).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Inspect the air switching valve assembly for bank 2 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000040KB005X');return false;">Click here</a>).</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td align="center">OK<br></td><td align="center">A<br></td></tr><tr><td align="center">NG (for Bank 1)<br></td><td align="center">B<br></td></tr><tr><td align="center">NG (for Bank 2)<br></td><td align="center">C<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE AIR SWITCHING VALVE ASSEMBLY (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000030WH00QX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE AIR SWITCHING VALVE ASSEMBLY (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000040KD005X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0028"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">6.INSPECT AIR INJECTION VSV RELAY (AI-VSV)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Inspect the air injection VSV relay (AI-VSV) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003BLB00QX_01_0016');return false;">Click here</a>).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE AIR INJECTION VSV RELAY (AI-VSV)</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0029"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">7.CHECK AIR INJECTION VSV RELAY (AI-VSV) (POWER SOURCE)</td></tr></table><table class="float"><tr><td><img src="../../img/a227244e01.png" name="A227244E01" alt="A227244E01" border="1" class="half"><br></td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Remove the air injection VSV relay (AI-VSV).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td>Air injection VSV relay (AI-VSV) terminal 2 - Body ground<br></td><td align="center">Always<br></td><td align="center">11 to 14 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Engine Room Relay Block<br></td></tr><tr><td align="center">*2<br></td><td>Air Injection VSV Relay (AI-VSV)<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Reinstall the air injection VSV relay (AI-VSV).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0030"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">8.CHECK HARNESS AND CONNECTOR (AIR INJECTION VSV RELAY (AI-VSV) - ECM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Remove the air injection VSV relay (AI-VSV).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the ECM connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance (Check for Open):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td>Air injection VSV relay (AI-VSV) terminal 1 - C30-20 (AIR1)<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Standard Resistance (Check for Short):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td>Air injection VSV relay (AI-VSV) terminal 1 or C30-20 (AIR1) - Body ground<br></td><td align="center">Always<br></td><td align="center">10 kΩ or higher<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Reinstall the air injection VSV relay (AI-VSV).</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Reconnect the ECM connector.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0006"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">9.INSPECT AIR INJECTION CONTROL DRIVER (POWER SOURCE OF AIR INJECTION CONTROL DRIVER)</td></tr></table><table class="float"><tr><td><img src="../../img/a221587e04.png" name="A221587E04" alt="A221587E04" border="1" class="half"><br></td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the air injection control driver connectors.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">A14-1 (BATT) - Body ground<br></td><td align="center">Always<br></td><td align="center">11 to 14 V (near battery voltage)<br></td></tr><tr><td align="center">A13-5 (+B) - Body ground<br></td><td align="center">Engine switch on (IG)<br></td><td align="center">11 to 14 V (near battery voltage)<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">A13-1 (E) - Body ground<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="center"></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td>*a<br></td><td>Front view of wire harness connector<br>(to Air Injection Control Driver)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0012"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">10.CHECK HARNESS AND CONNECTOR (ECM - AIR INJECTION CONTROL DRIVER)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the ECM connectors.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the air injection control driver connectors.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">C28-26 (AIRV) - A13-3 (SIV)<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0031"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">11.PERFORM ACTIVE TEST USING INTELLIGENT TESTER</td></tr></table><table class="float"><tr><td><img src="../../img/a229922e05.png" name="A229922E05" alt="A229922E05" border="1" class="half"><br><img src="../../img/a229922e06.png" name="A229922E06" alt="A229922E06" border="1" class="half"><br></td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the air injection control driver connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Connect terminals DI and SIV of the wire harness connector for the air injection control driver.</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Air Injection Control Driver<br></td></tr><tr><td align="center">*2<br></td><td>ECM<br></td></tr><tr><td align="center">*a<br></td><td>Front view of wire harness connector<br>(to Air Injection Control Driver)<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Turn the engine switch on (IG) and turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / Utility / Air Injection Check / Manual Mode / AIR PUMP: ON, ASV 1: OPEN, ASV 2: OPEN.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">When Manual Mode is selected, the intelligent tester initialization (atmospheric pressure measurement) is performed automatically. The initialization takes 10 seconds. After the initialization, AIR PUMP and ASV operation can be selected.</dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Start the engine.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Perform the secondary air injection system forced operation while the engine is idling.</font><br></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Measure the voltage between the SIV and E terminals of the ECM connector when the secondary air injection system is ON and OFF.</font><br></p></li></ol>
+<ol class="s2">
+<li value="9"><p><font class="ptxt">Turn the engine switch off.</font><br><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Performing Air Injection Check repeatedly may cause damage to the secondary air injection system. If it is necessary to repeat the check, leave an interval of several minutes between System Check operations to prevent the system from overheating.<br></li><li class="atten3">When performing the Air Injection Check operation after the battery cable has been reconnected, wait for 7 minutes with the engine switch turned on (IG) or the engine running.<br></li><li class="atten3">Turn the engine switch off when the Air Injection Check operation finishes.<br></li></ol></p><br clear="all"><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td>A13-3 (SIV) - A13-1 (E)<br></td><td>AIR PUMP: ON, ASV: OPEN<br></td><td>0.5 to 2 V<br></td></tr><tr><td>A13-3 (SIV) - A13-1 (E)<br></td><td>AIR PUMP: OFF, ASV: CLOSE<br></td><td>11 to 14 V<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="10"><p><font class="ptxt">Connect terminals DI and SIP of the wire harness connector for the air injection control driver.</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Air Injection Control Driver<br></td></tr><tr><td align="center">*2<br></td><td>ECM<br></td></tr><tr><td align="center">*a<br></td><td>Front view of wire harness connector<br>(to Air Injection Control Driver)<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="11"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="12"><p><font class="ptxt">Turn the engine switch on (IG) and turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="13"><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / Utility / Air Injection Check / Manual Mode / AIR PUMP: ON, ASV 1: OPEN, ASV 2: OPEN.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">When Manual Mode is selected, the intelligent tester initialization (atmospheric pressure measurement) is performed automatically. The initialization takes 10 seconds. After the initialization, AIR PUMP and ASV operation can be selected.</dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="14"><p><font class="ptxt">Start the engine.</font><br></p></li></ol>
+<ol class="s2">
+<li value="15"><p><font class="ptxt">Perform the secondary air injection system forced operation while the engine is idling.</font><br></p></li></ol>
+<ol class="s2">
+<li value="16"><p><font class="ptxt">Measure the voltage between the SIP and E terminals of the ECM connector when the secondary air injection system is ON and OFF.</font><br></p></li></ol>
+<ol class="s2">
+<li value="17"><p><font class="ptxt">Turn the engine switch off.</font><br><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">Performing Air Injection Check repeatedly may cause damage to the secondary air injection system. If it is necessary to repeat the check, leave an interval of several minutes between System Check operations to prevent the system from overheating.<br></li><li class="atten3">When performing the Air Injection Check operation after the battery cable has been reconnected, wait for 7 minutes with the engine switch turned on (IG) or the engine running.<br></li><li class="atten3">Turn the engine switch off when the Air Injection Check operation finishes.<br></li></ol></p><br clear="all"><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td>A13-4 (SIP) - A13-1 (E)<br></td><td>AIR PUMP: ON, ASV: OPEN<br></td><td>0.5 to 2 V<br></td></tr><tr><td>A13-4 (SIP) - A13-1 (E)<br></td><td>AIR PUMP: OFF, ASV: CLOSE<br></td><td>11 to 14 V<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="18"><p><font class="ptxt">Reconnect the air injection control driver connector.</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000013Z000OX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0008"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">12.REPLACE AIR INJECTION CONTROL DRIVER</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Replace the air injection control driver (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000030JC014X');return false;">Click here</a>).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">NEXT</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000013HC01FX_10_0009"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">13.CHECK WHETHER DTC OUTPUT RECURS (DTC P2440 AND/OR P2442)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Start the engine and warm it up.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch off.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Clear DTCs (if stored) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000PDK0H3X');return false;">Click here</a>).</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / Utility / Air Injection Check / Automatic Mode.</font><br></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Start the engine after the intelligent tester initialization is finished.</font><br></p></li></ol>
+<ol class="s2">
+<li value="9"><p><font class="ptxt">Perform the System Check operation by pressing ENTER (Next).</font><br></p></li></ol>
+<ol class="s2">
+<li value="10"><p><font class="ptxt">Perform the following to confirm the secondary air injection system pending codes: Press the Exit button.</font><br></p></li></ol>
+<ol class="s2">
+<li value="11"><p><font class="ptxt">Check pending DTCs.</font><br></p></li></ol>
+<ol class="s2">
+<li value="12"><p><font class="ptxt">Turn the engine switch off.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">No pending DTC output.<br></dd></dl></p><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">When performing the Air Injection Check operation after the battery cable has been reconnected, wait for 7 minutes with the engine switch turned on (IG) or the engine running.<br></li><li class="atten3">Turn the engine switch off when the Air Injection Check operation finishes.<br></li></ol></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000013Z000OX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">END&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

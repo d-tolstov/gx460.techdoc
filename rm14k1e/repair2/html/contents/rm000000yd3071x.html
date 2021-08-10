@@ -1,0 +1,126 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000YD3071X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; B2285 &nbsp;&nbsp; Steering Lock Position Signal Circuit Malfunction</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000000YD3071X');return false;">Click here</a></h2></p><br clear="all"><a name="RM000000YD3071X_01"></a><h2>DESCRIPTION</h2><font class="ptxt">This DTC is stored when a mismatch between the steering lock position signal from the direct line sent by the steering lock ECU and the steering lock position signal sent via LIN communication is detected.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">When the power management control ECU is replaced with a new one and the cable is connected to the negative (-) battery terminal, the power source mode changes to on (IG).<br></li><li class="atten4">When the battery cable is disconnected and reconnected, the power source returns to the mode it was in before the battery cable was disconnected.<br></li></ol></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="center" width="13%
+
+			"><col align=""></colgroup><colgroup align="center" width="30%
+
+			"><col align=""></colgroup><colgroup align="center" width="28%
+
+			"><col align=""></colgroup><colgroup align="center" width="29%
+
+			"><col align=""></colgroup><tr><td>DTC Code<br></td><td>DTC Detection Condition<br></td><td>Trouble Area<br></td><td>DTC Output Confirmation Operation<br></td></tr><tr><td>B2285<br></td><td align="left">Mismatch between the steering lock position signal from the direct line sent by the steering lock ECU and the steering lock position signal sent via LIN communication (1-trip detection logic*).<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">AM2 fuse<br></li><li class="itm">Steering lock actuator assembly (steering lock ECU)<br></li><li class="itm">Power management control ECU<br></li><li class="itm">LIN communication system<br></li><li class="itm">Harness or connector<br></li></ol></td><td align="left">Disconnect the cable from the negative (-) battery terminal, wait 30 seconds and reconnect the cable to the negative (-) battery terminal. Wait another 40 seconds or more with the engine switch off (steering locked), and then turn the engine switch on (ACC) (steering unlocked) and wait 40 seconds or more.<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*: Only output while a malfunction is present and the engine switch is on (IG)<br></li></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Vehicle Condition and Fail-safe Function when Malfunction Detected&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Vehicle Condition when Malfunction Detected<br></td><td align="center">Fail-safe Function when Malfunction Detected<br></td></tr><tr><td>The engine cannot be started.<br></td><td>An engine start command is not output.<br></td></tr></table><br clear="all"><a name="RM000000YD3071X_02"></a><h2>WIRING DIAGRAM</h2><div class="full"><br><img src="../../img/a207422e06.png" name="A207422E06" alt="A207422E06" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM000000YD3071X_03"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">When using the intelligent tester with the engine switch off, perform either of the following: 1) Turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the intelligent tester and vehicle begins, or 2) connect the intelligent tester to the vehicle and select "MANUAL" from the initial screen on the intelligent tester, and then select "KEY REGIST" under Model Code.<br></li><li class="atten3">The entry and start system uses multiplex communication. First perform the inspections in "How to Proceed with Troubleshooting" to confirm that there are no communication malfunctions before proceeding with troubleshooting (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO031X');return false;">Click here</a>).<br></li><li class="atten3">Inspect the fuses of circuits related to this system before performing the following inspection procedure.<br></li><li class="atten3">Before replacing the steering lock actuator assembly (steering lock ECU), refer to the Service Bulletin.<br></li><li class="atten3">After performing repairs, perform the operation that fulfills the DTC output confirmation operation, and then confirm that no DTCs are output again.<br></li></ol></p><br clear="all"><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span class="atten4">Related Data List and Active Test Items&nbsp;
+					</span></caption><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td class="atten4" align="center">DTC<br></td><td class="atten4" align="center">Data List Item<br></td><td class="atten4" align="center">Active Test Item<br></td></tr><tr><td class="atten4" align="center">B2285<br></td><td class="atten4"><div class="list-ttl"><span class="atten4">Power Source Control</span></div><ol style="list-style-type: none"><li class="atten4">Steering Unlock Switch<br></li></ol><div class="list-ttl"><span class="atten4">Entry&amp;Start</span></div><ol style="list-style-type: disc"><li class="atten4">IG2 Status<br></li><li class="atten4">IG(Lin)<br></li><li class="atten4">Power Supply Short<br></li><li class="atten4">Power Supply Open<br></li><li class="atten4">Lock Bar Stuck Error<br></li><li class="atten4">Motor Driver Short<br></li><li class="atten4">Motor Driver Open<br></li></ol></td><td class="atten4" align="center">-<br></td></tr></table></p><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">If the engine switch indicator is blinking in green, the steering lock bar may be stuck.</dd></dl></p><a name="RM000000YD3071X_07_0008"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.CHECK FOR DTC (LIN COMMUNICATION SYSTEM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check for DTCs (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000YEH07EX');return false;">Click here</a>).</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">LIN communication system DTC B2287 is not output simultaneously.<br></dd></dl></p><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If the lock and unlock functions of the steering lock do not operate, the engine switch cannot be turned on (IG) and the engine cannot be started.<br></li><li class="atten4">If LIN communication does not function, the steering cannot be locked or unlocked.<br></li></ol></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO DTC B2287 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000002S8G00WX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000YD3071X_07_0016"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.READ VALUE USING INTELLIGENT TESTER (STEERING UNLOCK SWITCH)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Enter the following menus: Body / Power Source Control / Data List.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">According to the display on the intelligent tester, read the Data List.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Power Source Control&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Tester Display<br></td><td>Measurement Item/Range<br></td><td>Normal Condition<br></td><td>Diagnostic Note<br></td></tr><tr><td>Steering Unlock Switch<br></td><td align="left">State of steering unlock sensor signal output from steering lock actuator assembly/ON or OFF<br></td><td align="left">ON: Steering unlocked*1<br>OFF: Steering locked*2<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">When the shift lever is in P and the engine switch is off, if any door is opened or closed, the steering is locked.<br></li><li class="itm">When the key is inside the vehicle and the engine switch is turned on (ACC) or on (IG), the steering unlocks.<br></li><li class="itm">The engine cannot be started when the steering unlock signal is off.<br></li></ol></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If the engine switch cannot be turned on (IG), proceed to the next step.<br></li><li class="atten4">*1:  When the key is inside the vehicle and the engine switch is turned on (ACC) or on (IG), the steering unlocks.<br></li><li class="atten4">*2:  When the shift lever is in P and the engine switch is off, if any door is opened or closed, the steering is locked.<br></li></ol></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td>Data List item does not change<br></td><td align="center">A<br></td></tr><tr><td>Data List item changes<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000000YD3071X_07_0022">Go to step 5</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000YD3071X_07_0028"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.CHECK HARNESS AND CONNECTOR (BATTERY - POWER MANAGEMENT CONTROL ECU)
+</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a207890e12.png" name="A207890E12" alt="A207890E12" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Disconnect the G39 power management control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G39-2 (AM21) - Body ground<br></td><td rowspan="2">Always<br></td><td rowspan="2">9.5 to 14 V<br></td></tr><tr><td>G39-1 (AM22) - Body ground<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Rear view of wire harness connector<br>(to Power Management Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR IN CIRCUIT CONNECTED TO POWER SOURCE</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000YD3071X_07_0029"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - BODY GROUND)
+</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the G39 power management control ECU connector.</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a207890e13.png" name="A207890E13" alt="A207890E13" border="1" class="half"><br></td></tr></table>
+<li value="2"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G39-6 (GND) - Body ground<br></td><td rowspan="2">Always<br></td><td rowspan="2">Below 1 Ω<br></td></tr><tr><td>G39-5 (GND2) - Body ground<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Rear view of wire harness connector<br>(to Power Management Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000YD3071X_07_0022"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">5.INSPECT STEERING LOCK ACTUATOR ASSEMBLY (STEERING LOCK ECU)</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c197722e39.png" name="C197722E39" alt="C197722E39" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">DTC P2285 may be stored due to an internal malfunction in the steering lock actuator. Lock and unlock position signals are sent separately to the power management control ECU from the steering lock actuator assembly to identify the steering lock position.</dd></dl></p><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="50%
+
+			" align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td colspan="2" width="50%
+
+			" align="center">Positive (+) tester probe &rarr; G23-4 (SLP1)<br>Negative (-) tester probe &rarr; Body ground<br></td><td align="center">Steering locked*1<br></td><td align="center">10 kΩ or higher<br></td></tr><tr><td colspan="2" width="50%
+
+			" align="center">Positive (+) tester probe &rarr; G23-4 (SLP1)<br>Negative (-) tester probe &rarr; Body ground<br></td><td align="center">Steering unlocked*2<br></td><td align="center">Below 1 Ω<br></td></tr></table></dd></dl></p><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">*1:  When the key is inside the vehicle and the engine switch is turned on (ACC) or on (IG), the steering unlocks.<br></li><li class="atten4">*2:  When the shift lever is in P and the engine switch is off, if any door is opened or closed, the steering is locked.<br></li><li class="atten4">With the connector connected to the ECU, measure the resistance from the rear of the connector.<br></li></ol></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Component with harness connected<br>(Steering Lock ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE STEERING LOCK ACTUATOR ASSEMBLY (STEERING LOCK ECU) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000039SJ00JX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000YD3071X_07_0011"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">6.CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - STEERING LOCK ECU)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the G39 power management control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the G23 steering lock ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td>G39-3 (SLP) - G23-4 (SLP1)<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr><tr><td>G39-3 (SLP) or G23-4 (SLP1) - Body ground<br></td><td align="center">Always<br></td><td align="center">10 kΩ or higher<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE POWER MANAGEMENT CONTROL ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000039R5007X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

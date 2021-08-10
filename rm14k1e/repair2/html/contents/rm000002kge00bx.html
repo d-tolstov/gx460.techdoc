@@ -1,0 +1,119 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000002KGE00BX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; C1831/31 &nbsp;&nbsp; Accumulator Solenoid Malfunction / Upside</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; C1832/32 &nbsp;&nbsp; Accumulator Solenoid Malfunction / Downside</h3></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000002KGE00BX');return false;">Click here</a></h2></p><br clear="all"><a name="RM000002KGE00BX_01"></a><h2>DESCRIPTION</h2><font class="ptxt">The stabilizer control ECU receives information from the steering angle sensor, skid control ECU (speed signal) and yaw rate and acceleration sensor via CAN communication. Based on this information, the stabilizer control ECU turns the stabilizer control solenoid valve (built into the stabilizer control with accumulator housing assembly) on or off.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">DTC Code<br></td><td align="center">DTC Detection Condition<br></td><td align="center">Trouble Area<br></td></tr><tr><td align="center">C1831/31<br>C1832/32<br></td><td>Either condition is met:<br><ol style="list-style-type: disc"><li class="itm">An open circuit signal is detected for a second continuously when current is not applied to the solenoid valve.<br></li><li class="itm">A short circuit signal is detected 8 seconds continuously when current is applied to the solenoid valve.<br></li></ol></td><td><ol style="list-style-type: disc"><li class="itm">Harness or connector<br></li><li class="itm">Stabilizer control solenoid valve (Stabilizer control with accumulator housing assembly)<br></li><li class="itm">Stabilizer control ECU<br></li></ol></td></tr></table><br clear="all"><a name="RM000002KGE00BX_02"></a><h2>WIRING DIAGRAM</h2><div class="full"><br><img src="../../img/c215168e06.png" name="C215168E06" alt="C215168E06" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM000002KGE00BX_03"></a><h2>INSPECTION PROCEDURE</h2><a name="RM000002KGE00BX_04_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.READ VALUE USING INTELLIGENT TESTER (ACCUMULATOR VALVE)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Turn the engine switch off.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Enter the following menus: Chassis / KDSS / Data List.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Select the item below in the Data List, and read the value displayed on the intelligent tester.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>KDSS&nbsp;
+					</span></caption><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="28%
+
+			"><col align=""></colgroup><colgroup align="" width="17%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Display<br></td><td align="center">Measurement Item/Range<br></td><td align="center">Normal Condition<br></td><td align="center">Diagnostic Note<br></td></tr><tr><td align="center">Accumulator Valve (Downside)<br></td><td>Stabilizer control solenoid valve (for Lower Chamber)/<br>ON or OFF<br></td><td>ON: Stabilizer control solenoid valve closed<br>OFF: Stabilizer control solenoid valve open<br></td><td align="center">-<br></td></tr><tr><td align="center">Accumulator Valve (Upside)<br></td><td>Stabilizer control solenoid valve (for Upper Chamber)/<br>ON or OFF<br></td><td>ON: Stabilizer control solenoid valve open<br>OFF: Stabilizer control solenoid valve closed<br></td><td align="center">-<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Perform the Active Test of the stabilizer control ECU using the intelligent tester.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>KDSS&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Display<br></td><td align="center">Test Part<br></td><td align="center">Control Range<br></td><td align="center">Diagnostic Note<br></td></tr><tr><td align="center">Accumulator Valve (Upside)<br></td><td>Stabilizer control solenoid valve (for Upper Chamber)<br></td><td>Valve ON / OFF<br></td><td>The operating sound of the solenoid (clicking sound) can be heard<br>ON: Data List ON<br>OFF: Data List OFF<br>When the Active Test is performed, the solenoid turns on for 3 seconds.<br></td></tr><tr><td align="center">Accumulator Valve (Downside)<br></td><td>Stabilizer control solenoid valve (for Lower Chamber)<br></td><td>Valve ON / OFF<br></td><td>The operating sound of the solenoid (clicking sound) can be heard<br>ON: Data List ON<br>OFF: Data List OFF<br>When the Active Test is performed, the solenoid turns on for 3 seconds.<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Check that the solenoid operating sound can be heard, and that the Data List display changes between ON and OFF in response to the Active Test.</font><br></p></li></ol><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">Solenoid operating sound can be heard and display changes between ON and OFF in response to Active Test.<br></dd></dl></p><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000002KGE00BX_04_0019">Go to step 3</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002KGE00BX_04_0012"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.RECONFIRM DTC</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Clear the DTCs (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001N9I00UX');return false;">Click here</a>)</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Check for DTCs (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001N9I00UX');return false;">Click here</a>).</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td>DTC is output<br></td><td align="center">A<br></td></tr><tr><td>DTC is not output<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">USE SIMULATION METHOD TO CHECK (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000004AQ7000X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE STABILIZER CONTROL ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000002KLG007X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM000002KGE00BX_04_0019"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.CHECK HARNESS AND CONNECTOR (STABILIZER CONTROL ECU - STABILIZER CONTROL SOLENOID VALVE)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the stabilizer control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the stabilizer control with accumulator housing assembly connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="41%
+
+			"><col align=""></colgroup><colgroup align="" width="26%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">G57-3 (SLAU) - R23-6 (SLAU)<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr><tr><td align="center">G57-3 (SLAU) - Body ground<br></td><td align="center">Always<br></td><td align="center">10 kΩ or higher<br></td></tr><tr><td align="center">G57-1 (SLAL) - R23-5 (SLAL)<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr><tr><td align="center">G57-1 (SLAL) - Body ground<br></td><td align="center">Always<br></td><td align="center">10 kΩ or higher<br></td></tr><tr><td align="center">R23-4 (AUG) - Body ground<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000002KGE00BX_04_0003"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.INSPECT STABILIZER CONTROL SOLENOID VALVE</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the stabilizer control with accumulator housing assembly connector.</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c215163e02.png" name="C215163E02" alt="C215163E02" border="1" class="half"><br></td></tr></table>
+<li value="2"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><br clear="all"><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>C1831/31 (for Upper Chamber)&nbsp;
+					</span></caption><colgroup align="" width="36%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">5 (SLAL) - 4 (AUG)<br></td><td align="center">25&deg;C (77&deg;F)<br></td><td align="center">24.3 to 25.7 Ω<br></td></tr></table></dd><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>C1832/32 (for Lower Chamber)&nbsp;
+					</span></caption><colgroup align="" width="35%
+
+			"><col align=""></colgroup><colgroup align="" width="32%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td align="center">6 (SLAU) - 4 (AUG)<br></td><td align="center">25&deg;C (77&deg;F)<br></td><td align="center">24.3 to 25.7 Ω<br></td></tr></table></dd></dl></p></p></li></ol><table border="1" cellspacing="0" cellpadding="2" width="48%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Component without harness connected<br>(Stabilizer Control with Accumulator Housing Assembly)<br></td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li value="3"><p><font class="ptxt">Check for an operating sound of the stabilizer control solenoid valve.</font><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c215165e02.png" name="C215165E02" alt="C215165E02" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">for Upper Chamber:</font><br><font class="ptxt">Connect terminal 5 (SLAL) to the positive (+) battery terminal, and terminal 4 (AUG) to the negative (-) battery terminal.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">An operating sound (click sound) can be heard.<br></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Component without harness connected<br>(Stabilizer Control with Accumulator Housing Assembly)<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/c215164e02.png" name="C215164E02" alt="C215164E02" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">for Lower Chamber:</font><br><font class="ptxt">Connect terminal 6 (SLAU) to the positive (+) battery terminal, and terminal 4 (AUG) to the negative (-) battery terminal.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">An operating sound (click sound) can be heard.<br></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Component without harness connected<br>(Stabilizer Control with Accumulator Housing Assembly)<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE STABILIZER CONTROL WITH ACCUMULATOR&#13;
+ HOUSING ASSEMBLY (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000002KK0007X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE STABILIZER CONTROL ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000002KLG007X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

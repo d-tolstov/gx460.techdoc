@@ -1,0 +1,66 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000035P5023X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; C1436 &nbsp;&nbsp; Yaw Rate Sensor Malfunction</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM0000035P5023X');return false;">Click here</a></h2></p><br clear="all"><a name="RM0000035P5023X_01"></a><h2>DESCRIPTION</h2><font class="ptxt">Refer to DTC C1419 and C1435 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000035P4025X_01');return false;">Click here</a>).</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="center" width="15%
+
+			"><col align=""></colgroup><colgroup align="center" width="44%
+
+			"><col align=""></colgroup><colgroup align="center" width="41%
+
+			"><col align=""></colgroup><tr><td>DTC Code<br></td><td>DTC Detection Condition<br></td><td>Trouble Area<br></td></tr><tr><td>C1436<br></td><td align="left">Either condition is met:<br><ol style="list-style-type: decimal"><li class="itm">With the vehicle stationary, the yaw rate and acceleration sensor output value is not 0&deg;/s.<br></li><li class="itm">An abnormal comparison value.<br></li></ol></td><td align="left">Yaw rate and acceleration sensor<br></td></tr></table><br clear="all"><a name="RM0000035P5023X_02"></a><h2>WIRING DIAGRAM</h2><font class="ptxt">Refer to DTCs C1232, C1243 and C1245 (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001EA3018X_02');return false;">Click here</a>).</font><br><br clear="all"><a name="RM0000035P5023X_03"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">When replacing the yaw rate and acceleration sensor, perform calibration (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000452J006X');return false;">Click here</a>).<br></li><li class="atten3">Check the yaw rate and acceleration sensor signal after replacement (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000452K00AX');return false;">Click here</a>).<br></li></ol></p><a name="RM0000035P5023X_04_0006"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.CHECK DTC (CAN COMMUNICATION SYSTEM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check for DTCs (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000046KV005X');return false;">Click here</a>).</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td>CAN DTC is not output<br></td><td align="center">A<br></td></tr><tr><td>CAN DTC is output<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO CAN COMMUNICATION SYSTEM (HOW TO PROCEED WITH TROUBLESHOOTING) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO031X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000035P5023X_04_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.READ VALUE USING INTELLIGENT TESTER (YAW RATE SENSOR)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Turn the engine switch off.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Enter the following menus: Chassis / ABS/VSC/TRC / Data List.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>ABS/VSC/TRC&nbsp;
+					</span></caption><colgroup align="center" width="16%
+
+			"><col align=""></colgroup><colgroup align="center" width="28%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="22%
+
+			"><col align=""></colgroup><tr><td>Tester Display<br></td><td>Measurement Item/Range<br></td><td>Normal Condition<br></td><td>Diagnostic Note<br></td></tr><tr><td>Yaw Rate Sensor<br></td><td align="left">Yaw rate and acceleration sensor 1 reading/ Min.: -128&deg;/s, Max.: 127&deg;/s<br></td><td align="left">Vehicle stationary: 0&deg;/s<br>Right turn: -128 to 0&deg;/s<br>Left turn: 0 to 127&deg;/s<br></td><td>-<br></td></tr></table></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Check that the yaw rate and acceleration sensor output value is displayed on the intelligent tester.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="12%
+
+			"><col align=""></colgroup><colgroup align="" width="71%
+
+			"><col align=""></colgroup><colgroup align="" width="17%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="83%
+
+			" align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td rowspan="2" align="center">NG<br></td><td>Yaw rate and acceleration sensor output value is 0&deg;/s when vehicle is stationary, but value fluctuates when turning<br></td><td align="center">A<br></td></tr><tr><td>Yaw rate and acceleration sensor output value is not 0&deg;/s when vehicle is stationary<br></td><td align="center">B<br></td></tr><tr><td colspan="2" width="83%
+
+			" align="center">OK<br></td><td align="center">C<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE YAW RATE AND ACCELERATION SENSOR (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000SS502KX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">C</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">USE SIMULATION METHOD TO CHECK (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000004AQ7000X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM0000035P5023X_04_0002"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.CHECK YAW RATE AND ACCELERATION SENSOR INSTALLATION</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Turn the engine switch off.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Check that the yaw rate and acceleration sensor is installed properly (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000SS202NX');return false;">Click here</a>).</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">The sensor is tightened to the specified torque.<br></dd><dd class="spec">The sensor is not installed at an angle.<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">INSTALL YAW RATE AND ACCELERATION SENSOR CORRECTLY (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000SS202NX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE YAW RATE AND ACCELERATION SENSOR (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000SS502KX');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

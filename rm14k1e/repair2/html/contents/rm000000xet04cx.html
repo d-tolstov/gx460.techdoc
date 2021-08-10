@@ -1,0 +1,40 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000XET04CX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; B2277 &nbsp;&nbsp; Detecting Vehicle Submersion</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000000XET04CX');return false;">Click here</a></h2></p><br clear="all"><a name="RM000000XET04CX_01"></a><h2>DESCRIPTION</h2><font class="ptxt">This DTC is stored when a malfunction in the water submersion detection circuit in the power management control ECU is detected.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">When the power management control ECU is replaced with a new one and the cable is connected to the negative (-) battery terminal, the power source mode changes to on (IG).<br></li><li class="atten4">When the battery cable is disconnected and reconnected, the power source returns to the mode it was in before the battery cable was disconnected.<br></li></ol></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="center" width="13%
+
+			"><col align=""></colgroup><colgroup align="center" width="30%
+
+			"><col align=""></colgroup><colgroup align="center" width="28%
+
+			"><col align=""></colgroup><colgroup align="center" width="29%
+
+			"><col align=""></colgroup><tr><td>DTC Code<br></td><td>DTC Detection Condition<br></td><td>Trouble Area<br></td><td>DTC Output Confirmation Operation<br></td></tr><tr><td>B2277<br></td><td align="left">The water submersion detection circuit in the power management control ECU detects water submersion (1-trip detection logic*).<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Submersion of power management control ECU in water<br></li><li class="itm">Power management control ECU<br></li></ol></td><td align="left">Wait 300 seconds after connecting the battery cable.<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*: Only output while a malfunction is present and the engine switch is on (IG)<br></li></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Vehicle Condition and Fail-safe Function when Malfunction Detected&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Vehicle Condition when Malfunction Detected<br></td><td align="center">Fail-safe Function when Malfunction Detected<br></td></tr><tr><td>The engine cannot be turned off and the engine cannot be started.<br></td><td>The power source mode changes to on (IG) and starter relay activation is prohibited.<br></td></tr></table><br clear="all"><a name="RM000000XET04CX_02"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">When using the intelligent tester with the engine switch off, perform either of the following: 1) Turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the intelligent tester and vehicle begins, or 2) connect the intelligent tester to the vehicle and select "MANUAL" from the initial screen on the intelligent tester, and then select "KEY REGIST" under Model Code.<br></li><li class="atten3">The entry and start system uses multiplex communication. First perform the inspections in "How to Proceed with Troubleshooting" to confirm that there are no communication malfunctions before proceeding with troubleshooting (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO031X');return false;">Click here</a>).<br></li><li class="atten3">After performing repairs, perform the operation that fulfills the DTC output confirmation operation, and then confirm that no DTCs are output again.<br></li></ol></p><br clear="all"><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span class="atten4">Related Data List and Active Test Items&nbsp;
+					</span></caption><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td class="atten4" align="center">DTC<br></td><td class="atten4" align="center">Data List Item<br></td><td class="atten4" align="center">Active Test Item<br></td></tr><tr><td class="atten4" align="center">B2277<br></td><td class="atten4" align="center">-<br></td><td class="atten4" align="center">-<br></td></tr></table></p><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">Before proceeding with troubleshooting, check if there are any signs of water damage to the power management control ECU. If there are any signs of water damage, replace the power management control ECU and take measures against the cause of the water damage.</dd></dl></p><a name="RM000000XET04CX_06_0011"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.CHECK FOR WATER DAMAGE</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Check for any signs of water damage to the power management control ECU, surrounding parts, wire harnesses and connectors.</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Result<br></td><td align="center">Proceed to<br></td></tr><tr><td>No signs of water damage<br></td><td align="center">A<br></td></tr><tr><td>Signs of water damage<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">TAKE MEASURES AGAINST CAUSE OF WATER DAMAGE AND REPLACE POWER MANAGEMENT CONTROL ECU</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE POWER MANAGEMENT CONTROL ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000039R5007X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

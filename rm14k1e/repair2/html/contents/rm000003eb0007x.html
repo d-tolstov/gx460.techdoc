@@ -1,0 +1,33 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000003EB0007X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>WIDE VIEW FRONT MONITOR SYSTEM &gt; TERMINALS OF ECU</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000003EB0007X');return false;"> Click here</a></h2></p><br clear="all" class="beforePng"><a name="RM000003EB0007X_z0"></a><br clear="all"><a name="RM14K0E___000019K0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK PARKING ASSIST ECU</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/e159063e11.png" name="E159063E11" alt="E159063E11" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Measure the voltage, resistance and check for pulses according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>I3-1 (+B) - I3-3 (GND1)<br></td><td>L - W-B<br></td><td align="left">Power source signal<br></td><td>Always<br></td><td>11 to 14 V<br></td></tr><tr><td rowspan="2">I3-7 (IG) - I3-3 (GND1)<br></td><td rowspan="2">L - W-B<br></td><td rowspan="2" align="left">IG power source signal<br></td><td align="left">Engine switch on (IG)<br></td><td>11 to 14 V<br></td></tr><tr><td align="left">Engine switch off<br></td><td>Below 1 V<br></td></tr><tr><td rowspan="2">I3-8 (ACC) - I3-3 (GND1)<br></td><td rowspan="2">P - W-B<br></td><td rowspan="2" align="left">ACC power source signal<br></td><td align="left">Engine switch on (ACC)<br></td><td>11 to 14 V<br></td></tr><tr><td align="left">Engine switch off<br></td><td>Below 1 V<br></td></tr><tr><td rowspan="2">I3-23 (BLSW) - I3-3 (GND1)<br></td><td rowspan="2">L - W-B<br></td><td rowspan="2" align="left">Front and side monitor main switch power source signal<br></td><td align="left">Engine switch on (IG), wide view front and side monitor switch on<br></td><td>11 to 14 V<br></td></tr><tr><td align="left">Engine switch on (IG), wide view front and side monitor switch off<br></td><td>Below 1 V<br></td></tr><tr><td>I3-3 (GND1) - Body ground<br></td><td>W-B - Body ground<br></td><td align="left">Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>I2-25 (BGND) - Body ground<br></td><td>GR - Body ground<br></td><td align="left">Front television camera shielded ground <br></td><td>Always<br></td><td>Below 1 V<br></td></tr><tr><td>I2-26 (BCB+) - I3-3 (GND1)<br></td><td>B - W-B<br></td><td align="left">Front television camera power source signal<br></td><td align="left">Wide view front monitor display screen displayed<br></td><td>5.8 to 7.05 V<br></td></tr><tr><td rowspan="2">I2-24 (BCV+) - I3-23 (BCV-)<br></td><td rowspan="2">R - W<br></td><td rowspan="2" align="left">Display signal<br></td><td align="left">Wide view front monitor display screen displayed<br></td><td>Pulse generation<br>(See waveform 1)<br></td></tr><tr><td align="left">Camera lens covered to make image black while wide view front monitor display screen displayed<br></td><td>Pulse generation<br>(See waveform 2)<br></td></tr><tr><td>I2-23 (BCV-) - I3-3 (GND1)<br></td><td>W - W-B<br></td><td align="left">Front television camera ground<br></td><td>Always<br></td><td>Below 1 V<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e159949e01.png" name="E159949E01" alt="E159949E01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Using an oscilloscope, check waveform 1.</font><br><table border="1" cellspacing="0" cellpadding="2" width="44.8%"><caption class="tbl-title"><span>Measurement Condition&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Item<br></td><td align="center">Content<br></td></tr><tr><td align="center">Terminal No. (Symbol)<br></td><td align="center">I2-24 (BCV+) - I2-23 (BCV-)<br></td></tr><tr><td align="center">Tool Setting<br></td><td align="center">0.2 V/DIV., 20 μs/DIV.<br></td></tr><tr><td align="center">Condition<br></td><td align="center">Wide view front monitor display screen displayed<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e164781e01.png" name="E164781E01" alt="E164781E01" border="1" class="half"><br></td></tr></table>
+<li><p><font class="ptxt">Using an oscilloscope, check waveform 2.</font><br><table border="1" cellspacing="0" cellpadding="2" width="44.8%"><caption class="tbl-title"><span>Measurement Condition&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Item<br></td><td align="center">Content<br></td></tr><tr><td align="center">Terminal No. (Symbol)<br></td><td align="center">I2-24 (BCV+) - I2-23 (BCV-)<br></td></tr><tr><td align="center">Tool Setting<br></td><td align="center">0.2 V/DIV., 50 ms/DIV.<br></td></tr><tr><td align="center">Condition<br></td><td align="center">Camera lens covered to make image black while wide view front monitor display screen displayed<br></td></tr></table></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

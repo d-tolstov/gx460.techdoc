@@ -1,0 +1,101 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000187U029X"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; P0107 &nbsp;&nbsp; Manifold Absolute Pressure / Barometric Pressure Circuit Low Input</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; P0108 &nbsp;&nbsp; Manifold Absolute Pressure / Barometric Pressure Circuit High Input</h3></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM00000187U029X');return false;">Click here</a></h2></p><br clear="all"><a name="RM00000187U029X_01"></a><h2>DESCRIPTION</h2><font class="ptxt">The manifold absolute pressure sensor detects the intake manifold pressure as a voltage using a built-in sensor unit.</font><br><img src="../../img/a207508e01.png" name="A207508E01" alt="A207508E01" border="1" class="half"><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="45%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">DTC No.<br></td><td align="center">DTC Detection Condition<br></td><td align="center">Trouble Area<br></td></tr><tr><td align="center">P0107<br></td><td>The manifold absolute pressure sensor voltage is below 0.5 V for 0.5 seconds (1 trip detection logic).<br></td><td><ol style="list-style-type: disc"><li class="itm">Open or short in manifold absolute pressure sensor circuit<br></li><li class="itm">Manifold absolute pressure sensor<br></li><li class="itm">ECM<br></li></ol></td></tr><tr><td align="center">P0108<br></td><td>The manifold absolute pressure sensor voltage is higher than 4.5 V for 0.5 seconds (1 trip detection logic).<br></td><td><ol style="list-style-type: disc"><li class="itm">Open or short in manifold absolute pressure sensor circuit<br></li><li class="itm">Manifold absolute pressure sensor<br></li><li class="itm">ECM<br></li></ol></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">When either of these DTCs is output, check the manifold absolute pressure using the intelligent tester. Enter the following menus: Powertrain / Engine and ECT / Data List / All Data / MAP.</dd></dl></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">MAP<br></td><td align="center">Malfunction<br></td></tr><tr><td align="center">Approximately 0 kPa<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Short in PIM circuit to ground<br></li><li class="itm">Short in PIM circuit to E2 circuit<br></li></ol></td></tr><tr><td align="center">130 kPa or higher<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Open in VC circuit or short in VC circuit to PIM circuit<br></li><li class="itm">Open in PIM circuit<br></li><li class="itm">Open in E2 circuit<br></li></ol></td></tr></table><br clear="all"><a name="RM00000187U029X_09"></a><h2>MONITOR DESCRIPTION</h2><font class="ptxt">The ECM monitors the sensor voltage and uses this value to calculate the manifold absolute pressure. When the sensor output voltage deviates from the normal operating range, the ECM interprets this as a malfunction in the manifold pressure sensor and stores a DTC.</font><br><font class="ptxt">Example:</font><br><font class="ptxt">When the sensor output voltage remains below 0.5 V, or higher than 4.5 V for more than 0.5 seconds, the ECM stores a DTC.</font><br><font class="ptxt">If the malfunction is not repaired successfully, a DTC is stored 0.5 seconds after the engine is next started.</font><br><br clear="all"><a name="RM00000187U029X_10"></a><h2>MONITOR STRATEGY</h2><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td>Frequency of Operation<br></td><td>Continuous<br></td></tr></table><br clear="all"><a name="RM00000187U029X_13"></a><h2>CONFIRMATION DRIVING PATTERN</h2><ol style="list-style-type: decimal"><li class="itm">Turn the engine switch on (IG) and wait for 5 seconds or more.<br></li></ol><br clear="all"><a name="RM00000187U029X_02"></a><h2>WIRING DIAGRAM</h2><div class="full"><br><img src="../../img/a231455e01.png" name="A231455E01" alt="A231455E01" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM00000187U029X_03"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">If other DTCs related to different systems that have terminal E2 as the ground terminal are stored simultaneously, there may be an open circuit between terminal E2 and body ground.<br></li><li class="atten4">Read freeze frame data using the intelligent tester. The ECM records vehicle and driving condition information as freeze frame data the moment a DTC is stored. When troubleshooting, freeze frame data can help determine if the vehicle was moving or stationary, if the engine was warmed up or not, if the air fuel ratio was lean or rich, and other data from the time the malfunction occurred.<br></li></ol></p><a name="RM00000187U029X_04_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.READ VALUE USING INTELLIGENT TESTER (MAP)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / Data List / MAP.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Read the MAP value.</font><br><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">Same value as the actual atmospheric pressure.<br></dd></dl></p><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Standard atmospheric pressure is 101 kPa. For every 100 m increase in elevation, pressure drops by 1 kPa. This varies by weather (high atmospheric pressure, low atmospheric pressure).<br></li><li class="atten4">Also, check "Atmosphere Pressure" in the Data List.<br></li></ol></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM00000187U029X_04_0002">Go to step 2</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK FOR INTERMITTENT PROBLEMS (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000PDQ0FVX');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM00000187U029X_04_0002"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.CHECK MANIFOLD ABSOLUTE PRESSURE SENSOR (TERMINAL VOLTAGE)</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a217923e03.png" name="A217923E03" alt="A217923E03" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Disconnect the manifold absolute pressure sensor connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Switch Condition<br></td><td>Specified Condition<br></td></tr><tr><td>C44-3 (VC) - C44-2 (E2)<br></td><td>Engine switch on (IG)<br></td><td>4.5 to 5.5 V<br></td></tr><tr><td>C44-1 (PIM) - C44-2 (E2)<br></td><td>Engine switch on (IG)<br></td><td>4.0 to 5.0 V<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align="center"></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td>*a<br></td><td>Front view of wire harness connector<br>(to Manifold Absolute Pressure Sensor)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM00000187U029X_04_0004">Go to step 5</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000187U029X_04_0028"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.REPLACE MANIFOLD ABSOLUTE PRESSURE SENSOR</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Replace the manifold absolute pressure sensor (<a href="#" onclick="javascript:openSeePage('seepage', 'RM00000423K004X');return false;">Click here</a>).</font><br></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">NEXT</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM00000187U029X_04_0029"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.CHECK WHETHER DTC OUTPUT RECURS</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG) and turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Clear the DTCs (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000PDK0H3X');return false;">Click here</a>).</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Turn the engine switch off and wait for at least 30 seconds.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Turn the engine switch on (IG) and wait for 5 seconds.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Turn the tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Enter the following menus: Powertrain / Engine and ECT / DTC.</font><br></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Read the DTCs.</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Display (DTC output)<br></td><td align="center">Proceed to<br></td></tr><tr><td>No DTC output<br></td><td align="center">A<br></td></tr><tr><td>DTC P0107 and/or P0108 output<br></td><td align="center">B<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000013Z000OX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">END&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM00000187U029X_04_0004"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">5.CHECK HARNESS AND CONNECTOR (MANIFOLD ABSOLUTE PRESSURE SENSOR - ECM)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the manifold absolute pressure sensor connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the ECM connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance (Check for open):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>C44-1 (PIM) - C29-8 (PIM)<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>C44-3 (VC) - C28-16 (VCV2)<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>C44-2 (E2) - C29-7 (E2)<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr></table></dd></dl></p><p><dl class="spec"><dt class="spec">Standard Resistance (Check for short):</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>C44-1 (PIM) or C29-8 (PIM) - Body ground<br></td><td>Always<br></td><td>10 kΩ or higher<br></td></tr><tr><td>C44-3 (VC) or C28-16 (VCV2) - Body ground<br></td><td>Always<br></td><td>10 kΩ or higher<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE ECM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000013Z000OX');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

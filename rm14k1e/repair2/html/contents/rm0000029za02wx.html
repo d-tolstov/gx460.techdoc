@@ -1,0 +1,47 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000029ZA02WX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0100 &nbsp;&nbsp; Lost Communication with ECM / PCM "A"</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0129 &nbsp;&nbsp; Lost Communication with Skid Control ECU</h3></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0142 &nbsp;&nbsp; Lost Communication with Main Body ECU</h3></td></tr><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; U0151 &nbsp;&nbsp; Lost Communication with Airbag ECU</h3></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM0000029ZA02WX');return false;">Click here</a></h2></p><br clear="all"><a name="RM0000029ZA02WX_01"></a><h2>DESCRIPTION</h2><font class="ptxt">The combination meter assembly communicates with the ECM via the CAN communication system (CAN No. 1 Bus).</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="40%
+
+			"><col align=""></colgroup><colgroup align="center" width="40%
+
+			"><col align=""></colgroup><tr><td>DTC No.<br></td><td>DTC Detection Condition<br></td><td>Trouble Area<br></td></tr><tr><td>U0100<br></td><td align="left">When the vehicle speed is 5 km/h (3.1 mph) or more, the IG voltage is 9.5 V or higher and the following condition is met:<br><ol style="list-style-type: decimal"><li class="itm">No communication with the ECM continues for 2 seconds or more.<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li class="itm">ECM<br></li><li class="itm">CAN communication system<br></li><li class="itm">Combination meter assembly<br></li></ol></td></tr><tr><td>U0129<br></td><td align="left">When 15 seconds have elapsed after the engine is started, the IG voltage is 9.5 V or higher and the following condition is met:<br><ol style="list-style-type: decimal"><li class="itm">No communication with the skid control ECU continues for 3 seconds or more.<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Skid control ECU<br></li><li class="itm">CAN communication system<br></li><li class="itm">Combination meter assembly<br></li></ol></td></tr><tr><td>U0142<br></td><td align="left">When the vehicle speed is 5 km/h (3.1 mph) or more, the IG voltage is 9.5 V or higher and the following condition is met:<br><ol style="list-style-type: decimal"><li class="itm">No communication with the main body ECU (multiplex network body ECU) continues for 3 seconds or more.<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Main body ECU (Multiplex network body ECU)<br></li><li class="itm">CAN communication system<br></li><li class="itm">Combination meter assembly<br></li></ol></td></tr><tr><td>U0151<br></td><td align="left">When the vehicle speed is 5 km/h (3.1 mph) or more, the IG voltage is 9.5 V or higher and the following condition is met:<br><ol style="list-style-type: decimal"><li class="itm">No communication with the center airbag sensor assembly continues for 10 seconds or more.<br></li></ol></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Center airbag sensor assembly<br></li><li class="itm">CAN communication system<br></li><li class="itm">Combination meter assembly<br></li></ol></td></tr></table><br clear="all"><a name="RM0000029ZA02WX_04"></a><h2>INSPECTION PROCEDURE</h2><a name="RM0000029ZA02WX_05_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.CONFIRM DTC OUTPUT</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Enter the following menus: Body Electrical / Trouble Codes.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Clear the stored DTCs.</font><br></p></li></ol>
+<ol class="s2">
+<li value="6"><p><font class="ptxt">Drive the vehicle at more than 5 km/h (3.1 mph) for at least 60 seconds.</font><br></p></li></ol>
+<ol class="s2">
+<li value="7"><p><font class="ptxt">Stop the vehicle.</font><br></p></li></ol>
+<ol class="s2">
+<li value="8"><p><font class="ptxt">Check for DTCs (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000029Z902HX');return false;">Click here</a>).</font><br><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Result&nbsp;
+					</span></caption><colgroup align="center" width="50%
+
+			"><col align=""></colgroup><colgroup align="center" width="50%
+
+			"><col align=""></colgroup><tr><td>Result<br></td><td>Proceed to<br></td></tr><tr><td>CAN communication system DTC is not output<br></td><td>A<br></td></tr><tr><td>CAN communication system DTC is output <br></td><td>B<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">If CAN communication system DTC U0100, U0129, U0142, or U0151 and another DTC are output at the same time, perform troubleshooting for CAN communication system DTC U0100, U0129, U0142, or U0151 first.</dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">B</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO CAN COMMUNICATION SYSTEM (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO031X');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">A</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">USE SIMULATION METHOD TO CHECK (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000004AQ7000X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

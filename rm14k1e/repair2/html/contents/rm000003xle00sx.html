@@ -1,0 +1,55 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000003XLE00SX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>PARKING ASSIST MONITOR SYSTEM &gt; Message indicating Back Door is Open is Displayed even after Back Door is Closed</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000003XLE00SX');return false;">Click here</a></h2></p><br clear="all"><a name="RM000003XLE00SX_01"></a><h2>DESCRIPTION</h2><font class="ptxt">The parking assist ECU receives back door courtesy light switch assembly open/close signals from the main body ECU via CAN communication. When the back door is open, the camera aiming cannot be adjusted correctly because the rear television camera assembly is installed on the back door. Therefore, when adjusting the camera aiming calibration while the back door is open, a back door open warning message will be displayed on the screen and camera aiming adjustment will be canceled.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The back door courtesy light switch assembly is connected to the main body ECU by the vehicle wire harness.</dd></dl></p><br clear="all"><a name="RM000003XLE00SX_02"></a><h2>WIRING DIAGRAM</h2><div class="full"><br><img src="../../img/e198737e04.png" name="E198737E04" alt="E198737E04" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM000003XLE00SX_03"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">When "System initializing" is displayed on the display and navigation module display after the battery terminal disconnected, correct the steering angle neutral point (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000035DE00QX');return false;">Click here</a>).<br></li><li class="atten3">Depending on the parts that are replaced or operations that are performed during vehicle inspection or maintenance, calibration of other systems as well as the parking assist monitor system may be needed (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000035DD00SX');return false;">Click here</a>).<br></li></ol></p><a name="RM000003XLE00SX_04_0001"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.READ VALUE USING INTELLIGENT TESTER (BACK DOOR COURTESY SWITCH)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Enter the following menus: Body / Main Body / Data List.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">Check the Data List for proper functioning of the following item.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Main Body&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Display<br></td><td align="center">Measurement Item/Range<br></td><td align="center">Normal Condition<br></td><td align="center">Diagnostic Note<br></td></tr><tr><td align="center">Back Door Courtesy SW<br></td><td>Back door courtesy switch signal/ON or OFF<br></td><td>ON: Back door open<br>OFF: Back door closed<br></td><td align="center">-<br></td></tr></table><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">The back door courtesy switch functions as specified in the normal condition column.<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000003XLE00SX_04_0003">Go to step 2</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">PROCEED TO NEXT SUSPECTED AREA SHOWN IN PROBLEM SYMPTOMS TABLE (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000035D700SX');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM000003XLE00SX_04_0003"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.CHECK HARNESS AND CONNECTOR (MAIN BODY ECU - BACK DOOR COURTESY LIGHT SWITCH)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the G47 main body ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the R11 back door courtesy light switch assembly connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G47-19 (BCTY) - R11-1<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>G47-19 (BCTY) - Body ground<br></td><td>Always<br></td><td>10 kΩ or higher<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000003XLE00SX_04_0004"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.INSPECT BACK DOOR COURTESY LIGHT SWITCH ASSEMBLY</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/e139234.png" name="E139234" alt="E139234" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Remove the back door courtesy light switch assembly (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003YNI00BX');return false;">Click here</a>).</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td align="center">Tester Connection<br></td><td align="center">Switch Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td rowspan="2" align="center">1 - Switch body<br></td><td align="center">Pin pushed<br></td><td align="center">10 kΩ or higher<br></td></tr><tr><td align="center">Pin not pushed<br></td><td align="center">Below 1 Ω<br></td></tr></table></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE BACK DOOR COURTESY LIGHT SWITCH ASSEMBLY (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003YNI00BX');return false;">Click here</a>)
+</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE MAIN BODY ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003WBO00KX');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

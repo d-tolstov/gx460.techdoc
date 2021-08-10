@@ -1,0 +1,84 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000T5E01YX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>FRONT POWER SEAT CONTROL SYSTEM &gt; TERMINALS OF ECU</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000000T5E01YX');return false;"> Click here</a></h2></p><br clear="all" class="beforePng"><a name="RM000000T5E01YX_z0"></a><br clear="all"><a name="RM14K0E___00007HL0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK FRONT POWER SEAT SWITCH LH</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b219506e05.png" name="B219506E05" alt="B219506E05" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the b4 and b5 connectors from the front power seat switch LH.</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage and resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>b4-2 (GND1) - Body ground<br></td><td>W-B - Body ground<br></td><td>Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>b4-7 (+B1) - b4-2 (GND1)<br></td><td>W - W-B<br></td><td>Power source<br></td><td>Always<br></td><td>11 to 14 V<br></td></tr><tr><td>b5-12 (SYSB) - b4-2 (GND1)<br></td><td>P - W-B<br></td><td>System power source<br></td><td>Always<br></td><td>11 to 14 V<br></td></tr></table><font class="ptxt">If the result is not as specified, there may be a malfunction on the wire harness side.</font><br></p></li>
+<li><p><font class="ptxt">Reconnect the b4 and b5 switch connectors.</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="left" width="20%
+
+			"><col align=""></colgroup><colgroup align="left" width="20%
+
+			"><col align=""></colgroup><colgroup align="left" width="20%
+
+			"><col align=""></colgroup><colgroup align="left" width="20%
+
+			"><col align=""></colgroup><colgroup align="left" width="20%
+
+			"><col align=""></colgroup><tr><td align="center">Terminal No. (Symbol)<br></td><td align="center">Wiring Color<br></td><td align="center">Terminal Description<br></td><td align="center">Condition<br></td><td align="center">Specified Condition<br></td></tr><tr><td rowspan="2" align="center">b4-3 (SLD+) - b4-2 (GND1)<br></td><td rowspan="2" align="center">L - W-B<br></td><td rowspan="2" align="center">Sliding motor signal (forward)<br></td><td align="center">Slide switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Slide switch on (Forward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td rowspan="2" align="center">b4-4 (SLD-) - b4-2 (GND1)<br></td><td rowspan="2" align="center">GR - W-B<br></td><td rowspan="2" align="center">Sliding motor signal (rearward)<br></td><td align="center">Slide switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Slide switch on (Rearward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td rowspan="2" align="center">b4-5 (FRV-) - b4-2 (GND1)<br></td><td rowspan="2" align="center">R - W-B<br></td><td rowspan="2" align="center">Front vertical motor signal (downward)<br></td><td align="center">Front vertical switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Front vertical switch on (Downward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td align="center">b4-6 (+B2) - b4-1 (GND2)<br></td><td align="center">SB - W-B<br></td><td align="center">Power source<br></td><td align="center">Always<br></td><td align="center">11 to 14 V<br></td></tr><tr><td rowspan="2" align="center">b4-8 (FRV+) - b4-2 (GND1)<br></td><td rowspan="2" align="center">B - W-B<br></td><td rowspan="2" align="center">Front vertical motor signal (upward)<br></td><td align="center">Front vertical switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Front vertical switch on (Upward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td rowspan="2" align="center">b4-9 (RCL+) - b4-2 (GND1)<br></td><td rowspan="2" align="center">P - W-B<br></td><td rowspan="2" align="center">Reclining motor signal (forward)<br></td><td align="center">Reclining switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Reclining switch on (Forward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td rowspan="2" align="center">b4-11 (RCL-) - b4-2 (GND1)<br></td><td rowspan="2" align="center">LG - W-B<br></td><td rowspan="2" align="center">Reclining motor signal (rearward)<br></td><td align="center">Reclining switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Reclining switch on (Rearward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td rowspan="2" align="center">b4-10 (LFT+) - b4-2 (GND1)<br></td><td rowspan="2" align="center">V - W-B<br></td><td rowspan="2" align="center">Lifter motor signal (upward)<br></td><td align="center">Lifter switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Lifter switch on (Upward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td rowspan="2" align="center">b4-12 (LFT-) - b4-2 (GND1)<br></td><td rowspan="2" align="center">G - W-B<br></td><td rowspan="2" align="center">Lifter motor signal (downward)<br></td><td align="center">Lifter switch off<br></td><td align="center">Below 1 V<br></td></tr><tr><td align="center">Lifter switch on (Downward)<br></td><td align="center">11 to 14 V<br></td></tr><tr><td align="center">b5-1 (SGND) - b4-2 (GND1)<br></td><td align="center">BR - W-B<br></td><td align="center">Ground<br></td><td align="center">Always<br></td><td align="center">Below 1 Ω<br></td></tr><tr><td align="center">b5-3 (SSFV) - b5-1 (SGND)<br></td><td align="center">R - BR<br></td><td align="center">Front vertical position signal<br></td><td align="center">Front vertical function operating<br></td><td align="center">4.5 to 4.8 V<br></td></tr><tr><td align="center">b5-4 (SSRL) - b5-1 (SGND)<br></td><td align="center">P - BR<br></td><td align="center">Lifter position signal<br></td><td align="center">Lifter function operating<br></td><td align="center">4.5 to 4.8 V<br></td></tr><tr><td align="center">b5-5 (SSRS) - b5-1 (SGND)<br></td><td align="center">G- BR<br></td><td align="center">Slide position signal<br></td><td align="center">Slide function operating<br></td><td align="center">4.5 to 4.8 V<br></td></tr><tr><td align="center">b5-11 (SSRR) - b5-1 (SGND)<br></td><td align="center">V - BR<br></td><td align="center">Reclining position signal<br></td><td align="center">Reclining function operating<br></td><td align="center">4.5 to 4.8 V<br></td></tr><tr><td rowspan="2" align="center">b5-10 (DBCL) - b4-2 (GND1)<br></td><td rowspan="2" align="center">GR- W-B<br></td><td rowspan="2" align="center">Buckle switch signal<br></td><td align="center">Engine switch off<br>Driver side seat belt unfastened<br></td><td align="center">11 to 14 V<br></td></tr><tr><td align="center">Engine switch off<br>Driver side seat belt fastened<br></td><td align="center">Below 1 V<br></td></tr><tr><td rowspan="2" align="center">b5-9 (DRDC) - b4-2 (GND1)<br></td><td rowspan="2" align="center">B- W-B<br></td><td rowspan="2" align="center">Buckle switch signal<br></td><td align="center">Engine switch on (IG)<br>Driver side seat belt unfastened<br></td><td align="center">11 to 14 V<br></td></tr><tr><td align="center">Engine switch on (IG)<br>Driver side seat belt fastened<br></td><td align="center">Below 1 V<br></td></tr></table><font class="ptxt">If the result is not as specified, the front power seat switch LH may have a malfunction.</font><br></p></li></ol><br clear="all"><a name="RM14K0E___00007HL0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK OUTER MIRROR CONTROL ECU ASSEMBLY LH</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b209687e19.png" name="B209687E19" alt="B209687E19" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the K8 connector from the outer mirror control ECU assembly LH.</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage and resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>K8-7 (GND) - Body ground<br></td><td>W-B - Body ground<br></td><td>Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>K8-14 (BDR) - K8-7 (GND)<br></td><td>R - W-B<br></td><td>Power source<br></td><td>Always<br></td><td>11 to 14 V<br></td></tr><tr><td rowspan="2">K8-5 (SIG) - K8-7 (GND)<br></td><td rowspan="2">G - W-B<br></td><td rowspan="2">Power source (IG)<br></td><td>Engine switch off<br></td><td>Below 1 V<br></td></tr><tr><td>Engine switch on (IG)<br></td><td>11 to 14 V<br></td></tr><tr><td>K8-6 (CPUB) - K8-7 (GND)<br></td><td>L - W-B<br></td><td>Power source<br></td><td>Always<br></td><td>11 to 14 V<br></td></tr></table><font class="ptxt">If the result is not as specified, there may be a malfunction on the wire harness side.</font><br></p></li>
+<li><p><font class="ptxt">Reconnect the K8 ECU connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td rowspan="2">K8-1 (MM) - K8-13 (MSWE)<br></td><td rowspan="2">LG - W-B<br></td><td rowspan="2">Seat memory switch SET signal<br></td><td>SET switch off<br></td><td>11 to 14 V<br></td></tr><tr><td>SET switch on<br></td><td>Below 1 V<br></td></tr><tr><td rowspan="2">K8-2 (M1) - K8-13 (MSWE)<br></td><td rowspan="2">SB - W-B<br></td><td rowspan="2">Seat memory switch M1 signal<br></td><td>M1 switch off<br></td><td>11 to 14 V<br></td></tr><tr><td>M1 switch on<br></td><td>Below 1 V<br></td></tr><tr><td rowspan="2">K8-3 (M2) - K8-13 (MSWE)<br></td><td rowspan="2">V - W-B<br></td><td rowspan="2">Seat memory switch M2 signal<br></td><td>M2 switch off<br></td><td>11 to 14 V<br></td></tr><tr><td>M2 switch on<br></td><td>Below 1 V<br></td></tr></table><font class="ptxt">If the result is not as specified, the outer mirror control ECU assembly LH may have a malfunction.</font><br></p></li></ol><br clear="all"><a name="RM14K0E___00007HL0000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DRIVER SIDE JUNCTION BLOCK ASSEMBLY AND MAIN BODY ECU (MULTIPLEX NETWORK BODY ECU)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/b235899e10.png" name="B235899E10" alt="B235899E10" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Remove the main body ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003WBO00KX');return false;">Click here</a>).</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage and resistance according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>A-30 (BECU) - Body ground<br></td><td>-<br></td><td>Power source<br></td><td>Always<br></td><td>11 to 14 V<br></td></tr><tr><td rowspan="2">A-32 (IG) - Body ground<br></td><td rowspan="2">-<br></td><td rowspan="2">Power source (IG)<br></td><td>Engine switch on (IG)<br></td><td>11 to 14 V<br></td></tr><tr><td>Engine switch off<br></td><td>Below 1 V<br></td></tr><tr><td>A-11 (GND1) - Body ground<br></td><td>-<br></td><td>Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>G46-3 (GND2) - Body ground<br></td><td>W-B - Body ground<br></td><td>Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr></table><font class="ptxt">If the result is not as specified, there may be a malfunction on the wire harness side.</font><br></p></li>
+<li><p><font class="ptxt">Install the main body ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000003WBM00KX');return false;">Click here</a>).</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td rowspan="2">2H-27 (FLCY) - Body ground<br></td><td rowspan="2">R - Body ground<br></td><td rowspan="2">Front door courtesy light switch LH signal<br></td><td>Front door LH closed<br></td><td>11 to 14 V<br></td></tr><tr><td>Front door LH open<br></td><td>Below 1 V<br></td></tr></table></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

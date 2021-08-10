@@ -1,0 +1,34 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000002OJD00DX"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>HEATED STEERING WHEEL SYSTEM &gt; SYSTEM DESCRIPTION</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000002OJD00DX');return false;"> Click here</a></h2></p><br clear="all" class="beforePng"><a name="RM000002OJD00DX_z0"></a><br clear="all"><a name="RM14K0E___00008QU0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">HEATED STEERING WHEEL SYSTEM</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The heated steering wheel system heats the steering wheel when the steering heater switch is operated.</font><br></p></li>
+<li><p><font class="ptxt">The heated steering wheel system uses a thermistor inside of the steering wheel to detect the heater temperature and maintain the set temperature.</font><br></p></li>
+<li><p><font class="ptxt">The timer function of the heated steering wheel system turns off the heater after a predetermined period of time.</font><br></p></li></ol><br clear="all"><a name="RM14K0E___00008QU0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">HEATER CONTROLLER SYSTEM</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Operation description</font><br><div class="full"><br><img src="../../img/c147022e03.png" name="C147022E03" alt="C147022E03" border="1" class="full"></div><br clear="all"><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the engine switch is on (IG), pressing the steering heater switch illuminates the LED and causes current to be output from the steering controller to the heater of the heated steering wheel. Pressing the steering heater switch again turns off the LED and stops the current from being output.</font><br></p></li>
+<li><p><font class="ptxt">A thermostat is installed in the steering wheel as a safety mechanism.</font><br></p></li>
+<li><p><font class="ptxt">The steering heater switch LED will blink at 0.3 second intervals when either of the following occurs: 1) an open or short in the steering wheel thermistor continues for 2 seconds or more; or 2) the steering heater switch is pressed continuously for 10 seconds or more.</font><br></p></li>
+<li><p><font class="ptxt">If the system returns to normal for 2 seconds or more, the previous operation before the malfunction occurred continues. However, regardless of if a malfunction is detected and the malfunction operation is occurring, or if the system returns to normal, the timer will turn off the heater 30 minutes after the switch was first turned on.</font><br></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Signal input/output description</font><br><div class="full"><br><img src="../../img/c147023e02.png" name="C147023E02" alt="C147023E02" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Signal<br></td><td align="center">Signal Name<br></td><td align="center">Function<br></td><td align="center">Signal Type<br></td></tr><tr><td align="center">Input<br></td><td align="center">Thermistor input<br></td><td>Input of voltage corresponding to heater temperature<br></td><td align="center">Analog input<br></td></tr><tr><td align="center">Input<br></td><td align="center">Temperature setting input<br></td><td>Input of voltage corresponding to temperature setting<br></td><td align="center">Analog input<br></td></tr><tr><td align="center">Input<br></td><td align="center">Switch operation input<br></td><td>Input of power circuit's latch operation estimate signal<br></td><td align="center">LOW/HI input<br></td></tr><tr><td align="center">Output<br></td><td align="center">LED output<br></td><td>Output to LED<br></td><td align="center">LOW/HI input<br></td></tr><tr><td align="center">Output<br></td><td align="center">Heater output<br></td><td>Output to heater<br></td><td align="center">LOW/HI input<br></td></tr><tr><td align="center">Output<br></td><td align="center">Latch output<br></td><td>Power circuit maintenance<br></td><td align="center">LOW/HI input<br></td></tr></table></p></li>
+<li><p><font class="ptxt">Safety function</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Content<br></td><td align="center">Operation<br></td></tr><tr><td>When thermistor trouble is detected<br></td><td align="center">Heater turns off<br></td></tr><tr><td>When overheating (150&deg;C (302&deg;F)) of controller is detected<br></td><td align="center">Heater turns off<br></td></tr><tr><td>When overvoltage (60 V) is detected<br></td><td align="center">Heater turns off<br></td></tr><tr><td>When undervoltage (6 V) is detected<br></td><td align="center">Heater turns off<br></td></tr><tr><td>After preset time of timer passes (30 min.)<br></td><td align="center">Heater turns off<br></td></tr></table></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

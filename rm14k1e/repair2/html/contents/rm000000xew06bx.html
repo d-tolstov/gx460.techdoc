@@ -1,0 +1,113 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000000XEW06BX"></a><table width="100%" cellpadding="0"><tr><td width="93%"><h3>
+								DTC
+								 &nbsp;&nbsp; B2284 &nbsp;&nbsp; Brake Signal Malfunction</h3></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM000000XEW06BX');return false;">Click here</a></h2></p><br clear="all"><a name="RM000000XEW06BX_01"></a><h2>DESCRIPTION</h2><font class="ptxt">This DTC is stored when a mismatch between the brake signal from the direct line and the brake signal sent via CAN communication is detected.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">When the power management control ECU is replaced with a new one and the cable is connected to the negative (-) battery terminal, the power source mode changes to on (IG).<br></li><li class="atten4">When the battery cable is disconnected and reconnected, the power source returns to the mode it was in before the battery cable was disconnected.<br></li></ol></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="center" width="13%
+
+			"><col align=""></colgroup><colgroup align="center" width="30%
+
+			"><col align=""></colgroup><colgroup align="center" width="28%
+
+			"><col align=""></colgroup><colgroup align="center" width="29%
+
+			"><col align=""></colgroup><tr><td>DTC Code<br></td><td>DTC Detection Condition<br></td><td>Trouble Area<br></td><td>DTC Output Confirmation Operation<br></td></tr><tr><td>B2284<br></td><td align="left">The brake signal information from the direct line and the brake signal information from the ECU via CAN communication are inconsistent (1-trip detection logic*).<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">STOP fuse<br></li><li class="itm">AM2 fuse<br></li><li class="itm">Stop light switch assembly<br></li><li class="itm">Engine control system<br></li><li class="itm">Power management control ECU<br></li><li class="itm">Harness or connector<br></li></ol></td><td align="left">Connect the cable to the negative (-) battery terminal, turn the brakes off for 20 seconds or more and then turn them on for 20 seconds or more.<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*: Only output while a malfunction is present and the engine switch is on (IG)<br></li></ol><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Vehicle Condition and Fail-safe Function when Malfunction Detected&nbsp;
+					</span></caption><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Vehicle Condition when Malfunction Detected<br></td><td align="center">Fail-safe Function when Malfunction Detected<br></td></tr><tr><td>When the key is inside the vehicle, the engine does not start even though an engine start operation is performed (the engine switch indicator does not illuminate in green). However, if the engine switch is pressed and held for a certain period of time after the power source mode is changed to on (ACC), the engine can be started.<br><ol style="list-style-type: disc"><li class="itm">When a direct line ON malfunction is present, the engine can be started by pressing the engine switch even if the brakes are off.<br></li><li class="itm">When a direct line OFF malfunction is present, the engine cannot be started by pressing the engine switch even if the brakes are on.<br></li></ol></td><td align="center">-<br></td></tr></table><br clear="all"><a name="RM000000XEW06BX_02"></a><h2>WIRING DIAGRAM</h2><div class="full"><br><img src="../../img/c222822e01.png" name="C222822E01" alt="C222822E01" border="1" class="full"></div><br clear="all"><br clear="all"><a name="RM000000XEW06BX_03"></a><h2>INSPECTION PROCEDURE</h2><p><dl class="caution"><dt class="cautionTitle">NOTICE:</dt><dt class="cautionTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten3">When using the intelligent tester with the engine switch off, perform either of the following: 1) Turn a courtesy light switch on and off at intervals of 1.5 seconds or less until communication between the intelligent tester and vehicle begins, or 2) connect the intelligent tester to the vehicle and select "MANUAL" from the initial screen on the intelligent tester, and then select "KEY REGIST" under Model Code.<br></li><li class="atten3">The entry and start system uses multiplex communication. First perform the inspections in "How to Proceed with Troubleshooting" to confirm that there are no communication malfunctions before proceeding with troubleshooting (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000001RSO031X');return false;">Click here</a>).<br></li><li class="atten3">Inspect the fuses of circuits related to this system before performing the following inspection procedure.<br></li><li class="atten3">After performing repairs, perform the operation that fulfills the DTC output confirmation operation, and then confirm that no DTCs are output again.<br></li></ol></p><br clear="all"><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span class="atten4">Related Data List and Active Test Items&nbsp;
+					</span></caption><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><colgroup align="" width="33%
+
+			"><col align=""></colgroup><tr><td class="atten4" align="center">DTC<br></td><td class="atten4" align="center">Data List Item<br></td><td class="atten4" align="center">Active Test Item<br></td></tr><tr><td class="atten4" align="center">B2284<br></td><td class="atten4"><div class="list-ttl"><span class="atten4">Power Source Control</span></div><ol style="list-style-type: none"><li class="atten4">Stop Light Switch1<br></li></ol><div class="list-ttl"><span class="atten4">Powertrain / Engine and ECT</span></div><ol style="list-style-type: none"><li class="atten4">ST1<br></li></ol></td><td class="atten4" align="center">-<br></td></tr></table></p><a name="RM000000XEW06BX_07_0024"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">1.READ VALUE USING INTELLIGENT TESTER (STOP LIGHT SWITCH)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Connect the intelligent tester to the DLC3.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Turn the engine switch on (IG).</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Turn the intelligent tester on.</font><br></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Enter the following menus: Body / Power Source Control / Data List.</font><br></p></li></ol>
+<ol class="s2">
+<li value="5"><p><font class="ptxt">According to the display on the intelligent tester, read the Data List.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="94.6%"><caption class="tbl-title"><span>Power Source Control&nbsp;
+					</span></caption><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><colgroup align="center" width="25%
+
+			"><col align=""></colgroup><tr><td>Tester Display<br></td><td>Measurement Item/Range<br></td><td>Normal Condition<br></td><td>Diagnostic Note<br></td></tr><tr><td>Stop Light Switch1<br></td><td align="left">State of brake pedal/ON or OFF<br></td><td align="left">ON: Brake pedal depressed<br>OFF: Brake pedal released<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Use this item to determine whether the stop light switch is malfunctioning.<br></li><li class="itm">The engine cannot be started when this item is "OFF".<br></li><li class="itm">When this item is malfunctioning, the engine can be started by pressing and holding the engine switch for a certain period of time.<br></li></ol></td></tr></table><p><dl class="spec"><dt class="spec">OK:</dt><dd class="spec">ON (brake pedal depressed) or OFF (brake pedal released) appears on the screen according to the stop light switch condition.<br></dd></dl></p></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-next" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/next_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1"><a href="#RM000000XEW06BX_07_0042">Go to step 2</a></td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">GO TO SFI SYSTEM (HOW TO PROCEED WITH TROUBLESHOOTING) (<a href="#" onclick="javascript:openSeePage('seepage', 'RM000000PD90FBX');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><a name="RM000000XEW06BX_07_0042"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">2.CHECK HARNESS AND CONNECTOR (BATTERY - POWER MANAGEMENT CONTROL ECU)
+</td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a207890e12.png" name="A207890E12" alt="A207890E12" border="1" class="half"><br></td></tr></table>
+<li value="1"><p><font class="ptxt">Disconnect the G39 power management control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G39-2 (AM21) - Body ground<br></td><td rowspan="2">Always<br></td><td rowspan="2">9.5 to 14 V<br></td></tr><tr><td>G39-1 (AM22) - Body ground<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Rear view of wire harness connector<br>(to Power Management Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR IN CIRCUIT CONNECTED TO POWER SOURCE</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000XEW06BX_07_0043"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">3.CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - BODY GROUND)
+</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the G39 power management control ECU connector.</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a207890e13.png" name="A207890E13" alt="A207890E13" border="1" class="half"><br></td></tr></table>
+<li value="2"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G39-6 (GND) - Body ground<br></td><td rowspan="2">Always<br></td><td rowspan="2">Below 1 Ω<br></td></tr><tr><td>G39-5 (GND2) - Body ground<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Rear view of wire harness connector<br>(to Power Management Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-next" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/next_down.png"></td><td width="80%"><br></td></tr></table><br><a name="RM000000XEW06BX_07_0036"></a><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">4.CHECK HARNESS AND CONNECTOR (POWER MANAGEMENT CONTROL ECU - STOP LIGHT SWITCH ASSEMBLY)</td></tr></table>
+<ol class="s2">
+<li value="1"><p><font class="ptxt">Disconnect the G38 power management control ECU connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="2"><p><font class="ptxt">Disconnect the A5 stop light switch assembly connector.</font><br></p></li></ol>
+<ol class="s2">
+<li value="3"><p><font class="ptxt">Measure the resistance according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Resistance:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G38-11 (STP1) - A5-1<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>G38-11 (STP1) or A5-1 - Body ground<br></td><td>Always<br></td><td>10 kΩ or higher<br></td></tr></table></dd></dl></p></p></li></ol>
+<ol class="s2">
+<li value="4"><p><font class="ptxt">Reconnect the A5 stop light switch assembly connector.</font><br></p></li></ol>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng"><table class="float"><tr><td><img src="../../img/a207893e07.png" name="A207893E07" alt="A207893E07" border="1" class="half"><br></td></tr></table>
+<li value="5"><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><p><dl class="spec"><dt class="spec">Standard Voltage:</dt><dd class="spec"><table border="1" cellspacing="0" cellpadding="2" width="43.2%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Tester Connection<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td rowspan="2">G38-11 (STP1) - Body ground<br></td><td>Brake pedal not depressed<br></td><td>Below 1 V<br></td></tr><tr><td>Brake pedal depressed<br></td><td>([Voltage at terminal AM21 or AM22] minus 2.0 V) or higher<br></td></tr></table></dd></dl></p><table border="1" cellspacing="0" cellpadding="2" width="45.6%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="90%
+
+			"><col align="left"></colgroup><tr><td align="center">*a<br></td><td>Rear view of wire harness connector<br>(to Power Management Control ECU)<br></td></tr></table></p></li></ol><br clear="all"><table cellpadding="4" cellspacing="0" border="0" width="96%"><tr><td width="50%"><table height="25" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td width="60%"><br></td><td class="diag-fin" style="border-right-width: 0px;">NG</td><td align="left" width="13"><img width="13" height="100%" src="../../../../image/fin_right.png"></td></tr></table></td><td width="50%"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPAIR OR REPLACE HARNESS OR CONNECTOR</td></tr></table></td></tr><tr><td height="4px"></td></tr></table><table cellpadding="0" cellspacing="0" border="0" width="96%"><tr><td width="20%" class="diag-fin" style="border-bottom-width: 0px;">OK</td><td width="80%"><br></td></tr><tr><td valign="top" align="center" width="20%"><img height="13" width="100%" src="../../../../image/fin_down.png"></td><td width="80%"><br></td></tr><tr><td colspan="2"><table cellpadding="2" cellspacing="0" border="1" width="100%"><tr><td class="s1">REPLACE POWER MANAGEMENT CONTROL ECU (<a href="#" onclick="javascript:openSeePage('seepage', 'RM0000039R5007X');return false;">Click here</a>)
+&nbsp;
+										</td></tr></table></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

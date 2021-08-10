@@ -1,0 +1,90 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000014DJ045X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>SEAT BELT WARNING SYSTEM &gt; TERMINALS OF ECU</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><p><h2>for Preparation <a href="#" onclick="openSeePage('ppr','RM0000014DJ045X');return false;"> Click here</a></h2></p><br clear="all" class="beforePng"><a name="RM0000014DJ045X_z0"></a><br clear="all"><a name="RM14K0E___00001UW0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK COMBINATION METER</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/e161130e21.png" name="E161130E21" alt="E161130E21" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the G3 meter connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance and voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>G3-1 (EP) - Body ground<br></td><td>W-B - Body ground<br></td><td align="left">Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr><tr><td>G3-25 (B) - Body ground<br></td><td>L - Body ground<br></td><td align="left">Combination meter B line <br></td><td>Always<br></td><td>11 to 14 V<br></td></tr><tr><td>G3-27 (IG+) - Body ground<br></td><td>R - Body ground<br></td><td align="left">Combination meter IG+ line <br></td><td>Engine switch on (IG)<br></td><td>11 to 14 V<br></td></tr><tr><td>G3-39 (CANL) - Body ground<br></td><td>W - Body ground<br></td><td align="left">CAN communication line <br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr><tr><td>G3-40 (CANH) - Body ground<br></td><td>LG - Body ground<br></td><td align="left">CAN communication line <br></td><td>Engine switch off<br></td><td>200 Ω or higher<br></td></tr></table><font class="ptxt">If the result is not as specified, there may be a malfunction on the wire harness side.</font><br></p></li>
+<li><p><font class="ptxt">Reconnect the G3 meter connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td rowspan="2">G3-12 (P/SB) - Body ground<br></td><td rowspan="2">L - Body ground<br></td><td rowspan="2" align="left">Front passenger seat belt signal<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied<br></li><li class="itm">Seat belt fastened<br></li></ol></td><td>11 to 14 V<br></td></tr><tr><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied<br></li><li class="itm">Seat belt unfastened<br></li></ol></td><td>Alternating between 11 to 14 V and below 1 V<br></td></tr><tr><td rowspan="2">G3-18 (WRNP) - Body ground<br></td><td rowspan="2">L - Body ground<br></td><td rowspan="2" align="left">Front passenger seat belt warning signal<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied, seat belt fastened (Front passenger side seat belt warning light off)<br></li></ol></td><td>11 to 14 V<br></td></tr><tr><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied, seat belt unfastened (Front passenger side seat belt warning light blinks)<br></li></ol></td><td>Alternating between 11 to 14 V and below 1 V<br></td></tr></table><font class="ptxt">If the result is not as specified, the meter may have a malfunction.</font><br></p></li></ol><br clear="all"><a name="RM14K0E___00001UW0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK HEATER CONTROL SWITCH BOARD (w/o Navigation System)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c220193e02.png" name="C220193E02" alt="C220193E02" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the H32 heater control switch board connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance and voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>H32-1 (IG+) - Body ground<br></td><td>L - Body ground<br></td><td align="left">heater control switch board IG+ line <br></td><td>Engine switch on (IG)<br></td><td>11 to 14 V<br></td></tr><tr><td>H32-11 (GND) - Body ground<br></td><td>W-B - Body ground<br></td><td align="left">Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr></table><font class="ptxt">If the result is not as specified, there may be a malfunction on the wire harness side.</font><br></p></li>
+<li><p><font class="ptxt">Reconnect the H32 heater control switch board connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td rowspan="2">H32-7 (LAPL) - Body ground<br></td><td rowspan="2">V - Body ground<br></td><td rowspan="2" align="left">Front passenger seat belt warning signal<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied, seat belt fastened (Front passenger side seat belt warning light off)<br></li></ol></td><td>11 to 14 V<br></td></tr><tr><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied, seat belt unfastened (Front passenger side seat belt warning light blinks)<br></li></ol></td><td>Alternating between 11 to 14 V and below 1 V<br></td></tr></table><font class="ptxt">If the result is not as specified, the heater control switch board may have a malfunction.</font><br></p></li></ol><br clear="all"><a name="RM14K0E___00001UW0000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK DISPLAY AND NAVIGATION MODULE DISPLAY (w/ Navigation System)</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c220194e02.png" name="C220194E02" alt="C220194E02" border="1" class="full"></div><br clear="all">
+<ol class="s2">
+<li><p><font class="ptxt">Disconnect the H4 display connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the resistance and voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td>H4-3 (IG) - Body ground<br></td><td>L - Body ground<br></td><td align="left">display and navigation module display IG line <br></td><td>Engine switch on (IG)<br></td><td>11 to 14 V<br></td></tr><tr><td>H4-10 (GND1) - Body ground<br></td><td>BR - Body ground<br></td><td align="left">Ground<br></td><td>Always<br></td><td>Below 1 Ω<br></td></tr></table><font class="ptxt">If the result is not as specified, there may be a malfunction on the wire harness side.</font><br></p></li>
+<li><p><font class="ptxt">Reconnect the H4 display connector.</font><br></p></li>
+<li><p><font class="ptxt">Measure the voltage according to the value(s) in the table below.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><colgroup align="center" width="20%
+
+			"><col align=""></colgroup><tr><td>Terminal No. (Symbol)<br></td><td>Wiring Color<br></td><td>Terminal Description<br></td><td>Condition<br></td><td>Specified Condition<br></td></tr><tr><td rowspan="2">H8-5 (PBEW) - Body ground<br></td><td rowspan="2">L - Body ground<br></td><td rowspan="2" align="left">Front passenger seat belt warning signal<br></td><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied, seat belt fastened (Front passenger side seat belt warning light off)<br></li></ol></td><td>11 to 14 V<br></td></tr><tr><td align="left"><ol style="list-style-type: disc"><li class="itm">Engine switch on (IG)<br></li><li class="itm">Front passenger seat occupied, seat belt unfastened (Front passenger side seat belt warning light blinks)<br></li></ol></td><td>Alternating between 11 to 14 V and below 1 V<br></td></tr></table><font class="ptxt">If the result is not as specified, the display may have a malfunction.</font><br></p></li></ol><br clear="all"><a name="RM14K0E___00001UW0000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CHECK CENTER AIRBAG SENSOR</td></tr></table><font class="ptxt"></font><div class="full"><br><img src="../../img/c109532e44.png" name="C109532E44" alt="C109532E44" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><colgroup align="center" width="33%
+
+			"><col align=""></colgroup><tr><td>Terminal No.<br></td><td>Symbol<br></td><td>Description<br></td></tr><tr><td>R1-10<br></td><td>LBE+<br></td><td align="left">Front seat inner belt LH (Seat belt buckle switch LH)<br></td></tr><tr><td>R1-18<br></td><td>LBE-<br></td><td align="left">Front seat inner belt LH (Seat belt buckle switch LH)<br></td></tr><tr><td>G1-13<br></td><td>CANH<br></td><td align="left">CAN communication line <br></td></tr><tr><td>G1-22<br></td><td>CANL<br></td><td align="left">CAN communication line <br></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>
