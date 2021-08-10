@@ -1,0 +1,902 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM000004AAE001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>BRAKE CONTROL SYSTEM &gt; DETAILS</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><br clear="all" class="beforePng"><a name="RM000004AAE001X_z0"></a><br clear="all"><a name="NM14K0E___00000630000111step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FUNCTION OF MAIN COMPONENTS</td></tr></table><font class="ptxt"></font><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="60%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="40%
+
+			" align="center">Component<br></td><td align="center">Function<br></td></tr><tr><td rowspan="11">Combination Meter Assembly<br></td><td>Brake System Warning Light<br></td><td><ol style="list-style-type: disc"><li class="itm">Lights up to alert the driver when the skid control ECU detects a malfunction in the EBD.<br></li><li class="itm">Lights up to alert the driver when the brake fluid level is low.<br></li><li class="itm">Lights up to alert the driver that the hydraulic pressure of the brake booster accumulator assembly in the hydraulic brake booster assembly has decreased.<br></li><li class="itm">Lights up to inform the driver of the parking brake condition.<br></li></ol></td></tr><tr><td>ABS Warning Light<br></td><td>Lights up to alert the driver when the skid control ECU detects a malfunction in the ABS or multi-terrain ABS.<br></td></tr><tr><td>Slip Indicator Light<br></td><td>Blinks to inform the driver when the TRC, A-TRC, VSC, hill-start assist control and CRAWL are operational.<br></td></tr><tr><td>VSC OFF Indicator Light<br></td><td>Lights up to inform the driver that the VSC OFF mode has been entered using the VSC OFF switch.<br></td></tr><tr><td>Downhill Assist Control Indicator Light*1<br></td><td>Lights up to inform the driver that the downhill assist control switch has been turned on.<br></td></tr><tr><td>CRAWL Indicator Light*2<br></td><td>Lights up to inform the driver that the CRAWL ON/OFF switch has been turned on.<br></td></tr><tr><td>Multi-terrain Select Indicator Light*3<br></td><td>Lights up to inform the driver that multi-terrain select control is available.<br></td></tr><tr><td>Master Warning Light<br></td><td>Lights up and sounds the buzzer in the combination meter assembly to inform the driver that CRAWL control has been released.<br></td></tr><tr><td>Multi-terrain Select Indicator*3<br></td><td>Displays the selected road mode.<br></td></tr><tr><td>Multi-information Display*4<br></td><td><ol style="list-style-type: disc"><li class="itm">Displays to inform the driver that the TRC OFF mode has been entered using the VSC OFF switch.<br></li><li class="itm">Displays multi-terrain select operation assist messages.<br></li><li class="itm">Informs the driver of the status of the CRAWL operation.<br></li></ol></td></tr><tr><td>Multi Buzzer<br></td><td>Sounds intermittently to inform the driver that the VSC or hill-start assist control is active.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Front and Rear Speed Sensors<br></td><td>Detects the wheel speed of each of the 4 wheels.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Yaw Rate Sensor Assembly (with Built-in Deceleration Sensor)<br></td><td><ol style="list-style-type: disc"><li class="itm">Detects the vehicle's longitudinal and lateral acceleration.<br></li><li class="itm">Detects the vehicle's yaw rate.<br></li></ol></td></tr><tr><td colspan="2" width="40%
+
+			">Steering Angle Sensor<br></td><td>Detects the direction and angle of the steering wheel.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Stop Light Switch Assembly<br></td><td>Detects the brake pedal depressing signal.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Parking Brake Switch Assembly<br></td><td>Detects that the parking brake pedal is depressed.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Center Differential Lock Detection Switch (Built into Transfer Shift Actuator Assembly)<br></td><td>Detects the center differential lock condition.<br></td></tr><tr><td colspan="2" width="40%
+
+			">VSC OFF Switch<br></td><td>Enables the driver to select "Normal Mode", "TRC OFF Mode", or "VSC OFF Mode".<br></td></tr><tr><td colspan="2" width="40%
+
+			">Multi-information Switch<br></td><td><ol style="list-style-type: disc"><li class="itm">Switches the screen of the multi-information display.<br></li><li class="itm">Selects multi-terrain select road mode.<br></li></ol></td></tr><tr><td colspan="2" width="40%
+
+			">CRAWL ON/OFF Switch*2<br></td><td>Turns the CRAWL on and off.<br></td></tr><tr><td colspan="2" width="40%
+
+			">CRAWL Speed Selector Switch*2<br></td><td>Used to select the target vehicle speed when the CRAWL is active.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Downhill Assist Control Switch*1<br></td><td>Turns the downhill assist control on and off.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Hydraulic Brake Booster Assembly<br></td><td>Changes the brake fluid path based on the signals from the skid control ECU during the operations of the brake control functions in order to control the fluid pressure that is applied to the wheel cylinders.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Brake Fluid Level Warning Switch (Built into Hydraulic Brake Booster Assembly)<br></td><td>Detects that the brake fluid level is low.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Master Cylinder Pressure Sensor (Built into Hydraulic Brake Booster Assembly)<br></td><td>Detects the master cylinder pressure and outputs this information to the skid control ECU.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Accumulator Pressure Sensor (Built into Hydraulic Brake Booster Assembly)<br></td><td>Monitors the hydraulic pressure of the brake booster accumulator assembly and outputs this information to the brake booster pump assembly control.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Control Pressure Sensor*4 (Built into Hydraulic Brake Booster Assembly)<br></td><td>In the brake control of the pre-crash safety system, hydraulic pressure is applied from the brake booster accumulator assembly to each wheel cylinder, generating braking force automatically. The control pressure sensor detects the control hydraulic pressure at that time.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Switching Solenoid Valve (Built into Hydraulic Brake Booster Assembly)<br></td><td>Switches the brake hydraulic path when the brake control system is activated.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Control Solenoid Valve (Built into Hydraulic Brake Booster Assembly)<br></td><td>Controls the hydraulic pressure that is applied to the wheel cylinders during brake control.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Brake Booster Pump Assembly (Built into Hydraulic Brake Booster Assembly)<br></td><td>Draws up the brake fluid from the brake master cylinder reservoir and provides high hydraulic pressure to the brake booster accumulator assembly.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Skid Control ECU<br></td><td>Judges the vehicle driving condition based on signals from each sensor, and sends brake control signals to the hydraulic brake booster assembly.<br></td></tr><tr><td colspan="2" width="40%
+
+			">4WD Control ECU<br></td><td>Sends the transfer drive mode.<br></td></tr><tr><td colspan="2" width="40%
+
+			">ECM<br></td><td><ol style="list-style-type: disc"><li class="itm">Sends the throttle position signal, accelerator pedal position signal, engine speed signal etc., to the skid control ECU.<br></li><li class="itm">Based on the signals received from the skid control ECU, controls the engine output.<br></li></ol></td></tr></table><ol style="list-style-type: none"><li class="itm">*1: Models with downhill assist control<br></li><li class="itm">*2: Models with CRAWL<br></li><li class="itm">*3: Models with multi-terrain select<br></li><li class="itm">*4: Models with dynamic radar cruise control system<br></li></ol><br clear="all"><a name="NM14K0E___00000630000112step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATING CONDITION</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The brake control function varies by the transfer drive mode as shown in the following table:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>Models without CRAWL&nbsp;
+					</span></caption><colgroup align="" width="13%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><tr><td rowspan="2" align="center">Transfer Drive Mode<br></td><td colspan="8" width="87%
+
+			" align="center">Brake Control Function<br></td></tr><tr><td align="center">ABS<br></td><td align="center">EBD<br></td><td align="center">Brake Assist<br></td><td align="center">TRC<br></td><td align="center">A-TRC<br></td><td align="center">VSC<br></td><td align="center">Hill-start Assist Control<br></td><td align="center">Downhill Assist Control<br></td></tr><tr><td align="center">H4F<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td></tr><tr><td align="center">H4L<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td></tr><tr><td align="center">L4F<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td></tr><tr><td align="center">L4L<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">○: Operates</dd></dl><dl class="reference"><dd class="reference">X: Does not operate</dd></dl></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>Models with CRAWL&nbsp;
+					</span></caption><colgroup align="" width="13%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><tr><td rowspan="2" align="center">Transfer Drive Mode<br></td><td colspan="8" width="87%
+
+			" align="center">Brake Control Function<br></td></tr><tr><td align="center">ABS<br></td><td align="center">EBD<br></td><td align="center">Brake Assist<br></td><td align="center">TRC<br></td><td align="center">A-TRC<br></td><td align="center">VSC<br></td><td align="center">Hill-start Assist Control<br></td><td align="center">CRAWL<br></td></tr><tr><td align="center">H4F<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td></tr><tr><td align="center">H4L<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td></tr><tr><td align="center">L4F<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td></tr><tr><td align="center">L4L<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">○: Operates</dd></dl><dl class="reference"><dd class="reference">X: Does not operate</dd></dl></p><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>Models with Multi-terrain Select&nbsp;
+					</span></caption><colgroup align="" width="12%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><tr><td rowspan="3" align="center">Transfer Drive Mode<br></td><td colspan="9" width="88%
+
+			" align="center">Brake Control Function<br></td></tr><tr><td rowspan="2" align="center">ABS/Multi-terrain ABS*<br></td><td rowspan="2" align="center">EBD<br></td><td rowspan="2" align="center">Brake Assist<br></td><td rowspan="2" align="center">TRC<br></td><td colspan="2" width="19%
+
+			" align="center">A-TRC<br></td><td rowspan="2" align="center">VSC<br></td><td rowspan="2" align="center">Hill-start Assist Control<br></td><td rowspan="2" align="center">CRAWL<br></td></tr><tr><td align="center">Multi-terrain Select Off<br></td><td align="center">Multi-terrain Select On<br></td></tr><tr><td align="center">H4F<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td></tr><tr><td align="center">H4L<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td></tr><tr><td align="center">L4F<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td></tr><tr><td align="center">L4L<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">○<br></td><td align="center">○<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">○: Operates</dd></dl><dl class="reference"><dd class="reference">X: Does not operate</dd></dl><dl class="reference"><dd class="reference">*: The multi-terrain select is on</dd></dl></p></p></li>
+<li><p><font class="ptxt">Hill-start Assist Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The hill-start assist control operates when all of the following conditions have been met:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td>Hill-start Assist Control Operation Condition<br></td><td>- The shift lever is in D or S.<br>- The brake pedal is not depressed.<br>- The skid control ECU has detected the backward movement of the vehicle when the driver is starting off on a hill.<br></td></tr></table></p></li>
+<li><p><font class="ptxt">The hill-start assist control stops operating when any of the following conditions have been met:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td>Hill-start Assist Control Ending Condition<br></td><td>- The shift lever is in any position other than D or S.<br>- The brake pedal is depressed.<br>- Approximately 5 seconds have passed since control commenced.<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">Downhill Assist Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The downhill assist control operates when all of the following conditions have been met:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td>Downhill Assist Control Operation Condition<br></td><td>- The downhill assist control switch is on.<br>- The transfer drive mode is in L4F or L4L.<br>- The accelerator pedal and brake pedal are not depressed.<br>- When descending a hill at a sufficiently slow vehicle speed.<br></td></tr></table></p></li>
+<li><p><font class="ptxt">The downhill assist control stops operating when any of the following conditions have been met:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td>Downhill Assist Control Ending Condition<br></td><td>- The downhill assist control switch is off.<br>- The transfer drive mode is in any position other than L4F or L4L.<br>- The accelerator pedal or brake pedal is depressed.<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">CRAWL</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the CRAWL ON/OFF switch is on with all of the following conditions met, the CRAWL control starts operating:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td>CRAWL Operation Condition<br></td><td>- The transfer drive mode is in L4F or L4L.<br>- The shift lever is in R, D or S.<br>- The 2nd start switch is off.<br>- The driver door is closed.<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">When the 2nd start switch is on, the engine output control is not operated.</dd></dl></p></p></li>
+<li><p><font class="ptxt">The CRAWL control stops operating when any of the following conditions have been met:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td>CRAWL Operation Ending Condition<br></td><td>- The CRAWL ON/OFF switch is off.<br>- The transfer drive mode is in any position other than L4F or L4L.<br>- The shift lever is in P or N.<br>- The driver door is opened.<br>- Vehicle speed is above 25 km/h (16 mph).<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">Multi-terrain Select</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When all of the following conditions are met, the multi-terrain select can be turned on or off and road mode can be selected by operating the multi-information switch, and the multi-terrain select indicator light will illuminate.</font><br></p></li>
+<li><p><font class="ptxt">If the drive mode most appropriate for the selected road mode is shifted to, the road mode will be displayed on the multi-terrain select indicator, and engine output control and A-TRC control will commence.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td>Multi-terrain Select Operation Condition<br></td><td>- The transfer drive mode is in L4F or L4L*.<br>- Vehicle speed is 12 km/h (7.5 mph) or less.<br>- The CRAWL is off.<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: If the "MUD and SAND" road mode is selected, the multi-terrain select will control when in transfer drive mode H4F, H4L, L4F or L4L.</dd></dl></p></p></li>
+<li><p><font class="ptxt">If the transfer drive mode is shifted to H4F or H4L while the multi-terrain select is controlling in "LOOSE ROCK", "MOGUL" or "ROCK" road mode, multi-terrain select control will halt temporarily.</font><br></p></li>
+<li><p><font class="ptxt">Multi-terrain select control will terminate if a malfunction occurs in the multi-information switch operation, the brake control system, the engine control system or the 4WD control system.</font><br></p></li>
+<li><p><font class="ptxt">The 2nd start switch and VSC OFF switch cannot be operated while multi-terrain select is in operation.</font><br></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000630000113step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">SYSTEM CONTROL</td></tr></table><font class="ptxt"></font><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="60%
+
+			"><col align=""></colgroup><tr><td align="center">Control<br></td><td align="center">Outline<br></td></tr><tr><td>Anti-lock Brake System (ABS)<br></td><td>The ABS helps prevent the wheels from locking when the brakes are applied firmly or when braking on a slippery surface.<br></td></tr><tr><td>Multi-terrain Anti-lock Brake System (Multi-terrain ABS)<br></td><td>In addition to the existing ABS function, the multi-terrain ABS automatically calculates the optimum ABS control in accordance with off-road conditions such as dirt or sandy roads.<br></td></tr><tr><td>Electronic Brake Force Distribution (EBD)<br></td><td>The EBD control utilizes ABS, achieving proper brake force distribution between the front and rear wheels in accordance with driving conditions. In addition, during braking while cornering, it also controls the brake forces of the right and left wheels, helping maintain vehicle behavior.<br></td></tr><tr><td>Brake Assist<br></td><td><ol style="list-style-type: disc"><li class="itm">The primary purpose of brake assist is to provide an auxiliary brake force to assist a driver who cannot generate a large brake force during emergency braking, thus helping ensure the vehicle's braking performance.<br></li><li class="itm">If the brake booster malfunctions and the skid control ECU judges that the brake pedal force applied by the driver is not sufficient to ensure adequate braking force, brake assist is used to enhance the braking force.<br></li></ol></td></tr><tr><td>Traction Control (TRC)<br></td><td>The TRC helps restrain the slippage of the drive wheels if the driver depresses the accelerator pedal excessively when starting off or while accelerating on a slippery surface.<br></td></tr><tr><td>Active Traction Control (A-TRC)<br></td><td>A-TRC controls the brake hydraulic pressure that is applied to the slipping wheel, and distributes the drive force that would have been lost through the slippage to the remaining wheels in order to achieve an LSD effect.<br></td></tr><tr><td>Vehicle Stability Control (VSC)<br></td><td>The VSC helps restrain sideways slippage of the vehicle during a strong front wheel skid or strong rear wheel skid, which may occur while cornering.<br></td></tr><tr><td>Hill-start Assist Control <br></td><td>When the vehicle starts off on a steep or a slippery hill, hill-start assist control detects the backward descent of the vehicle and effects 4-wheel hydraulic pressure control to reduce the backward speed of the vehicle. As a result, the vehicle can be started off on a hill more easily.<br></td></tr><tr><td>Downhill Assist Control<br></td><td>When the downhill assist control switch is pressed while the transfer drive mode is in L4F and L4L, and without accelerator or brake pedal operation, downhill assist control activates to effect 4-wheel hydraulic pressure control, in order to maintain a constant low vehicle speed without causing the wheels to become locked. Thus, the vehicle can descend a steep hill in a stable manner.<br></td></tr><tr><td>CRAWL<br></td><td>When the vehicle runs on extremely bumpy rough ground or a slippery road, the CRAWL is activated to regulate the engine output and the hydraulic pressure of the 4 wheels, allowing the driver to drive the vehicle at the desired speed and keep that speed with virtually no accelerator or brake pedal operation. As a result, off-road driveability is improved.<br></td></tr></table>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Anti-lock Brake System (ABS)</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The ABS prevents the wheels from locking during sudden braking or braking on a slippery surface. This provides the proper braking force when the vehicle slips, thus ensuring vehicle stability and excellent braking performance.</font><br><div class="full"><br><img src="../../img/x102062e01.png" name="X102062E01" alt="X102062E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration (Illustration Provides Conceptual Image)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>Models with ABS<br></td><td align="center">*B<br></td><td>Models without ABS<br></td></tr><tr><td align="center">*a<br></td><td>Brake Operation<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Multi-terrain Anti-lock Brake System (Multi-terrain ABS)</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The multi-terrain ABS operates in conjunction with the multi-terrain select. This function detects off-road driving in sand, mud, gravel, dirt and so on based on signals from the yaw rate sensor assembly, the speed sensor and the ECM, and then automatically switches to the ABS control most appropriate for the road condition.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This function is intended to improve the braking feeling when driving off-road without negatively affecting on-road braking control performance.</font><br><div class="full"><br><img src="../../img/x102092e01.png" name="X102092E01" alt="X102092E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102093e02.png" name="X102093E02" alt="X102093E02" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Electronic Brake Force Distribution (EBD)</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This function controls the brake force that acts on the rear wheels in accordance with the changes in the vehicle conditions such as load factors or deceleration, in order to ensure excellent braking performance.</font><br><div class="full"><br><img src="../../img/x102063e01.png" name="X102063E01" alt="X102063E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102064e01.png" name="X102064E01" alt="X102064E01" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">During cornering braking, this function controls the brake force that acts on the left and right wheels in accordance with the vehicle conditions. This ensures vehicle stability and excellent braking performance.</font><br><div class="full"><br><img src="../../img/x102065.png" name="X102065" alt="X102065" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td>Control Moment<br></td><td align="center"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td>Brake Force<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Brake Assist</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">During the brake assist, the skid control ECU calculates the speed of the brake pedal application based on the signals from the master cylinder pressure sensor and then determines the intention of the driver to make an emergency brake application. If the skid control ECU determines that the driver intends to make an emergency brake application, this function activates the hydraulic brake booster assembly to increase the brake fluid pressure, which increases the brake force.</font><br><div class="full"><br><img src="../../img/x102094e01.png" name="X102094E01" alt="X102094E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Traction Control (TRC)</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The TRC helps prevent the drive wheels from slipping if the driver depresses the accelerator pedal excessively when starting off or accelerating on a slippery surface. Simultaneously with the hydraulic brake control of the drive wheels, the skid control ECU makes a request to the ECM to effect engine output control. This produces the drive force that suits the driving conditions, in order to ensure the proper start-off acceleration.</font><br><div class="full"><br><img src="../../img/x102066e01.png" name="X102066E01" alt="X102066E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration (Driving on Road with Different Surface Friction Characteristics)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>Models without TRC<br></td><td align="center">*B<br></td><td>Models with TRC<br></td></tr><tr><td align="center">*1<br></td><td>ECM <br>- Engine Output Control<br></td><td align="center">*2<br></td><td>Brake Actuator Assembly<br>- Hydraulic Brake Control<br></td></tr><tr><td align="center">*a<br></td><td>Brake Slipping Drive Wheel <br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center"><img src="../../img/v100145.png" name="V100145" alt="V100145" class="none"><br></td><td>Slippery Surface<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Active Traction Control (A-TRC)</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the vehicle drive mode is L4F* or L4L*, the A-TRC helps restrain wheelspin by controlling the brake hydraulic pressure that is applied to the spinning wheels, and distributes the drive force that would have been lost through the slippage to the remaining wheels in order to achieve an effect that is similar to Limited Slip Differential (LSD).</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: When multi-terrain select is on (models with multi-terrain select)</dd></dl></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The A-TRC independently controls the brake hydraulic pressure to the four wheels in accordance with the extent of the slippage at the wheels, as detected by the skid control ECU.</font><br><div class="full"><br><img src="../../img/x102095e01.png" name="X102095E01" alt="X102095E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102096e01.png" name="X102096E01" alt="X102096E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Vehicle Stability Control (VSC)</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The following are 2 examples that can be considered circumstances in which the tires exceed their lateral grip limit. The VSC is designed to help control the vehicle behavior by controlling the engine output and the brakes of each wheel when the vehicle is under one of the conditions indicated below:</font><br><div class="full"><br><img src="../../img/x102067e01.png" name="X102067E01" alt="X102067E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Front Wheel Skid Tendency (Understeer) <br>- When the front wheels lose grip in relation to the rear wheel<br></td><td align="center">*b<br></td><td>Rear Wheel Skid Tendency (Oversteer)<br>- When the rear wheels lose grip in relation to the front wheels<br></td></tr></table></p></li>
+<li><p><font class="ptxt">To determine the condition of the vehicle, sensors detect the steering angle, vehicle speed, vehicle yaw rate, and vehicle's lateral acceleration, which are then calculated by the skid control ECU.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Whether or not the vehicle is experiencing a front wheel skid is determined by the difference between the target yaw rate and the vehicle's actual yaw rate. When the vehicle's actual yaw rate is smaller than the target yaw rate (which is determined based on the vehicle speed and steering angle) that should be generated when the driver operates the steering wheel, it means the vehicle is making a turn at a greater angle than the target locus of travel. Thus, the skid control ECU determines that there is a large front wheel skid tendency.</font><br><div class="full"><br><img src="../../img/x102068e01.png" name="X102068E01" alt="X102068E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Actual Locus of Travel (Actual Yaw Rate)<br></td><td align="center">*b<br></td><td>Locus of Travel Based on Target Yaw Rate<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Whether or not the vehicle is experiencing a rear wheel skid is determined by the values of the vehicle's slip angle and the vehicle's slip angular velocity (time-dependent changes in the vehicle's slip angle). When the vehicle's slip angle is large, and the slip angular velocity is also large, the skid control ECU determines that the vehicle has a large rear wheel skid tendency.</font><br><div class="full"><br><img src="../../img/x102069e01.png" name="X102069E01" alt="X102069E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*a<br></td><td>Travel Direction of Vehicle's Center of Gravity<br></td><td align="center">*b<br></td><td>Movement of Vehicle<br></td></tr><tr><td align="center">*c<br></td><td>Slip Angle<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li>
+<li><p><font class="ptxt">When the skid control ECU determines that the vehicle exhibits a tendency to experience a front wheel skid or a rear wheel skid, it decreases the engine output and applies the brakes of the front or rear wheels to control the vehicle's yaw moment. The basic operation of the VSC is described below. However, the control method differs depending on the vehicle's characteristics and driving conditions.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When the skid control ECU determines that there is a large front wheel skid tendency, it takes countermeasures in accordance with the extent of that tendency. The skid control ECU controls the engine output and applies the brakes of the rear wheels and front wheel on the outer circle of the turn in order to help restrain the front wheel skid tendency.</font><br><div class="full"><br><img src="../../img/x102070.png" name="X102070" alt="X102070" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration (Front Wheel Skid Dampening at Right Turn)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td>Control Moment<br></td><td align="center"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td>Brake Force<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When the skid control ECU determines that there is a large rear wheel skid tendency, it takes countermeasures in accordance with the extent of that tendency. It applies the brakes of the front and rear wheels of the outer circle of the turn, and generates an outward moment of inertia in the vehicle, in order to restrain the rear wheel skid tendency. Along with the reduction in the vehicle speed caused by the braking force, excellent vehicle stability is ensured. In some cases, the skid control ECU applies the brake of the front wheel on the outer circle of the turn, as necessary.</font><br><div class="full"><br><img src="../../img/x102071.png" name="X102071" alt="X102071" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration (Rear Wheel Skid Dampening at Right Turn)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td>Control Moment<br></td><td align="center"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td>Brake Force<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Hill-start Assist Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the vehicle starts off on a steep or slippery hill, the vehicle may start to descend backward while the driver switches from the brake pedal to the accelerator pedal, thus making it difficult for the vehicle to start off. To prevent this from occurring, the hill-start assist control temporarily (approximately 5 seconds at the maximum) applies the brakes to the 4 wheels in order to prevent the vehicle from descending backward.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Without the hill-start assist control, the driver must quickly and precisely switch from the brake pedal to the accelerator pedal. With the hill-start assist control, however, the driver can start off easily and operate the pedal in a relaxed manner, because the hill-start assist control prevents the vehicle from descending backward.</font><br><div class="full"><br><img src="../../img/x102097e01.png" name="X102097E01" alt="X102097E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Downhill Assist Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the vehicle is descending a steep hill and the engine brake alone cannot provide a sufficient deceleration force while the transfer drive mode is in L4F or L4L, downhill assist control effects 4 wheel brake control to maintain a constant, low vehicle speed. Thus, the vehicle is able to descend in a stable manner without causing the wheels to lock.</font><br></p></li>
+<li><p><font class="ptxt">When the vehicle descends a steep hill without downhill assist control, the driver must pay close attention to the brake and accelerator pedal maneuvers. However, with downhill assist control, the driver can concentrate on the steering operation, without accelerator or brake pedal operation.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Downhill assist control enables the vehicle to maintain stability because it can descend a slippery hill at low speeds without causing the wheels to lock.</font><br><div class="full"><br><img src="../../img/x102098e01.png" name="X102098E01" alt="X102098E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">CRAWL</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The CRAWL is a driving support system that regulates the engine output and the brake force, enabling the vehicle to be driven at a constant speed on rough ground or slippery roads.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When the vehicle drives across rough ground such as extremely bumpy rough roads, the driver needs to pay attention to the steering, braking and acceleration operations. However, with the CRAWL, the driver can concentrate on steering, without worrying about the accelerator pedal or brake pedal.</font><br><div class="full"><br><img src="../../img/x102099.png" name="X102099" alt="X102099" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The CRAWL ensures good vehicle stability in situations such as when the vehicle is running on a slippery or steep road because the chances of the wheels spinning or locking are minimized by regulating the engine output and the brake force.</font><br><div class="full"><br><img src="../../img/x102100.png" name="X102100" alt="X102100" border="1" class="full"></div><br clear="all"></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000630000114step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FUNCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">VSC OFF Switch</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The operation of the VSC and TRC functions can be stopped by the VSC OFF switch. While the vehicle is running off the shoulder of the road or running on a dirt road, the engine output control is stopped to maintain drive torque.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The VSC OFF switch cannot be operated while multi-terrain select is operating.</dd></dl></p><div class="full"><br><img src="../../img/x102995e01.png" name="X102995E01" alt="X102995E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>VSC OFF Indicator Light<br></td><td align="center">*2<br></td><td>Multi-information Display<br></td></tr><tr><td align="center">*3<br></td><td>VSC OFF Switch<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li>
+<li><p><font class="ptxt">The VSC OFF switch can select 3 modes (mode A, mode B, and mode C).</font><br></p></li>
+<li><p><font class="ptxt">Briefly pressing the VSC OFF switch in mode A selects mode B.</font><br></p></li>
+<li><p><font class="ptxt">Pressing and holding the VSC OFF switch for 3 seconds or more with the vehicle stopped selects mode C.</font><br></p></li>
+<li><p><font class="ptxt">Briefly pressing the VSC OFF switch in mode B or mode C or turning the engine switch off returns to mode A.</font><br></p></li>
+<li><p><font class="ptxt">When TRC is not operating, "TRC OFF" will be displayed on the multi-information display.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When VSC is not operating, the VSC OFF indicator light will illuminate.</font><br><div class="full"><br><img src="../../img/x102072e02.png" name="X102072E02" alt="X102072E02" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Function of VSC OFF Switch (Models without Multi-terrain Select)&nbsp;
+					</span></caption><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><tr><td rowspan="2" align="center">Transfer Drive Mode<br></td><td rowspan="2" align="center">Brake Control Function<br></td><td colspan="3" width="60%
+
+			" align="center">VSC OFF Switch Mode<br></td></tr><tr><td align="center">Mode A<br></td><td align="center">Mode B<br></td><td align="center">Mode C<br></td></tr><tr><td rowspan="3" align="center">H4F<br></td><td align="center">TRC<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Operates<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td></tr><tr><td rowspan="3" align="center">H4L<br></td><td align="center">TRC<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Operates<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td></tr><tr><td rowspan="3" align="center">L4F<br></td><td align="center">TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Operates<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Operates<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td rowspan="3" align="center">L4L<br></td><td align="center">TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Operates<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Function of VSC OFF Switch (Models with Multi-terrain Select)&nbsp;
+					</span></caption><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><tr><td rowspan="2" align="center">Transfer Drive Mode<br></td><td rowspan="2" align="center">Brake Control Function<br></td><td colspan="3" width="60%
+
+			" align="center">VSC OFF Switch Mode<br></td></tr><tr><td align="center">Mode A<br></td><td align="center">Mode B<br></td><td align="center">Mode C<br></td></tr><tr><td rowspan="3" align="center">H4F<br></td><td align="center">TRC<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Operates<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td></tr><tr><td rowspan="3" align="center">H4L<br></td><td align="center">TRC<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Operates<br></td><td align="center">Operates<br></td><td align="center">Does Not Operate<br></td></tr><tr><td rowspan="3" align="center">L4F<br></td><td align="center">TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Operates<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td rowspan="3" align="center">L4L<br></td><td align="center">TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">A-TRC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr><tr><td align="center">VSC<br></td><td align="center">Does Not Operate<br></td><td align="center">-<br></td><td align="center">Does Not Operate<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Multi-terrain Select</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The multi-terrain select has the following functions:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="75%
+
+			"><col align=""></colgroup><tr><td rowspan="4">Multi-terrain Select Function<br></td><td>Sends the road mode that is selected by the multi-information switch to the skid control ECU, ECM and 4WD control ECU.<br></td></tr><tr><td>Displays a message on the multi-information display prompting the driver to switch to the optimum transfer drive mode if the currently selected road mode and transfer drive mode are inappropriate.<br></td></tr><tr><td>Displays an assist message on the multi-information display in order to make switching to the optimum transfer drive mode easier.<br></td></tr><tr><td>Automatically switches to the optimum engine output control and switches the brake control function to A-TRC when the selected road mode and transfer drive mode are switched to the optimum position.<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The screen of the multi-information display is switched by operating the multi-information switch, control is enabled by determining the road mode, and the multi-terrain select indicator light flashes.</font><br><div class="full"><br><img src="../../img/x102977e01.png" name="X102977E01" alt="X102977E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Multi-information Switch<br>- ENTER Switch<br>- Menu Switch<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>Multi-terrain Select Selection Screen (Mode Select or Camera Selection)<br></td><td align="center">*b<br></td><td>Multi-terrain Select Selection Screen (Determined Mode Select)<br></td></tr><tr><td align="center">*c<br></td><td>Road Mode Selection Screen<br></td><td align="center">*d<br></td><td>Road Mode Selection Screen (Determined Road Mode)<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">4 road modes can be selected: "MUD and SAND", "LOOSE ROCK", "MOGUL" and "ROCK". The recommended road modes for each road condition are listed below.</font><br><br clear="all"><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">Road mode recommendations are for reference only. The mode may not be appropriate depending on the road conditions (incline, road surface, road undulation etc.).</dd></dl><dl class="reference"><dd class="reference"><div class="full"><br><img src="../../img/x102338e01.png" name="X102338E01" alt="X102338E01" border="1" class="full"></div><br clear="all"></dd></dl></p><div class="full"><br><img src="../../img/x102337e01.png" name="X102337E01" alt="X102337E01" border="1" class="full"></div><br clear="all"></p></li>
+<li><p><font class="ptxt">The engine output and A-TRC control tendency for each road mode are as follows:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><tr><td rowspan="2" align="center">Multi-terrain Select Road Mode<br></td><td rowspan="2" align="center">Transfer Drive Mode<br></td><td colspan="2" width="60%
+
+			" align="center">Control<br></td></tr><tr><td align="center">Engine Control<br></td><td align="center">A-TRC Control<br></td></tr><tr><td>MUD and SAND<br></td><td>H4F, H4L, L4F, L4L<br></td><td>Engine output control is performed gradually in response to accelerator pedal operation<br></td><td>The wheel is allowed to slip more than usual<br></td></tr><tr><td>LOOSE ROCK<br></td><td>L4F, L4L<br></td><td>Engine output control is performed gradually in response to accelerator pedal operation<br></td><td>The wheel is allowed to slip more than usual<br></td></tr><tr><td>MOGUL<br></td><td>L4F, L4L<br></td><td>Engine output control is performed gradually in response to accelerator pedal operation<br></td><td>The wheel is made to slip more than usual<br></td></tr><tr><td>ROCK<br></td><td>L4F, L4L<br></td><td>Engine output control is performed gradually in response to accelerator pedal operation<br></td><td>The wheel is made to grip more than usual<br></td></tr></table></p></li>
+<li><p><font class="ptxt">The driver is informed of multi-terrain select operation by the flashing or illumination of the multi-terrain select indicator light and the slip indicator light. Also, operation assist messages are displayed on the multi-information display.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="2" width="40%
+
+			" align="center">System Condition<br></td><td colspan="3" width="60%
+
+			" align="center">Indicator Light and Multi-information Display<br></td></tr><tr><td align="center">Multi-terrain Select Indicator Light<br></td><td align="center">Slip Indicator Light<br></td><td align="center">Multi-information Display Message<br></td></tr><tr><td colspan="2" width="40%
+
+			">Operates<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center">-<br></td></tr><tr><td colspan="2" width="40%
+
+			">A-TRC Operates<br></td><td align="center">○<br></td><td align="center">▲<br></td><td align="center">-<br></td></tr><tr><td colspan="2" width="40%
+
+			">A-TRC Control &rarr; A-TRC Control Released<br></td><td align="center">○ &rarr; X<br></td><td align="center">▲ &rarr; X<br></td><td align="center"><img src="../../img/x102998.png" name="X102998" alt="X102998" class="none"><br></td></tr><tr><td rowspan="5">Control Commencement Conditions Not Met<br></td><td>Transfer Drive Mode Mismatch<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center"><img src="../../img/x102311.png" name="X102311" alt="X102311" class="none"><br></td></tr><tr><td>System Malfunction<br></td><td align="center">X<br></td><td align="center">○<br></td><td rowspan="2" align="center"><img src="../../img/x102314.png" name="X102314" alt="X102314" class="none"><br></td></tr><tr><td>Vehicle Speed 12 km/h (7.5 mph) or more<br></td><td align="center">X<br></td><td align="center">X<br></td></tr><tr><td>During CRAWL Control<br></td><td align="center">X<br></td><td align="center">▲<br></td><td align="center"><img src="../../img/x102324.png" name="X102324" alt="X102324" class="none"><br></td></tr><tr><td>Malfunction Multi-terrain Select <br></td><td align="center">▲<br></td><td align="center">X<br></td><td align="center"><img src="../../img/x102314.png" name="X102314" alt="X102314" class="none"><br></td></tr><tr><td colspan="2" width="40%
+
+			">Related System Switching Commencement Conditions Not Met<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center"><img src="../../img/x102323.png" name="X102323" alt="X102323" class="none"><br><img src="../../img/x102321.png" name="X102321" alt="X102321" class="none"><br></td></tr><tr><td rowspan="4" colspan="2" width="40%
+
+			">Operation Assist<br></td><td align="center">○<br></td><td align="center">X<br></td><td align="center"><img src="../../img/x102313.png" name="X102313" alt="X102313" class="none"><br></td></tr><tr><td align="center">○<br></td><td align="center">X<br></td><td align="center"><img src="../../img/x102312.png" name="X102312" alt="X102312" class="none"><br></td></tr><tr><td align="center">○<br></td><td align="center">X<br></td><td align="center"><img src="../../img/x102322.png" name="X102322" alt="X102322" class="none"><br></td></tr><tr><td align="center">○<br></td><td align="center">X<br></td><td align="center"><img src="../../img/x102326.png" name="X102326" alt="X102326" class="none"><br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">○: Illuminates</dd></dl><dl class="reference"><dd class="reference">▲: Blinks</dd></dl><dl class="reference"><dd class="reference">X: Turns off</dd></dl></p></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000630000115step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CONSTRUCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Yaw Rate Sensor Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">This sensor has a built-in deceleration sensor.</font><br></p></li>
+<li><p><font class="ptxt">The yaw rate sensor detects the vehicle's yaw rate.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The deceleration sensor detects the vehicle's longitudinal and lateral acceleration.</font><br><div class="full"><br><img src="../../img/x102074e01.png" name="X102074E01" alt="X102074E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Yaw Rate Sensor Assembly<br></td><td align="center">*2<br></td><td>Deceleration Sensor<br></td></tr><tr><td align="center">*3<br></td><td>Yaw Rate Sensor<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>Cross Section<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Steering Angle Sensor</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The steering angle sensor detects the steering direction and angle, and sends this information to the skid control ECU.</font><br><div class="full"><br><img src="../../img/x102075.png" name="X102075" alt="X102075" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Speed Sensor</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Active type speed sensors, which can detect the rotational direction of the wheel, have been provided. This type of sensor contains a sensor IC, which consists of 2 Magnetic Resistance Elements (MREs).</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The magnet type rotor, which consists of N and S poles that are arranged in a circle, is integrated with the hub bearing inner race.</font><br><div class="full"><br><img src="../../img/x102137e01.png" name="X102137E01" alt="X102137E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration (Front Axle)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Front Speed Sensor<br></td><td align="center">*2<br></td><td>Sensor Rotor<br></td></tr></table><div class="full"><br><img src="../../img/x102138e01.png" name="X102138E01" alt="X102138E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration (Rear Axle)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Rear Speed Sensor<br></td><td align="center">*2<br></td><td>Sensor Rotor<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Hydraulic Brake Booster Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The brake actuator portion of the hydraulic brake booster consists of 4 switching solenoid valves, 8 control solenoid valves and a skid control ECU.</font><br></p></li>
+<li><p><font class="ptxt">The pressure increase mode, the pressure holding mode, and the pressure reduction mode are effected based on the combination of these solenoid valves, which are turned on and off in order to control the hydraulic pressure that is applied to each of the wheel cylinders.</font><br></p></li>
+<li><p><font class="ptxt">4 switching solenoid valves are used: 2 (SMCF, SREA) in the front brake fluid path, 1 (SREC) in the rear brake fluid path, and 1 (STR) in the accumulator fluid path. The switching solenoid valves open and close in accordance with the control signals from the skid control ECU in order to switch the respective brake fluid path.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The 8 control solenoid valves are used for the 4 wheels (2 types per wheel: pressure holding solenoid and pressure reduction solenoid).</font><br><div class="full"><br><img src="../../img/x102293.png" name="X102293" alt="X102293" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102102e01.png" name="X102102E01" alt="X102102E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Switching Solenoid Valve STR (Traction Solenoid Valve)<br></td><td align="center">*2<br></td><td>Switching Solenoid Valve SREC (Regulator Cut Solenoid Valve)<br></td></tr><tr><td align="center">*3<br></td><td>Switching Solenoid Valve SREA (Regulator Apply for Front Solenoid Valve)<br></td><td align="center">*4<br></td><td>Switching Solenoid Valve SMCF (Master Cut for Front Solenoid Valve)<br></td></tr><tr><td align="center">*5<br></td><td>Control Pressure Sensor (Models with Dynamic Radar Cruise Control System)<br></td><td align="center">*6<br></td><td>Master Cylinder Pressure Sensor<br></td></tr><tr><td align="center">*7<br></td><td>Control Solenoid Valve SRLH<br></td><td align="center">*8<br></td><td>Control Solenoid Valve SRRH<br></td></tr><tr><td align="center">*9<br></td><td>Control Solenoid Valve SFLH<br></td><td align="center">*10<br></td><td>Control Solenoid Valve SFRH<br></td></tr><tr><td align="center">*11<br></td><td>Control Solenoid Valve SRLR<br></td><td align="center">*12<br></td><td>Control Solenoid Valve SRRR<br></td></tr><tr><td align="center">*13<br></td><td>Control Solenoid Valve SFLR<br></td><td align="center">*14<br></td><td>Control Solenoid Valve SFRR<br></td></tr><tr><td align="center">*a<br></td><td>Rear LH<br></td><td align="center">*b<br></td><td>Rear RH<br></td></tr><tr><td align="center">*c<br></td><td>Front LH<br></td><td align="center">*d<br></td><td>Front RH<br></td></tr><tr><td align="center"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td>To Brake Master Cylinder Reservoir<br></td><td align="center"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td>From Brake Booster Accumulator Assembly<br></td></tr><tr><td align="center"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td>From Brake Master Cylinder<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000630000116step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Speed Sensor</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The active type speed sensor uses a sensor IC to detect magnetic field changes caused when the sensor rotor rotates, and the sensor outputs the detected information to the skid control ECU as digital pulses.</font><br><div class="full"><br><img src="../../img/x102996e01.png" name="X102996E01" alt="X102996E01" border="1" class="full"></div><br clear="all"></p></li>
+<li><p><font class="ptxt">To detect the rotation direction, the output waves are used to determine the relationship of the pulses that are generated by the 2 Magnetic Resistance Elements (MREs).</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Upon receiving this signal, the sensor IC outputs a forward or backward wave.</font><br><div class="full"><br><img src="../../img/x102079e01.png" name="X102079E01" alt="X102079E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102080e01.png" name="X102080E01" alt="X102080E01" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The frequency of the output pulses is used to detect the vehicle speed. Because the active type sensor outputs digital pulses, it can detect vehicle speeds even when the vehicle is nearly stationary.</font><br><div class="full"><br><img src="../../img/x102081e01.png" name="X102081E01" alt="X102081E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">ABS and EBD</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Based on the signals received from the 4 speed sensors, the skid control ECU calculates the speed of each wheel, and checks wheel slipping conditions.</font><br></p></li>
+<li><p><font class="ptxt">The skid control ECU compares the speed sensor signals of the front and rear, judges the slipping condition of the rear wheel, and operates the EBD.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When a wheel is about to lock, the ABS operation starts in order to regulate the hydraulic pressure at the wheel cylinders while switching between the 3 modes: pressure increase, pressure holding, and pressure reduction.</font><br><div class="full"><br><img src="../../img/x102103e01.png" name="X102103E01" alt="X102103E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102104e01.png" name="X102104E01" alt="X102104E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>EBD Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">EBD Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">EBD Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table><div class="full"><br><img src="../../img/x102105e01.png" name="X102105E01" alt="X102105E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>ABS Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">ABS Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">ABS Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">While the front wheels are in the ABS operation, SREA and SMCF are on. While only rear wheels are in the ABS operation, SREA and SMCF are off.</dd></dl></p></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Multi-terrain ABS</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The skid control ECU calculates the speed and deceleration of each wheel, and checks the wheel slipping condition based on signals from the 4 speed sensors and the yaw rate sensor assembly as well as the engine output information transmitted from the ECM.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">If the wheel is likely to lock, the skid control ECU controls the pressure holding solenoid valve and pressure reduction solenoid valve as multi-terrain ABS operation in the following 3 modes: increase mode, holding mode, and reduction mode.</font><br><div class="full"><br><img src="../../img/x102106e01.png" name="X102106E01" alt="X102106E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102105e01.png" name="X102105E01" alt="X102105E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Multi-terrain ABS Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">Multi-terrain ABS Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">Multi-terrain ABS Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: none"><li class="atten4">While the front wheels are in the multi-terrain ABS operation, SREA and SMCF are on.<br></li><li class="atten4">While only rear wheels are in the multi-terrain ABS operation, SREA and SMCF are off.<br></li></ol></p></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Brake Assist</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">If an emergency braking situation has occurred, it is detected by the skid control ECU based on the vehicle speed signal from the speed sensor, the brake pedal application speed from the master cylinder pressure sensor, and the signal representing the amount of pedal effort. Then, the skid control ECU actuates each solenoid valve. As a result, the pressure from the brake booster accumulator assembly is applied to the wheel cylinders. The accumulator pressure that is applied to the wheel cylinders generates a higher pressure than the master cylinder.</font><br><div class="full"><br><img src="../../img/x102107e01.png" name="X102107E01" alt="X102107E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102108e01.png" name="X102108E01" alt="X102108E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Brake Assist Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">Brake Assist Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">Brake Assist Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">TRC</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The fluid pressure that is generated by the brake booster pump assembly is regulated by the switching solenoid valves and control solenoid valves to the required pressure. Thus, the pressure to the wheel cylinders of the drive wheels is controlled in the following 3 modes: increase mode, holding mode, and reduction mode, to restrain the slippage of the drive wheels.</font><br></p></li>
+<li><p><font class="ptxt">The skid control ECU outputs a TRC operation signal to the ECM. Upon receiving this signal, the ECM effects engine output control.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">If the accumulator pressure drops during this operation, the skid control ECU receives the signals from the accumulator pressure sensor and actuates the brake booster pump assembly to ensure the proper accumulator pressure.</font><br><div class="full"><br><img src="../../img/x102978e01.png" name="X102978E01" alt="X102978E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102108e01.png" name="X102108E01" alt="X102108E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>TRC Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">TRC Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">TRC Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">A-TRC</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Based on the vehicle speed that has been calculated from each speed sensor and the signals of the yaw rate and deceleration sensor, the skid control ECU computes the target control speed.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The skid control ECU compares the target control speed and the wheel speed to determine whether or not slippage exists. Upon detecting slippage, the skid control ECU controls the solenoid valve of the hydraulic brake booster assembly to control the brake fluid pressure that is applied to the slipping wheel. When the wheel speed becomes lower than the target control speed, the skid control ECU stops increasing the brake fluid pressure.</font><br><div class="full"><br><img src="../../img/x102979e01.png" name="X102979E01" alt="X102979E01" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The fluid pressure control of the A-TRC independently controls the brake of each wheel by operating the individual solenoid valves in accordance with the signals received from the skid control ECU. The brake of each wheel is controlled in the following 3 modes: pressure increase, pressure holding, and pressure reduction modes.</font><br><div class="full"><br><img src="../../img/x102108e01.png" name="X102108E01" alt="X102108E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>A-TRC Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">A-TRC Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">A-TRC Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">VSC</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Based on the information provided by various sensors, switches, and the ECM, the skid control ECU determines the vehicle's yaw moment. Then, the skid control ECU controls the fluid pressure that is generated by the brake booster pump assembly and applies it by way of the solenoid valves to the brake wheel cylinder of each wheel in the following 3 modes: pressure increase, pressure holding, and pressure reduction modes. As a result, the tendency of the front wheels or the rear wheels to skid is restrained.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">At this time, the skid control ECU outputs a VSC operation signal to the ECM and the combination meter and causes the buzzer in the combination meter assembly to sound intermittently. Upon receiving this signal, the ECM controls the engine output. The slip indicator light will blink in the combination meter assembly.</font><br><div class="full"><br><img src="../../img/x104058e01.png" name="X104058E01" alt="X104058E01" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">During front wheel skid restraining control, the brakes of the rear wheels and front wheel of the outer side of the turn are applied. Also, depending on whether the brake is on or off and on the condition of the vehicle, there are circumstances in which the brake might not be applied to the wheels even if those wheels are targeted for braking. The diagram below shows the hydraulic circuit in the pressure increase mode, as it restrains a front wheel skid while the vehicle is making a right turn.</font><br><div class="full"><br><img src="../../img/x102297e01.png" name="X102297E01" alt="X102297E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>VSC Operation (Turning Right)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">VSC Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">VSC Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">During rear wheel skid restraining control, the front wheel brake of the outer side of the turn is applied. Also, depending on whether the brake is on or off and on the condition of the vehicle, there are circumstances in which the brake might be applied to the rear brake of the outer side of the turn. The diagram below shows the hydraulic circuit in the pressure increase mode, as it restrains a rear wheel skid while the vehicle is making a right turn.</font><br><div class="full"><br><img src="../../img/x102298e01.png" name="X102298E01" alt="X102298E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>VSC Operation (Turning Right)&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">VSC Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">VSC Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Hill-start Assist Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Based on the information provided by various sensors, switches, and the ECM, the skid control ECU computes the backward movement of the vehicle that occurs when the vehicle starts off on a hill. Then, the skid control ECU controls the fluid pressure that is generated by the pump and pump motor and applies it by way of the solenoid valves to the brake wheel cylinder of each wheel in the following 3 modes: pressure increase, pressure holding, and pressure reduction modes.</font><br></p></li>
+<li><p><font class="ptxt">The skid control ECU determines the state of the backward movement of the vehicle while the driver is attempting to drive uphill, based on the speed sensors and the neutral start switch.</font><br></p></li>
+<li><p><font class="ptxt">The skid control ECU determines the gradient of the hill, the acceleration state of the vehicle, the locked state and the rotation direction of each wheel through the speed sensors and the yaw rate sensor assembly. Then, the skid ECU computes the amount of brake control that will prevent the wheels from locking.</font><br></p></li>
+<li><p><font class="ptxt">During this operation, the skid control ECU outputs a hill-start assist control operation signal to the combination meter. This causes the slip indicator light to blink, sends signals to the stop light control relay which turns on the stop light.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The hill-start assist control operates for approximately five seconds. At this time, the skid control ECU informs the driver by the slow and intermittent sound of the buzzer in the combination meter assembly. After this, the skid control ECU alerts the driver by using the quick and intermittent sound of the buzzer in the combination meter assembly, and gradually releases the brake hydraulic pressure in order to end the hill-start assist control operation.</font><br><div class="full"><br><img src="../../img/x104059e01.png" name="X104059E01" alt="X104059E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102108e01.png" name="X102108E01" alt="X102108E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Hill-start Assist Control Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">Hill-start Assist Control Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">Hill-start Assist Control Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Downhill Assist Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Based on the information provided by various sensors, switches, and the engine ECU, the skid control ECU determines the conditions that enable downhill assist control operation. Then, the skid control ECU controls the fluid pressure that is generated by the brake booster pump assembly and applies it by way of the solenoid valve to the brake wheel cylinder of each wheel in the following 3 modes: pressure increase, pressure holding and pressure reduction modes.</font><br></p></li>
+<li><p><font class="ptxt">The skid control ECU computes the vehicle speed, travel direction, and the gradient of the hill in accordance with the signals that are input by the speed sensor and the yaw rate sensor assembly, and effects brake control to attain the target vehicle speed. The target vehicle speed is determined by the direction of the vehicle.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Downhill Assist Control Target Vehicle Speed&nbsp;
+					</span></caption><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td rowspan="2">Travel Direction<br></td><td>Forward<br></td><td align="center">5 km/h to 7 km/h (3 mph to 4 mph)<br></td></tr><tr><td>Backward<br></td><td align="center">3 km/h to 5 km/h (2 mph to 3 mph)<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">During the downhill assist control operation, the skid control ECU outputs signals to the stop light control relay to cause the stop light to turn on, and to the combination meter to cause the slip indicator light to blink.</font><br><div class="full"><br><img src="../../img/x102982e01.png" name="X102982E01" alt="X102982E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/x102108e01.png" name="X102108E01" alt="X102108E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Downhill Assist Control Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">Downhill Assist Control Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">Downhill Assist Control Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">CRAWL</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Based on the information provided by various sensors, switches, and the ECM, the skid control ECU determines the conditions that enable the CRAWL to operate. The skid control ECU computes the target vehicle speed (approximately 1 km/h to 6 km/h, 1 mph to 3.7 mph) to control the vehicle speed, and the target wheel speeds to control the wheel slipping. The target vehicle speed can be changed using the CRAWL speed selector switch.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When the vehicle speed differs from the target speed, the engine output is regulated. When the wheel speeds differ from the target speeds, the hydraulic brake pressure of the wheels is regulated.</font><br><div class="full"><br><img src="../../img/x104060e01.png" name="X104060E01" alt="X104060E01" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The skid control ECU controls the fluid pressure that is generated by the brake booster pump assembly and applies it by way of the solenoid valves to the brake wheel cylinder of each wheel in the following 3 modes: pressure increase, pressure holding, and pressure reduction modes.</font><br><div class="full"><br><img src="../../img/x102108e01.png" name="X102108E01" alt="X102108E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>CRAWL Operation&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="6%
+
+			"><col align=""></colgroup><colgroup align="" width="14%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td rowspan="2" colspan="4" width="40%
+
+			" align="center">Item<br></td><td rowspan="2" align="center">CRAWL Not Activated<br></td><td colspan="3" width="45%
+
+			" align="center">CRAWL Activated<br></td></tr><tr><td align="center">Increase Mode<br></td><td align="center">Holding Mode<br></td><td align="center">Reduction Mode<br></td></tr><tr><td rowspan="4" colspan="2" width="20%
+
+			">Switching Solenoid Valve<br></td><td align="center">*1<br></td><td align="center">STR<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">Off (Closed)<br></td></tr><tr><td align="center">*2<br></td><td align="center">SREC<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">Off (Open)<br></td></tr><tr><td align="center">*3<br></td><td align="center">SREA<br></td><td align="center">Off (Closed)<br></td><td align="center">On (Open)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*4<br></td><td align="center">SMCF<br></td><td align="center">Off (Open)<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td></tr><tr><td rowspan="12">Control Solenoid Valve<br></td><td rowspan="3">Front Brake LH<br></td><td align="center">*7<br></td><td align="center">SFLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*11<br></td><td align="center">SFLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*c<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Front Brake RH<br></td><td align="center">*8<br></td><td align="center">SFRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*12<br></td><td align="center">SFRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*d<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake LH<br></td><td align="center">*5<br></td><td align="center">SRLH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*9<br></td><td align="center">SRLR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*a<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td rowspan="3">Rear Brake RH<br></td><td align="center">*6<br></td><td align="center">SRRH<br></td><td align="center">Off (Open)<br></td><td align="center">&larr;<br></td><td align="center">On (Closed)<br></td><td align="center">&larr;<br></td></tr><tr><td align="center">*10<br></td><td align="center">SRRR<br></td><td align="center">Off (Closed)<br></td><td align="center">&larr;<br></td><td align="center">&larr;<br></td><td align="center">On (Open)<br></td></tr><tr><td align="center">*b<br></td><td align="center">Wheel Cylinder Pressure<br></td><td align="center">-<br></td><td align="center">Increases<br></td><td align="center">Holds<br></td><td align="center">Reduces<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td colspan="4" width="60%
+
+			">To Brake Master Cylinder Reservoir<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Booster Accumulator Assembly<br></td></tr><tr><td colspan="4" width="40%
+
+			"><img src="../../img/v100137.png" name="V100137" alt="V100137" class="none"><br></td><td colspan="4" width="60%
+
+			">From Brake Master Cylinder<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000630000117step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FAIL-SAFE</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">If a failure occurs in the skid control ECU, sensors, or hydraulic brake booster assembly, the system continues effecting brake control by excluding the failed area and using only the areas that are operating normally.</font><br></p></li></ol><br clear="all"><a name="NM14K0E___00000630000118step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">DIAGNOSIS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">If the skid control ECU detects a malfunction in the brake control system, the warning or indicator lights illuminate. At the same time, a Diagnostic Trouble Code (DTC) is stored in the memory of the skid control ECU.</font><br></p></li>
+<li><p><font class="ptxt">This system has a sensor signal check (test mode) function.</font><br></p></li>
+<li><p><font class="ptxt">For details of DTC and check function, refer to the corresponding Repair Manual for this model.</font><br></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

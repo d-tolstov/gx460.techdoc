@@ -1,0 +1,110 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000045MR001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>PRE-CRASH SAFETY SYSTEM &gt; DETAILS</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000045MR001X_z0"></a><br clear="all"><a name="NM14K0E___00000290000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FUNCTION OF MAIN COMPONENTS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The pre-crash safety system consists of the following parts:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="65%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="35%
+
+			" align="center">Component<br></td><td align="center">Function<br></td></tr><tr><td colspan="2" width="35%
+
+			">Millimeter Wave Radar Sensor Assembly<br></td><td>Radiates millimeter radio wave radar forward, uses the reflected millimeter radio wave for detecting the presence of a vehicle being driven ahead, the vehicle-to-vehicle distance, and the relative speed, and transmits these pieces of information to the driving support ECU assembly.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Speed Sensor<br></td><td>Detects the wheel speed signal and transmits the signal to the skid control ECU.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Brake Actuator Assembly<br>- Skid Control ECU<br></td><td><ol style="list-style-type: disc"><li class="itm">Receives a brake assist standby request signal from the driving support ECU assembly and switches the brake assist to the standby mode. When the driver depresses the brake pedal, it operates the brake assist.<br></li><li class="itm">Even if the driver does not apply the brakes, if the skid control ECU receives a pre-crash brake request signal from the driving support ECU assembly, it applies the brakes.<br></li><li class="itm">Determines that the brakes have been applied suddenly through a signal received from the master cylinder pressure sensor, and outputs a seat belt operation signal to the seat belt control ECU.<br></li><li class="itm">Determines the presence of a front wheel skid tendency or rear wheel skid tendency, and outputs a seat belt operation signal to the seat belt control ECU.<br></li><li class="itm">Transmits a vehicle speed signal to the driving support ECU assembly.<br></li></ol></td></tr><tr><td colspan="2" width="35%
+
+			">Front Seat Outer Belt Assembly<br>- Seat Belt Motor<br></td><td>Retracts the seat belt in accordance with signals received from the seat belt control ECU.<br></td></tr><tr><td rowspan="4">Combination Meter Assembly<br></td><td>PCS Warning Light<br></td><td>Illuminates or blinks to warn the driver in accordance with signals from the seat belt control ECU and the driving support ECU assembly.<br></td></tr><tr><td>Multi-information Display<br></td><td>Displays a warning message to inform or warn the driver of the system condition in accordance with signals from the seat belt control ECU and the driving support ECU assembly.<br></td></tr><tr><td>Master Warning Light<br></td><td>Illuminates to warn the driver in accordance with signals from the seat belt control ECU and the driving support ECU assembly.<br></td></tr><tr><td>Multi Buzzer<br></td><td>Sounds to warn the driver in accordance with signals from the seat belt control ECU and the driving support ECU assembly when the system is malfunctioning.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Steering Angle Sensor<br></td><td>Detects the angle and direction of steering and transmits a signal to the skid control ECU and the driving support ECU assembly.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Yaw Rate Sensor<br></td><td>Detects the yaw rate and lateral/longitudinal deceleration of the vehicle and transmits the signal to the skid control ECU and the driving support ECU assembly.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Seat Belt Control ECU<br></td><td>Receives a seat belt operation request signal from the driving support ECU assembly or skid control ECU and operates the seat belts.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Driving Support ECU Assembly<br></td><td>Makes judgments on whether a collision is unavoidable based on the information received from the millimeter wave radar sensor assembly. It then outputs a seat belt operation signal and brake assist standby request signal if required.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Suspension Control ECU<br></td><td>Sends control signals to the absorber control actuator based on the signals of the driving support ECU assembly.<br></td></tr><tr><td colspan="2" width="35%
+
+			">Pre-crash Brake Off Switch<br></td><td>Stops the pre-crash brake control when the switch is turned on. The PCS warning light illuminates to notify that the pre-crash brake control is off.<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">When the seat belt control ECU is replaced, active test of the seat belt motor must be performed in accordance with the following procedure to check that the motor operates properly:</dd></dl><dl class="reference"><dd class="reference">1. Engine switch is on (IG).</dd></dl><dl class="reference"><dd class="reference">2. Monitor the PCS warning light for at least 3 seconds after turning the engine switch is on (IG). Make sure that the warning light does not remain on.</dd></dl><dl class="reference"><dd class="reference">3. Connect the intelligent tester II to the DLC3 and enter the select active test mode.</dd></dl><dl class="reference"><dd class="reference">4. Perform an active test of the front seat belt motor and check that the motor operates properly. For details, refer to the corresponding Repair Manual for this model.</dd></dl></p></p></li></ol><br clear="all"><a name="NM14K0E___00000290000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATING CONDITION</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Controls on the pre-crash safety system are performed under the following conditions:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="60%
+
+			"><col align=""></colgroup><tr><td align="center">Control<br></td><td align="center">Condition<br></td></tr><tr><td>Pre-crash Seat Belt<br>(Sudden Braking Operation/Front or Rear Wheel Skid Tendency Operation)<br></td><td><ol style="list-style-type: disc"><li class="itm">Front seat belt is buckled.<br></li><li class="itm">Vehicle speed is approx. 30 km/h (20 mph) or above.<br></li><li class="itm">Brakes are suddenly applied, or front or rear wheel skid tendency is detected.<br></li></ol></td></tr><tr><td>Pre-crash Seat Belt<br>(Pre-crash Safety Operation)<br></td><td><ol style="list-style-type: disc"><li class="itm">Front seat belt is buckled.<br></li><li class="itm">Vehicle speed is approx. 5 km/h (3 mph) or above.<br></li><li class="itm">Oncoming vehicle or an obstacle relative speed is approx. 30 km/h (20 mph) or above.<br></li></ol></td></tr><tr><td>Pre-crash Brake Assist<br></td><td><ol style="list-style-type: disc"><li class="itm">Vehicle speed is approx. 30 km/h (20 mph) or above.<br></li><li class="itm">Oncoming vehicle or an obstacle relative speed is approx. 30 km/h (20 mph) or above.<br></li><li class="itm">Brake pedal is depressed.<br></li></ol></td></tr><tr><td>Pre-crash Brake<br></td><td><ol style="list-style-type: disc"><li class="itm">Pre-crash brake off switch is not pressed.<br></li><li class="itm">Vehicle speed is approx. 15 km/h (10 mph) or above.<br></li><li class="itm">Oncoming vehicle or an obstacle relative speed is approx. 15 km/h (10 mph) or above.<br></li></ol></td></tr><tr><td>AVS<br></td><td><ol style="list-style-type: disc"><li class="itm">Vehicle speed is approx. 5 km/h (3 mph) or above.<br></li><li class="itm">Oncoming vehicle or an obstacle relative speed is approx. 30 km/h (20 mph) or above.<br></li></ol></td></tr></table></p></li></ol><br clear="all"><a name="NM14K0E___00000290000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">SYSTEM CONTROL</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Front or Rear Wheel Skid Tendency Operation</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The front or rear wheel skid tendency operation is performed as follows:</font><br><div class="full"><br><img src="../../img/y106256e01.png" name="Y106256E01" alt="Y106256E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="85%
+
+			"><col align=""></colgroup><tr><td align="center">1)<br></td><td>While the vehicle is traveling at approx. 30 km/h (20 mph) or above, the skid control ECU determines the front or rear wheel skid tendency condition based on the signals from the steering angle sensor, yaw rate sensor and speed sensors.<br></td></tr><tr><td align="center">2)<br></td><td>The skid control ECU outputs a seat belt operation request signal to the seat belt control ECU.<br></td></tr><tr><td align="center">3)<br></td><td>The seat belt control ECU determines the front seat belt motor operation conditions based on this signal and the seat belt buckle switch signal. Then, it retracts the seat belts by operating the seat belt motors.<br></td></tr><tr><td align="center">4)<br></td><td>The seat belts return to a normal state when the relevant conditions of the vehicle have stabilized.<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Sudden Braking Operation</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The sudden braking operation is performed as follows:</font><br><div class="full"><br><img src="../../img/y106255e01.png" name="Y106255E01" alt="Y106255E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="85%
+
+			"><col align=""></colgroup><tr><td align="center">1)<br></td><td>While the vehicle is traveling at approx. 30 km/h (20 mph) or above, the skid control ECU can determine a sudden braking condition based on the signals from the master cylinder pressure sensor, wheel cylinder pressure sensors, stop light switch and speed sensors.<br></td></tr><tr><td align="center">2)<br></td><td>At this time, the skid control ECU outputs a seat belt operation request signal to the seat belt control ECU.<br></td></tr><tr><td align="center">3)<br></td><td>The seat belt control ECU determines the front seat belt motor operation conditions based on this signal and the seat belt buckle switch signal. Then, it retracts the seat belts by operating the seat belt motors.<br></td></tr><tr><td align="center">4)<br></td><td>The seat belts return to a normal state when the brake pedal is released.<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Pre-crash Safety Operation</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The diagram below shows the flow of the activation of the systems during a pre-crash safety operation:</font><br><div class="full"><br><img src="../../img/y105949e02.png" name="Y105949E02" alt="Y105949E02" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The pre-crash safety operation is performed as follows:</font><br><div class="full"><br><img src="../../img/y106254e01.png" name="Y106254E01" alt="Y106254E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="85%
+
+			"><col align=""></colgroup><tr><td align="center">1)<br></td><td>The driving support ECU assembly determines that the possibility of a collision is high based on the signals received from the millimeter wave radar sensor assembly, steering angle sensor, speed sensors, and yaw rate sensor.<br></td></tr><tr><td align="center">2)<br></td><td>At this time, the driving support ECU assembly sends the following signals:<br><ol style="list-style-type: disc"><li class="itm">A BRAKE! warning display request signal is sent to the multi-information display.<br></li><li class="itm">A warning buzzer request signal is sent to the skid control ECU.<br></li><li class="itm">An AVS control operation request signal is sent to the suspension control ECU.<br></li></ol></td></tr><tr><td align="center">3)<br></td><td>Upon receiving this signal, the skid control ECU sets the brake assist to the standby mode, and the absorber control ECU optimizes the amount of damping of the absorber control actuators.<br></td></tr><tr><td align="center">4)<br></td><td>The driving support ECU assembly determines that an unavoidable collision condition exists based on the signals received from the millimeter wave radar sensor assembly, speed sensors, steering angle sensor, and yaw rate sensor.<br></td></tr><tr><td align="center">5)<br></td><td>At this time, the driving support ECU assembly outputs a seat belt operation request signal to the seat belt control ECU, a brake request signal to the skid control ECU.<br></td></tr><tr><td align="center">6)<br></td><td>The seat belt control ECU determines the front seat belt motor operation condition based on this signal and the seat belt buckle switch signal, and retracts the seat belts by operating the front seat belt motors.<br></td></tr><tr><td align="center">7)<br></td><td>If no collision occurs, the seat belts and the brake assist will return to their normal states.<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000290000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CONSTRUCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Millimeter Wave Radar Sensor Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The millimeter wave radar sensor assembly consists of a millimeter wave radar circuit, signal processing circuit, and CPU.</font><br></p></li>
+<li><p><font class="ptxt">For details on the millimeter wave radar sensor assembly, see the Dynamic Radar Cruise Control System.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Combination Meter Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The combination meter assembly provides a master warning light, PCS warning light, multi buzzer, and multi-information display to warn and indicate in the pre-crash safety system.</font><br></p></li>
+<li><p><font class="ptxt">If the driving support ECU assembly determines that the possibility of a collision is high, it sends a signal to the combination meter assembly. Upon receiving this signal, the combination meter assembly indicates a warning on the multi-information display. Details are indicated below:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="40%
+
+			" align="center">Multi-information Display<br></td><td align="center">Details<br></td><td align="center">PCS Warning Light<br></td><td align="center">Skid Control Buzzer Assembly<br></td></tr><tr><td align="center"><img src="../../img/y104240.png" name="Y104240" alt="Y104240" class="none"><br></td><td>Displays<br></td><td><ol style="list-style-type: disc"><li class="itm">The driving support ECU assembly has determined that the possibility of a collision is high.<br></li><li class="itm">The driving support ECU assembly has determined that the possibility of a collision is even higher than the above.<br></li></ol></td><td align="center">Blinks<br></td><td align="center">Intermittently Sounds<br></td></tr></table></p></li>
+<li><p><font class="ptxt">2 types of warning messages are used for the pre-crash safety system, as described below. The pre-crash safety system will not operate when these messages appear in the combination meter assembly:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="27%
+
+			"><col align=""></colgroup><colgroup align="" width="12%
+
+			"><col align=""></colgroup><colgroup align="" width="12%
+
+			"><col align=""></colgroup><colgroup align="" width="12%
+
+			"><col align=""></colgroup><colgroup align="" width="12%
+
+			"><col align=""></colgroup><tr><td align="center">Multi-information Display<br></td><td align="center">Detail<br></td><td align="center">Master Warning Light<br></td><td align="center">PCS Warning Light<br></td><td align="center">Multi Buzzer<br></td><td align="center">Diagnostic Trouble Code (DTC)<br></td></tr><tr><td align="center"><img src="../../img/y104241.png" name="Y104241" alt="Y104241" class="none"><br></td><td>This message appears when the seat belt control ECU and the driving support ECU assembly detects a system malfunction.<br></td><td align="center">Illuminates<br></td><td align="center">Blinks<br></td><td align="center">Sounds Once<br></td><td align="center">○<br></td></tr><tr><td align="center"><img src="../../img/y104242.png" name="Y104242" alt="Y104242" class="none"><br></td><td>This message appears when the seat belt control ECU determines the following conditions:<br><ol style="list-style-type: disc"><li class="itm">Dirty millimeter wave radar sensor assembly<br></li><li class="itm">Poor weather condition<br></li><li class="itm">Overheated seat belt control ECU.<br></li></ol>After these conditions have been resolved, the system will operate normally.<br></td><td align="center">-<br></td><td align="center">Illuminates<br></td><td align="center">-<br></td><td align="center">-<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000290000015step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">DIAGNOSIS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Initial Check</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The seat belt control ECU performs an initial check on the system for approximately 3 seconds after the engine switch has been turned on (IG).</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">DTC Output</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">If the seat belt control ECU detects a malfunction in the pre-crash safety system, it stores a 5-digit DTC in memory.</font><br></p></li>
+<li><p><font class="ptxt">The 5-digit DTC can be read by connecting an intelligent tester II to the DLC3.</font><br></p></li></ol></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

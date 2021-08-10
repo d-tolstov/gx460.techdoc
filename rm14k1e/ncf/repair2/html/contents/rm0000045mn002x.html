@@ -1,0 +1,138 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000045MN002X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>AIRBAG SYSTEM &gt; DETAILS</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000045MN002X_z0"></a><br clear="all"><a name="NM14K0E___00000250000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FUNCTION OF MAIN COMPONENTS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The main components in the airbag system have the following functions:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="30%
+
+			" align="center">Component<br></td><td align="center">Function<br></td></tr><tr><td colspan="2" width="30%
+
+			">Center Airbag Sensor Assembly<br></td><td><ol style="list-style-type: disc"><li class="itm">The center airbag sensor assembly receives signals from the deceleration sensor and safing sensor built into the center airbag sensor assembly and one of the front airbag sensors, determines whether the steering pad (driver side squib), front passenger airbag, driver and front passenger knee airbag, front and rear seat outer belt assembly (pretensioner squib) should be activated, and diagnoses system malfunctions.<br></li><li class="itm">The center airbag sensor assembly receives signals from the deceleration sensor and the safing sensor built into the center airbag sensor assembly, the side airbag sensor assembly, rear airbag sensor, rear floor side airbag sensor, determines whether the front and rear seat side airbag, the curtain shield airbag, front and rear seat outer belt assembly (pretensioner squib) should be activated, and diagnosis system malfunctions.<br></li><li class="itm">The center airbag sensor assembly sends the airbag deployment signal to the ECM through the Controller Area Network (CAN) to operate the fuel pump control.<br></li><li class="itm">The center airbag sensor assembly sends the airbag deployment signal to the main body ECU to operate the collision door lock release function.<br></li></ol></td></tr><tr><td colspan="2" width="30%
+
+			">Steering Pad (Driver Side Squib)<br></td><td rowspan="7">These consist of an inflator, a bag, and so on. The inflator deploys gas in accordance with an expansion signal from the center airbag sensor assembly and deploys the bag.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Front Passenger Airbag Assembly<br></td></tr><tr><td colspan="2" width="30%
+
+			">Driver Knee Airbag<br></td></tr><tr><td colspan="2" width="30%
+
+			">Front Passenger Knee Airbag<br></td></tr><tr><td colspan="2" width="30%
+
+			">Front Seat Side Airbag Assembly<br></td></tr><tr><td colspan="2" width="30%
+
+			">Rear Seat Side Airbag Assembly<br></td></tr><tr><td colspan="2" width="30%
+
+			">Curtain Shield Airbag Assembly<br></td></tr><tr><td colspan="2" width="30%
+
+			">Front Airbag Sensor<br></td><td>The front airbag sensor uses an electrical type deceleration sensor. Based on the deceleration of the vehicle during a frontal collision, a distortion is created in the sensor and converted into an electrical signal. Accordingly, the extent of the initial collision can be detected in detail.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Side Airbag Sensor Assembly<br></td><td rowspan="2">A deceleration sensor is enclosed in the side airbag sensor and rear airbag sensor. Based on the deceleration of the vehicle during a side or rear side collision, a distortion is created in the sensor and converted into an electrical signal.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Rear Airbag Sensor<br></td></tr><tr><td colspan="2" width="30%
+
+			">Rear Floor Side Airbag Sensor<br></td><td>Based on the deceleration of the vehicle during a rear side collision, a distortion is created in the sensor and converted into an electrical signal. This sensor functions as a safing sensor to detect the deployment of the SRS curtain shield airbag.<br></td></tr><tr><td rowspan="2">Combination Meter Assembly<br></td><td>SRS Warning Light<br></td><td>The SRS warning light turns on to alert the driver when the center airbag sensor assembly detects a malfunction in the airbag system.<br></td></tr><tr><td>Multi-information Display<br></td><td>The multi-information display alerts the driver when the center airbag sensor assembly detects a malfunction in the airbag system.<br></td></tr></table></p></li></ol><br clear="all"><a name="NM14K0E___00000250000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATING CONDITION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">If the impact of a collision is greater than the specified value, the SRS is activated automatically. The center airbag sensor assembly includes the safing sensor and deceleration sensor. The safing sensor is designed to turn on at a lower deceleration rate than the deceleration sensor.</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">In case of a frontal collision, the center airbag sensor assembly determines whether airbag deployment or pretensioner activation is necessary based on signals from the deceleration sensor and the front airbag sensor. If the safing sensor turns on simultaneously, current flows to the squibs to deploy the SRS components as shown in the illustration below. However, a deployment ignition signal may be output with the deceleration sensor on signal even without a signal from the front airbag sensor.</font><br><div class="full"><br><img src="../../img/y105267e01.png" name="Y105267E01" alt="Y105267E01" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">In case of a side collision, the center airbag sensor assembly determines whether airbag deployment is necessary based on signals from the side airbag sensor assembly. If the safing sensor turn on simultaneously with the side airbag sensor assembly, current flows to the squibs to deploy the SRS as shown in the illustration below:</font><br><div class="full"><br><img src="../../img/y105262e01.png" name="Y105262E01" alt="Y105262E01" border="1" class="full"></div><br clear="all"></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">In case of a rear side collision, the center airbag sensor assembly determines whether airbag deployment is necessary based on signals from the rear airbag sensor. If the safing sensor and rear floor side airbag sensor turn on simultaneously with the rear airbag sensor, current flows to the squib to deploy the SRS as shown in the illustration below:</font><br><div class="full"><br><img src="../../img/y105295e01.png" name="Y105295E01" alt="Y105295E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000250000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CONSTRUCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Driver Airbag Assembly</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The inflator and bag are built into the steering pad.</font><br><div class="full"><br><img src="../../img/y105279e01.png" name="Y105279E01" alt="Y105279E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Bag<br></td><td align="center">*2<br></td><td>Inflator<br></td></tr><tr><td align="center">*a<br></td><td>A - A Cross Section<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Front Passenger Airbag Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The front passenger airbag assembly is located in the upper section of the instrument panel of the front passenger seat.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The front passenger airbag assembly consists of an inflator and a bag.</font><br><div class="full"><br><img src="../../img/y105940e01.png" name="Y105940E01" alt="Y105940E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Inflator<br></td><td align="center">*2<br></td><td>Bag<br></td></tr><tr><td align="center">*a<br></td><td>A - A Cross Section<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Driver Side Knee Airbag Assembly and Front Passenger Side Knee Airbag Assembly</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The driver and front passenger side knee airbag assemblies consist of an airbag door, an inflator, and a bag.</font><br><div class="full"><br><img src="../../img/y105941e01.png" name="Y105941E01" alt="Y105941E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Inflator<br></td><td align="center">*2<br></td><td>Door<br></td></tr><tr><td align="center">*3<br></td><td>Bag<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>A - A Cross Section<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Front Seat Side Airbag Assembly</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Front seat side airbag assemblies are installed in the seat backs of the driver seat and the front passenger seat. Each front seat side airbag assembly is a one-piece design, consisting of an inflator and a bag.</font><br><div class="full"><br><img src="../../img/y104715e01.png" name="Y104715E01" alt="Y104715E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Bag<br></td><td align="center">*2<br></td><td>Inflator<br></td></tr><tr><td align="center">*a<br></td><td>A - A Cross Section<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Rear Seat Side Airbag Assembly</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Rear seat side airbag assemblies are installed in the seat backs of the rear seats. Each rear seat side airbag assembly is a one-piece design, consisting of an inflator and a bag.</font><br><div class="full"><br><img src="../../img/y105942e01.png" name="Y105942E01" alt="Y105942E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Inflator<br></td><td align="center">*2<br></td><td>Bag<br></td></tr><tr><td align="center">*a<br></td><td>A - A Cross Section<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Curtain Shield Airbag Assembly</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Curtain shield airbag assemblies are installed in the area close to the sides of the headliner. Each SRS curtain shield airbag assembly is a one-piece design, consisting of an inflator and a bag.</font><br><div class="full"><br><img src="../../img/y105943e01.png" name="Y105943E01" alt="Y105943E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Inflator<br></td><td align="center">*2<br></td><td>Bag<br></td></tr><tr><td align="center">*a<br></td><td>A - A Cross Section<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000250000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">SYSTEM CONTROL</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Airbag for Frontal Collision</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">There are 3 types of airbags for frontal collisions: steering pad, front passenger, driver and front passenger knee airbags. These airbags deploy simultaneously.</font><br><div class="full"><br><img src="../../img/y105269e01.png" name="Y105269E01" alt="Y105269E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li>
+<li><p><font class="ptxt">Airbag for Side/Rear Side Collision</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The airbag for side collisions contains 2 types of airbags: front seat side and curtain shield airbags. These airbags deploy simultaneously. The airbag for rear side collisions contains only the curtain shield airbags.</font><br><ol style="list-style-type: disc"><li class="itm">With the airbag for side collisions, if the side airbag sensor assembly detects an impact, it informs the center airbag sensor assembly, which causes the front seat side and curtain shield airbag to be deployed simultaneously.<br></li><br clear="all"><li class="itm">With the rear airbag for side collisions, if the rear airbag sensor and rear floor side airbag sensor detect an impact, they inform the center airbag sensor assembly, which causes the curtain shield airbag to be deployed.<br><br clear="all"><div class="full"><br><img src="../../img/y105944e02.png" name="Y105944E02" alt="Y105944E02" border="1" class="full"></div><br clear="all"><br clear="all"><div class="full"><br><img src="../../img/y105270e02.png" name="Y105270E02" alt="Y105270E02" border="1" class="full"></div><br clear="all"></li></ol></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000250000015step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">DIAGNOSIS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Summary</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">If the center airbag sensor assembly detects a malfunction in the SRS airbag system, the center airbag sensor assembly stores the malfunction data in memory, in addition to illuminating the SRS warning light.</font><br><ol style="list-style-type: disc"><br clear="all"><li class="itm">The center airbag sensor assembly outputs the malfunction data as 5-digit Diagnostic Trouble Codes (DTCs) to an intelligent tester II or the SRS warning light.<br><br clear="all"><div class="full"><br><img src="../../img/y101206e01.png" name="Y101206E01" alt="Y101206E01" border="1" class="full"></div><br clear="all"></li></ol></p></li></ol></p></li>
+<li><p><font class="ptxt">SRS Airbag System DTCs</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The 5-digit DTCs can be read after connecting a intelligent tester II to the DLC3.</font><br></p></li>
+<li><p><font class="ptxt">If the SRS airbag deploys, the center airbag sensor assembly will turn on the SRS warning light. However, in contrast to the ordinary diagnosis function, a DTC will not be stored. The SRS warning light cannot be turned off. It is necessary to replace the center airbag sensor assembly with a new one.</font><br></p></li></ol></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

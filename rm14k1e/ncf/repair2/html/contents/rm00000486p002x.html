@@ -1,0 +1,204 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM00000486P002X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>FOUR WHEEL DRIVE CONTROL SYSTEM &gt; DETAILS</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><br clear="all" class="beforePng"><a name="RM00000486P002X_z0"></a><br clear="all"><a name="NM14K0E___00000470000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FUNCTION OF MAIN COMPONENTS</td></tr></table><font class="ptxt"></font><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="60%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="40%
+
+			" align="center">Component<br></td><td align="center">Function<br></td></tr><tr><td rowspan="5">Transfer Shift Actuator Assembly<br></td><td>H-L Shift Motor<br></td><td>Switches the transfer gear ratio between high and low in accordance with signals from the 4WD control ECU.<br></td></tr><tr><td>H-L Limit Switch<br></td><td>Detects the position of the H-L shift motor and transmits a signal to the 4WD control ECU.<br></td></tr><tr><td>Center Differential Lock Shift Motor<br></td><td>Switches the center differential between free and lock in accordance with signals from the 4WD control ECU.<br></td></tr><tr><td>Center Differential Lock Limit Switch<br></td><td>Detects the position of the center differential lock shift motor and transmits a signal to the 4WD control ECU.<br></td></tr><tr><td>Center Differential Lock Position Switch<br></td><td>Detects the lock position of the center differential and transmits a signal to the 4WD control ECU and so on.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Transfer Position Switch<br></td><td>Switches the transfer gear ratio between high and low and transmits a signal to the 4WD control ECU.<br></td></tr><tr><td colspan="2" width="40%
+
+			">Center Differential Lock Switch<br></td><td>Switches the center differential between free and lock and transmits a signal to the 4WD control ECU.<br></td></tr><tr><td colspan="2" width="40%
+
+			">4WD Control ECU<br></td><td>Controls each shift motor in response to a signal from each switch.<br></td></tr><tr><td colspan="2" width="40%
+
+			">ECM<br></td><td>Transmits a shift position signal to the 4WD control ECU via CAN.<br></td></tr><tr><td rowspan="4">Combination Meter Assembly<br></td><td>4LO Indicator Light<br></td><td><ol style="list-style-type: disc"><li class="itm">Blinks while switching the transfer gear ratio between high and low, and turns on when in low.<br></li><li class="itm">Blinks when the switching conditions are not met while switching the transfer gear ratio between high and low.<br></li></ol></td></tr><tr><td>Center Differential Lock Indicator Light<br></td><td><ol style="list-style-type: disc"><li class="itm">Blinks while switching the center differential between free and lock, and turns on when in lock.<br></li><li class="itm">Blinks when the switching conditions are not met while switching the center differential between free and lock.<br></li></ol></td></tr><tr><td>VSC OFF Indicator Light<br></td><td>Turns on in accordance with the drive mode when VSC function is not operating.<br></td></tr><tr><td>Multi Buzzer<br></td><td>Sounds when the switching conditions are not met while switching the drive mode.<br></td></tr></table><br clear="all"><a name="NM14K0E___00000470000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATING CONDITION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">4 Drive Mode</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The drive mode switching pattern of the 4WD system is as shown in the illustration below:</font><br><div class="full"><br><img src="../../img/x102268e01.png" name="X102268E01" alt="X102268E01" border="1" class="full"></div><br clear="all"></p></li>
+<li><p><font class="ptxt">The center differential can be switched between free and lock (switching patterns A to D) when the vehicle is running. However, the center differential should not be switched from free to lock when the vehicle is turning or the tires are spinning.</font><br></p></li>
+<li><p><font class="ptxt">The transfer gear ratio can be switched between high and low (switching patterns E to H) only when the vehicle is stationary and the shift lever is in N.</font><br></p></li>
+<li><p><font class="ptxt">TRC or VSC function in the brake control system may be stopped, depending on the drive mode. For details, see the Brake Control/Dynamic Control Systems section.</font><br></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000470000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CONSTRUCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Transfer Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">A planetary gear unit is used in the reduction mechanism.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The center differential uses a TORSEN* LSD. As a result, this LSD ensures the proper torque distribution during acceleration and high-speed driving.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: TORSEN is a registered trademark of JTEKT Corporation.</dd></dl></p><div class="full"><br><img src="../../img/x102231e01.png" name="X102231E01" alt="X102231E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Transfer Input Shaft<br></td><td align="center">*2<br></td><td>Transfer Low Planetary Gear Assembly<br></td></tr><tr><td align="center">*3<br></td><td>Center Differential<br></td><td align="center">*4<br></td><td>Transfer Rear Output Shaft<br></td></tr><tr><td align="center">*5<br></td><td>No. 2 Transfer Gear Shift Fork<br></td><td align="center">*6<br></td><td>Center Differential Lock Fork Sub-assembly<br></td></tr><tr><td align="center">*7<br></td><td>Transfer Front Output Shaft<br></td><td align="center">*8<br></td><td>Transfer Front Drive Chain<br></td></tr><tr><td align="center">*9<br></td><td>Transfer Shift Actuator Assembly<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Transfer Low Planetary Gear Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">A transfer low planetary gear assembly is used on the planetary gear unit to switch the transfer gear ratio between high and low.</font><br></p></li>
+<li><p><font class="ptxt">The transfer low planetary gear assembly consists of the planetary sun gear, 4 planetary pinion gears, planetary ring gear, and planetary carrier.</font><br></p></li>
+<li><p><font class="ptxt">The planetary sun gear is integrated with the transfer input shaft. A transfer clutch hub spline piece is fitted to the rear of the planetary sun gear.</font><br></p></li>
+<li><p><font class="ptxt">4 planetary pinion gears are fitted to the planetary carrier. Each pinion gear shaft is fixed to the planetary carrier. A transfer low planetary spline piece is fitted to the rear of the planetary carrier.</font><br></p></li>
+<li><p><font class="ptxt">The planetary ring gear is fixed to the front transfer case and its internal teeth mesh with the planetary pinion gears.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">In this planetary gear unit, the power transmission route is switched in accordance with the movement of the transfer high and low clutch sleeve. The input power from the transfer input shaft is transmitted to the center differential case via the transfer high and low clutch sleeve.</font><br><div class="full"><br><img src="../../img/x102232e01.png" name="X102232E01" alt="X102232E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Transfer Input Shaft<br></td><td align="center">*2<br></td><td>Planetary Sun Gear<br></td></tr><tr><td align="center">*3<br></td><td>Planetary Ring Gear<br></td><td align="center">*4<br></td><td>Planetary Carrier<br></td></tr><tr><td align="center">*5<br></td><td>Transfer Low Planetary Spline Piece<br></td><td align="center">*6<br></td><td>Transfer High and Low Clutch Sleeve<br></td></tr><tr><td align="center">*7<br></td><td>Transfer Clutch Hub Spline Piece<br></td><td align="center">*8<br></td><td>Center Differential Case<br></td></tr><tr><td align="center">*9<br></td><td>Planetary Pinion Gear<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Center Differential</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The center differential uses a TORSEN* LSD. Also, a mechanism is used to switch the center differential between free and lock.</font><br></p></li>
+<li><p><font class="ptxt">The TORSEN* LSD is a torque-sensing LSD. It generates a limited-differential torque in proportion to the drive torque, and instantly changes the front and rear torque distribution.</font><br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: TORSEN is a registered trademark of JTEKT Corporation.</dd></dl></p></p></li>
+<li><p><font class="ptxt">The torque distribution during straightline driving is 40/60 (front/rear), which is helpful for an appropriate steering response during the initial stage of a turn. During the acceleration stage of a turn, the torque distribution increases in the rear wheels.</font><br></p></li>
+<li><p><font class="ptxt">This center differential consists of a center differential case, sun gear, ring gear, coupling, 8 pinion gears, clutch plates, and planetary carrier.</font><br></p></li>
+<li><p><font class="ptxt">The drive torque is input to the center differential case.</font><br></p></li>
+<li><p><font class="ptxt">The center differential case is connected with the planetary carrier.</font><br></p></li>
+<li><p><font class="ptxt">The sun gear is connected to the front driver sprocket (in the front wheel output side) through the transfer clutch hub and transfer front drive spline piece.</font><br></p></li>
+<li><p><font class="ptxt">The ring gear is connected to the transfer rear output shaft (in the rear wheel output side) through the coupling.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The center differential is switched between free and lock in accordance with the movement of the front drive clutch sleeve.</font><br><div class="full"><br><img src="../../img/x102233e01.png" name="X102233E01" alt="X102233E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Case<br></td><td align="center">*2<br></td><td>Ring Gear<br></td></tr><tr><td align="center">*3<br></td><td>Pinion Gear<br></td><td align="center">*4<br></td><td>Front Drive Clutch Sleeve<br></td></tr><tr><td align="center">*5<br></td><td>Planetary Carrier<br></td><td align="center">*6<br></td><td>Front Drive Sprocket<br></td></tr><tr><td align="center">*7<br></td><td>Transfer Front Drive Spline Piece<br></td><td align="center">*8<br></td><td>No. 4 Clutch Plate<br></td></tr><tr><td align="center">*9<br></td><td>Transfer Clutch Hub<br></td><td align="center">*10<br></td><td>No. 3 Clutch Plate<br></td></tr><tr><td align="center">*11<br></td><td>No. 2 Clutch Plate<br></td><td align="center">*12<br></td><td>Coupling<br></td></tr><tr><td align="center">*13<br></td><td>Sun Gear<br></td><td align="center">*14<br></td><td>Transfer Rear Output Shaft<br></td></tr><tr><td align="center">*15<br></td><td>No. 1 Clutch Plate<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Transfer Shift Actuator Assembly</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The transfer shift actuator assembly consists of the high-low switching mechanism (to switch the transfer gear ratio) and the free-lock switching mechanism (to switch the center differential lock).</font><br><div class="full"><br><img src="../../img/x102234e01.png" name="X102234E01" alt="X102234E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Lock Shift Fork Shaft<br></td><td align="center">*2<br></td><td>H-L Shift Fork Shaft<br></td></tr><tr><td align="center">*a<br></td><td>High-low Switching Mechanism (to Switch Transfer Gear Ratio)<br></td><td align="center">*b<br></td><td>Free-lock Switching Mechanism (to Switch Center Differential Lock)<br></td></tr></table><div class="full"><br><img src="../../img/x102235e01.png" name="X102235E01" alt="X102235E01" border="1" class="full"></div><br clear="all"><ol style="list-style-type: disc"><li class="itm">High-low Switching Mechanism<br></li><ol style="list-style-type: disc"><li class="itm">By rotating the H-L shift motor clockwise or counterclockwise in accordance with a signal from the 4WD control ECU, the H-L shift fork shaft is transferred to switch the transfer gear ratio between high and low.<br></li><li class="itm">The drive mechanism for switching the transfer gear ratio between high and low consists of an H-L shift motor, H-L limit switch, and H-L shift fork shaft.<br></li><li class="itm">The H-L limit switch detects the H-L shift motor position.<br></li></ol></ol><div class="full"><br><img src="../../img/x102236e01.png" name="X102236E01" alt="X102236E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>H-L Limit Switch<br></td><td align="center">*2<br></td><td>H-L Shift Fork Shaft<br></td></tr><tr><td align="center">*3<br></td><td>H-L Shift Motor<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>Low Side<br></td><td align="center">*b<br></td><td>High Side<br></td></tr></table><div class="full"><br><img src="../../img/x102237e01.png" name="X102237E01" alt="X102237E01" border="1" class="full"></div><br clear="all"><ol style="list-style-type: disc"><li class="itm">Free-lock Switching Mechanism<br></li><ol style="list-style-type: disc"><li class="itm">By rotating the center differential lock shift motor clockwise or counterclockwise in accordance with a signal from the 4WD control ECU, the center differential lock shift fork shaft is transferred to switch the center differential between free and lock.<br></li><li class="itm">The drive mechanism for switching the center differential between free and lock consists of a center differential lock shift motor, center differential lock limit switch, center differential lock position switch, and center differential lock shift fork shaft. <br></li><li class="itm">The center differential lock limit switch detects the center differential lock shift motor position.<br></li><li class="itm">The center differential lock position switch detects the lock position of the center differential.<br></li></ol></ol><div class="full"><br><img src="../../img/x102238e01.png" name="X102238E01" alt="X102238E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Lock Limit Switch<br></td><td align="center">*2<br></td><td>Center Differential Lock Shift Fork Shaft<br></td></tr><tr><td align="center">*3<br></td><td>Center Differential Lock Shift Motor<br></td><td align="center">*4<br></td><td>Center Differential Lock Position Switch<br></td></tr><tr><td align="center">*a<br></td><td>Lock Side<br></td><td align="center">*b<br></td><td>Free Side<br></td></tr></table><div class="full"><br><img src="../../img/x102239e01.png" name="X102239E01" alt="X102239E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Transfer Position Switch</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Operating the transfer position switch will switch the transfer gear ratio between high and low.</font><br><div class="full"><br><img src="../../img/x102895e01.png" name="X102895E01" alt="X102895E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Transfer Position Switch<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Center Differential Lock Switch</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Operating the push type center differential lock switch will switch the center differential between free and lock.</font><br><div class="full"><br><img src="../../img/x102248e01.png" name="X102248E01" alt="X102248E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Lock Switch<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___00000470000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">High-low Switching of Transfer Gear Ratio</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">High Position</font><br><ol style="list-style-type: disc"><li class="itm">In the high position, the internal gear teeth of the transfer high and low clutch sleeve mesh with the transfer clutch hub spline piece.<br></li><li class="itm">Also, the transfer high and low clutch sleeve is connected to the center differential case.<br></li><li class="itm">The rotation of the transfer input shaft is transmitted to the planetary sun gear, transfer clutch hub spline piece, transfer high and low clutch sleeve, and the differential case.<br></li></ol><div class="full"><br><img src="../../img/x102242e01.png" name="X102242E01" alt="X102242E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Planetary Sun Gear<br></td><td align="center">*2<br></td><td>Planetary Pinion Gear<br></td></tr><tr><td align="center">*3<br></td><td>Planetary Ring Gear<br></td><td align="center">*4<br></td><td>Planetary Carrier<br></td></tr><tr><td align="center">*5<br></td><td>Transfer High and Low Clutch Sleeve<br></td><td align="center">*6<br></td><td>Transfer Input Shaft<br></td></tr><tr><td align="center">*7<br></td><td>Transfer Clutch Hub Spline Piece<br></td><td align="center">*8<br></td><td>Center Differential Case<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Low Position</font><br><ol style="list-style-type: disc"><li class="itm">In the low position, the external teeth of the transfer high and low clutch sleeve mesh with the transfer low planetary spline piece.<br></li><li class="itm">Also, the transfer high and low clutch sleeve is connected to the center differential case. <br></li><li class="itm">The rotation of the transfer input shaft is transmitted in a reduced form to the planetary sun gear, planetary pinion gears, planetary pinion gear shafts, planetary carrier, transfer low planetary spline piece, transfer high and low clutch sleeve, and center differential case.<br></li></ol><div class="full"><br><img src="../../img/x102243e01.png" name="X102243E01" alt="X102243E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Planetary Sun Gear<br></td><td align="center">*2<br></td><td>Planetary Pinion Gear<br></td></tr><tr><td align="center">*3<br></td><td>Planetary Ring Gear<br></td><td align="center">*4<br></td><td>Planetary Carrier<br></td></tr><tr><td align="center">*5<br></td><td>Transfer Low Planetary Spline Piece<br></td><td align="center">*6<br></td><td>Transfer High and Low Clutch Sleeve<br></td></tr><tr><td align="center">*7<br></td><td>Transfer Input Shaft<br></td><td align="center">*8<br></td><td>Center Differential Case<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Free-lock Switching of Center Differential</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Lock Position</font><br><ol style="list-style-type: none"><li class="itm">In the lock position, the front drive clutch sleeve connects the center differential case and the transfer front drive spline piece to set the center differential to lock.<br></li></ol><div class="full"><br><img src="../../img/x102244e01.png" name="X102244E01" alt="X102244E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Case<br></td><td align="center">*2<br></td><td>Front Drive Clutch Sleeve<br></td></tr><tr><td align="center">*3<br></td><td>Transfer Front Drive Spline Piece<br></td><td align="center">*4<br></td><td>Front Drive Sprocket<br></td></tr><tr><td align="center">*5<br></td><td>Transfer Rear Output Shaft<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>Input Torque<br></td><td align="center">*b<br></td><td>Front Output Torque<br></td></tr><tr><td align="center">*c<br></td><td>Rear Output Torque<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Operation of Center Differential</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Normal Driving Operation</font><br><ol style="list-style-type: none"><li class="itm">During normal driving (front wheel speed = rear wheel speed), the drive torque that is input by the differential case is transmitted (front: 40/rear: 60) as shown below, without involving the LSD function.<br></li></ol><div class="full"><br><img src="../../img/x102245e01.png" name="X102245E01" alt="X102245E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Case<br></td><td align="center">*2<br></td><td>Pinion Gear<br></td></tr><tr><td align="center">*3<br></td><td>Ring Gear<br></td><td align="center">*4<br></td><td>Planetary Carrier<br></td></tr><tr><td align="center">*5<br></td><td>Front Drive Sprocket<br></td><td align="center">*6<br></td><td>Sun Gear<br></td></tr><tr><td align="center">*7<br></td><td>Transfer Rear Output Shaft<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>Input Torque<br></td><td align="center">*b<br></td><td>Front Output Torque<br></td></tr><tr><td align="center">*c<br></td><td>Rear Output Torque<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Front Wheel Skid Driving Operation</font><br><ol style="list-style-type: none"><li class="itm">During front wheel skid driving (front wheel speed &gt; rear wheel speed) when a rotational difference exists between the sun gear and the ring gear, the distribution of the drive torque that is input by the center differential case changes instantly before the torque is transmitted, as follows:<br></li><ol style="list-style-type: disc"><li class="itm">The sun gear transmits torque to the planetary carrier while pushing on the No. 4 clutch plate. The planetary carrier transmits this torque to the ring gear from the center differential case via the No. 1 clutch plate.<br></li><li class="itm">The ring gear outputs torque while pushing on the No. 1 clutch plate.<br></li><li class="itm">These LSD functions change the torque distribution.<br></li></ol></ol><div class="full"><br><img src="../../img/x102246e01.png" name="X102246E01" alt="X102246E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Case<br></td><td align="center">*2<br></td><td>Pinion Gear<br></td></tr><tr><td align="center">*3<br></td><td>Ring Gear<br></td><td align="center">*4<br></td><td>Planetary Carrier<br></td></tr><tr><td align="center">*5<br></td><td>Front Drive Sprocket<br></td><td align="center">*6<br></td><td>No. 1 Clutch Plate<br></td></tr><tr><td align="center">*7<br></td><td>Coupling<br></td><td align="center">*8<br></td><td>Sun Gear<br></td></tr><tr><td align="center">*9<br></td><td>No. 4 Clutch Plate<br></td><td align="center">*10<br></td><td>Transfer Clutch Hub<br></td></tr><tr><td align="center">*11<br></td><td>Transfer Rear Output Shaft<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>Input Torque<br></td><td align="center">*b<br></td><td>Front Output Torque<br></td></tr><tr><td align="center">*c<br></td><td>Rear Output Torque<br></td><td align="center">*d<br></td><td>Pushing on No. 1 Clutch Plate<br></td></tr><tr><td align="center">*e<br></td><td>Pushing on No. 4 Clutch Plate<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li>
+<li><p><font class="ptxt">Rear Wheel Skid Driving Operation</font><br><ol style="list-style-type: none"><li class="itm">During rear wheel skid driving (front wheel speed &lt; rear wheel speed), when a rotational difference exists between the sun gear and the ring gear, the distribution of the drive torque that is input by the center differential case changes instantly before the torque is transmitted, as follows:<br></li><ol style="list-style-type: disc"><li class="itm">The ring gear transmits torque to the center differential case while pushing on the No. 1 clutch plate. The center differential case transmits this torque from the planetary carrier to the sun gear via the No. 4 clutch plate.<br></li><li class="itm">The sun gear outputs torque while pushing on the No. 4 clutch plate.<br></li><li class="itm">These LSD functions change the torque distribution.<br></li></ol></ol></p></li></ol></p></li></ol><div class="full"><br><img src="../../img/x102247e01.png" name="X102247E01" alt="X102247E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="98%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Center Differential Case<br></td><td align="center">*2<br></td><td>Pinion Gear<br></td></tr><tr><td align="center">*3<br></td><td>Ring Gear<br></td><td align="center">*4<br></td><td>Planetary Carrier<br></td></tr><tr><td align="center">*5<br></td><td>Front Drive Sprocket<br></td><td align="center">*6<br></td><td>No. 1 Clutch Plate<br></td></tr><tr><td align="center">*7<br></td><td>Coupling<br></td><td align="center">*8<br></td><td>Sun Gear<br></td></tr><tr><td align="center">*9<br></td><td>No. 4 Clutch Plate<br></td><td align="center">*10<br></td><td>Transfer Clutch Hub<br></td></tr><tr><td align="center">*11<br></td><td>Transfer Rear Output Shaft<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*a<br></td><td>Input Torque<br></td><td align="center">*b<br></td><td>Front Output Torque<br></td></tr><tr><td align="center">*c<br></td><td>Rear Output Torque<br></td><td align="center">*d<br></td><td>Pushing on No. 1 Clutch Plate<br></td></tr><tr><td align="center">*e<br></td><td>Pushing on No. 4 Clutch Plate<br></td><td align="center">-<br></td><td>-<br></td></tr></table><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

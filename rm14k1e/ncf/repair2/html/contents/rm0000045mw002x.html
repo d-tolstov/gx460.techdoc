@@ -1,0 +1,298 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000045MW002X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>AIR CONDITIONING SYSTEM &gt; DETAILS</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000045MW002X_z0"></a><br clear="all"><a name="NM14K0E___000002D0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">SYSTEM CONTROL</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The air conditioning system uses the following controls:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td align="center">Control<br></td><td align="center">Outline<br></td></tr><tr><td>Neural Network Control<br></td><td>This control is capable of effecting complex control by artificially simulating the information processing method of the nervous system of living organisms in order to establish a complex input/output relationship that is similar to that of a human brain.<br></td></tr><tr><td rowspan="2">Automatic Recirculation Control<br></td><td>Automatically changes the air inlet mode to fresh air or recirculate mode in accordance with the level of harmful elements in the outside air, cabin temperature, and outside temperature.<br></td></tr><tr><td>Changes the sensitivity of the smog ventilation sensor.<br></td></tr><tr><td>Pollen Removal Mode Control<br></td><td>Activated by the pollen removal mode switch operation. Switches the air outlet to the FACE mode. Sends air which has passed through the clean air filter to the area around the upper part of the bodies of the driver and front passenger. This air is filtered by the clean air filter in order to remove pollen.<br></td></tr><tr><td rowspan="2">Outlet Air Temperature Control<br></td><td>Based on the temperature set at the temperature control switch, the neural network control calculates the outlet air temperature based on the input signals from various sensors.<br></td></tr><tr><td>The temperature settings for the driver and front passenger are controlled independently in order to provide a separate vehicle interior temperature for the right and left sides of the vehicle. As a result, air conditioning control that accommodates occupant preferences has been achieved.<br></td></tr><tr><td rowspan="2">Blower Control<br></td><td>Controls the blower motor in accordance with the airflow volume that has been calculated by the neural network control based on the input signals from various sensors.<br></td></tr><tr><td>Automatically increases the blower level when the defroster is on.<br></td></tr><tr><td>Air Outlet Control<br></td><td>Automatically switches the air outlets in accordance with the outlet mode that has been calculated by the neural network control based on the input signals from various sensors.<br></td></tr><tr><td rowspan="2">Air Inlet Control<br></td><td>Automatically controls the air inlet control damper in accordance with the airflow volume that has been calculated by the neural network control.<br></td></tr><tr><td>Automatically switches between fresh air/recirculation in conjunction with the set temperature while the automatic air conditioning is operating.<br></td></tr><tr><td>Cooler Compressor Control<br></td><td>Controls the blower motor in accordance with the airflow volume that has been calculated by the neural network control based on the input signals from various sensors.<br></td></tr><tr><td>Memory Call Control<br></td><td>Memorizes the last front and rear air conditioning settings when the engine switch is turned from on to off in accordance with the ID code of the key that is used to operate the vehicle. The memory call control then recalls the settings if the key is used when the engine switch is turned on. This function operates when both of the following conditions are met:<br><ol style="list-style-type: disc"><li class="itm">The inside of the outside door handle is touched or the driver door is unlocked using the unlock button, and then the driver door is opened.<br></li><li class="itm">Engine switch is turned on.<br></li></ol></td></tr><tr><td>Rear Window Defogger Control<br></td><td><ol style="list-style-type: disc"><li class="itm">Switches the rear defogger and outer rear view mirror heaters on for 15 minutes when the rear defogger button is pressed.<br></li><li class="itm">Switches them off if the button is pressed while they are operating.<br></li></ol></td></tr><tr><td>Self-diagnosis<br></td><td>Checks the sensors in accordance with the operation of the air conditioning switches, then displays a Diagnosis Trouble Code (DTC) on the clock to indicate if there is a malfunction or not (sensor check function).<br></td></tr><tr><td>Customization<br></td><td>Some functions can be customized. For details, refer to the corresponding Repair Manual for this model.<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Neural Network Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">In the previous automatic air conditioning system, the air conditioning amplifier assembly determined the required outlet air temperature and blower air volume in accordance with a calculation formula that had been obtained based on information received from the sensors. However, because the sensors of a person are rather complex, a given temperature is sensed differently, depending on the environment in which the person is situated. For example, a given amount of solar radiation can feel comfortably warm in a cold climate, but extremely uncomfortable in a hot climate. Therefore, as a technique for effecting a high level of control, a neural network is used in the automatic air conditioning system. With this technique, the data that has been collected under varying environmental conditions is stored in the air conditioning amplifier assembly, which effects control to provide enhanced air conditioning comfort.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The neural network control consists of neurons in an input layer, an intermediate layer, and an output layer. The input layer neurons process the input data of the ambient temperature, the amount of sunlight, and the room temperature based on the outputs of the switches and sensors, and output them to the intermediate layer neurons. Based on this data, the intermediate layer neurons adjust the strength of the links among the neurons. The sum of this data is then calculated by the output layer neurons in the form of the required outlet temperature, solar correction, target airflow volume, and outlet mode control volume. Accordingly, the air conditioning amplifier assembly controls the servo motors and blower with fan motor sub-assembly in accordance with the control volumes that have been calculated by the neural network control.</font><br><div class="full"><br><img src="../../img/y100965e02.png" name="Y100965E02" alt="Y100965E02" border="1" class="full"></div><br clear="all"></p></li></ol></p></li>
+<li><p><font class="ptxt">Automatic Recirculation Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the automatic recirculation control is operating, the air conditioning amplifier assembly automatically changes air inlet mode to fresh air or recirculate air mode based on signals from the smog ventilation sensor, outside temperature, and room temperature sensors when AUTO air inlet mode is selected.</font><br><ol style="list-style-type: disc"><li class="itm">The air conditioning amplifier assembly detects harmful elements (CO, HC and NOx) based on smog ventilation sensor signals and automatically switches air inlet mode to recirculate air mode to prevent such harmful elements from entering the cabin.<br></li><li class="itm">The air conditioning amplifier assembly detects room temperature based on signals from the room temperature sensor and automatically switches air inlet mode to recirculate air mode to cool the room quickly.<br></li><br clear="all"><li class="itm">The air conditioning amplifier assembly detects outside temperature based on an ambient temperature sensor signal and automatically switches air inlet mode to fresh air mode to prevent the windshield from fogging up.<br><br clear="all"><div class="full"><br><img src="../../img/y105277e01.png" name="Y105277E01" alt="Y105277E01" border="1" class="full"></div><br clear="all"></li></ol><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The smog ventilation sensor cannot detect elements such as smoke from a bonfire or factory exhaust, foul or animal odors, and dirt or dust particles. Therefore, air inlet mode is not switched in accordance with those elements. Depending on the direction of the wind, the smog ventilation sensor might not be able to detect the undesirable elements (CO, HC and NOx), allowing them to enter the cabin.</dd></dl></p></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Memory Call Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The air conditioning amplifier assembly stores the front and rear air conditioning settings for each memory number when the engine switch is turned off.</font><br></p></li>
+<li><p><font class="ptxt">The main body ECU converts the key ID code into a memory number, stores it and sends the converted signal to the air conditioning amplifier assembly.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The air conditioning amplifier assembly stores the memory number and air conditioning settings.</font><br><div class="full"><br><img src="../../img/y103551e04.png" name="Y103551E04" alt="Y103551E04" border="1" class="full"></div><br clear="all"></p></li>
+<li><p><font class="ptxt">When the doors are unlocked, the certification ECU recognizes the key ID code and sends the key ID code to the main body ECU.</font><br></p></li>
+<li><p><font class="ptxt">Upon receiving the key ID code signal, the main body ECU converts the signal into a memory number signal and sends it to the air conditioning amplifier assembly.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The air conditioning amplifier assembly then recalls the stored air conditioning settings based on the memory number signal when the engine switch is turned on (IG).</font><br><div class="full"><br><img src="../../img/y104722e02.png" name="Y104722E02" alt="Y104722E02" border="1" class="full"></div><br clear="all"></p></li>
+<li><p><font class="ptxt">The following air conditioning system settings can be memorized:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="35%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="50%
+
+			" align="center">Setting<br></td><td align="center">Condition<br></td></tr><tr><td colspan="2" width="50%
+
+			">Air Conditioning Switch<br></td><td>On or Off<br></td></tr><tr><td colspan="2" width="50%
+
+			">AUTO Switch<br></td><td>On or Off<br></td></tr><tr><td rowspan="2">Temperature Setting<br></td><td>Driver<br></td><td>LO,16 to 32&deg;C (65 to 85&deg;F) or HI<br></td></tr><tr><td>Front Passenger<br></td><td>LO,16 to 32&deg;C (65 to 85&deg;F) or HI<br></td></tr><tr><td colspan="2" width="50%
+
+			">Blower Fan Speed<br></td><td>Level 1 to 7<br></td></tr><tr><td colspan="2" width="50%
+
+			">Air Inlet Mode<br></td><td>Fresh or Recirculate<br></td></tr><tr><td colspan="2" width="50%
+
+			">Air Outlet Mode<br></td><td>Face, Bi-Level, Foot, Foot and Defroster or Defroster<br></td></tr><tr><td colspan="2" width="50%
+
+			">Dual Switch<br></td><td>On or Off<br></td></tr></table></p></li>
+<li><p><font class="ptxt">The following rear air conditioning system settings can be memorized:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="50%
+
+			"><col align=""></colgroup><colgroup align="" width="50%
+
+			"><col align=""></colgroup><tr><td align="center">Setting<br></td><td align="center">Condition<br></td></tr><tr><td>Air Conditioning Switch<br></td><td>On or Off<br></td></tr><tr><td>AUTO Switch<br></td><td>On or Off<br></td></tr><tr><td>Temperature Setting<br></td><td>LO,16 to 32&deg;C (65 to 85&deg;F) or HI<br></td></tr><tr><td>Blower Fan Speed<br></td><td>Level 1 to 7<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Memory call control of the air conditioning system can be canceled or re-enabled using the intelligent tester II.<br></li><li class="atten4">Main body ECU can store a maximum of 3 memory numbers.<br></li><li class="atten4">The memory call function recalls the key ID that was recognized when the door was unlocked. This happens even if the user brings 2 keys or more, or when the user uses different keys to unlock the door and turn the engine switch on (IG).<br></li><li class="atten4">Using the intelligent tester II, the main body ECU can be made to convert the ID numbers of different key to a desired memory number. Therefore, all key IDs can be converted to an identical memory number, or 2 memory numbers can be divided among 3 keys.<br></li><br clear="all"><li class="atten4">For details about key ID code registration, refer to the corresponding Repair Manual for this model.<br><br clear="all"><div class="full"><br><img src="../../img/y103554e04.png" name="Y103554E04" alt="Y103554E04" border="1" class="full"></div><br clear="all"></li></ol></p></p></li></ol></p></li>
+<li><p><font class="ptxt">Pollen Removal Mode Control</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the pollen removal mode switch is pressed, the pollen removal mode control is activated. Then, the air outlet is switched to the FACE mode and recirculated pollen-free air flows in the area around the upper part of the bodies of the driver and front passenger.</font><br><ol style="list-style-type: disc"><li class="itm">When the pollen removal mode switch signal is input to the air conditioning amplifier assembly, the air conditioning amplifier assembly controls the cooler compressor assembly, recirculation damper servo sub-assembly, mode damper servo sub-assembly and blower with fan motor sub-assembly as shown in the timing chart below.<br></li><li class="itm">This control usually operates for approximately 3 minutes. However, when the ambient temperature is low [5&deg;C (41&deg;F) maximum], it will operate for approximately 1 minute.<br></li><br clear="all"><li class="itm">After this control stops operating, the air conditioning amplifier assembly automatically returns to the mode it was in just before the pollen removal mode switch was pressed.<br><br clear="all"><div class="full"><br><img src="../../img/y104195e01.png" name="Y104195E01" alt="Y104195E01" border="1" class="full"></div><br clear="all"></li></ol></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___000002D0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CONSTRUCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Air Conditioning Control Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Front Air Conditioning Control Assembly</font><br><ol style="list-style-type: disc"><li class="itm">A push-button type heater control panel is used. Temperature control switches for the driver and front passenger are provided on the heater control panel to enhance their ease of use.<br></li><li class="itm">On models without navigation system, the air conditioning status is displayed on the accessory meter.<br></li><br clear="all"><li class="itm">On models with navigation system, the air conditioning status is displayed on the display and navigation module display.<br><br clear="all"><div class="full"><br><img src="../../img/y106261e01.png" name="Y106261E01" alt="Y106261E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>Models with Display and Navigation Module Display<br></td><td align="center">*B<br></td><td>Models without Display and Navigation Module Display<br></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">Rear Air Conditioning Control Assembly</font><br><ol style="list-style-type: none"><br clear="all"><li class="itm">A rear automatic air conditioning control assembly with Liquid Crystal Display (LCD) is used to ensure excellent visibility.<br><br clear="all"><div class="full"><br><img src="../../img/y105899.png" name="Y105899" alt="Y105899" border="1" class="full"></div><br clear="all"></li></ol></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Air Conditioning Unit</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The air conditioning unit consists of the No. 1 cooler evaporator sub-assembly, heater radiator unit sub-assembly, servomotors, front No. 1 cooler thermistor and blower with fan motor sub-assembly.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">A semi-central location air conditioning unit, in which the No. 1 cooler evaporator sub-assembly and heater radiator unit sub-assembly are placed in the vehicle's longitudinal direction, is used.</font><br><div class="full"><br><img src="../../img/y106283e01.png" name="Y106283E01" alt="Y106283E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>No. 1 Cooler Evaporator Sub-assembly<br></td><td align="center">*2<br></td><td>Heater Radiator Unit Sub-assembly<br></td></tr><tr><td align="center"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td>Front<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">No. 1 Cooler Evaporator Sub-assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">A Revolutionary super-slim Structure (RS) evaporator is used. By placing the tanks at the top and the bottom of the No. 1 cooler evaporator sub-assembly and by using a micropore tube construction, the following effects have been achieved:</font><br><ol style="list-style-type: disc"><li class="itm">The temperature distribution has been made uniform.<br></li><br clear="all"><li class="itm">The No. 1 cooler evaporator sub-assembly has been made thinner.<br><br clear="all"><div class="full"><br><img src="../../img/y106284e01.png" name="Y106284E01" alt="Y106284E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Tank<br></td><td align="center">*2<br></td><td>Micropore Tube<br></td></tr><tr><td align="center">*3<br></td><td>Cooling Fin<br></td><td align="center">-<br></td><td>-<br></td></tr></table></li></ol></p></li></ol></p></li>
+<li><p><font class="ptxt">Front No. 1 Cooler Thermistor</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The front No. 1 cooler thermistor detects the temperature of the cool air immediately past the No. 1 cooler evaporator sub-assembly in the form of resistance changes, and outputs it to the air conditioning amplifier assembly.</font><br></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Heater Radiator Unit Sub-assembly</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This heater radiator unit sub-assembly has been made compact and performance has been improved by making the core section finer and improving the shapes of the tank section and flow section. Also, the environment has been considered. By using aluminum as the material, the amount of the environmental burden disposal (lead) has been reduced.</font><br><div class="full"><br><img src="../../img/y104717.png" name="Y104717" alt="Y104717" border="1" class="full"></div><br clear="all"></p></li></ol></p></li>
+<li><p><font class="ptxt">Blower with Fan Motor Sub-assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The blower with fan motor sub-assembly has a built-in blower controller, and is controlled using duty control performed by the air conditioning amplifier assembly.</font><br></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Bus Connector</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The bus connector has a built-in communication/driver IC, which communicates with each servomotor connector, actuates the servomotor, and has a position detection function. This enables bus communication for the servomotor wire harness to achieve a more lightweight construction and a reduced number of wires.</font><br><div class="full"><br><img src="../../img/y100968e01.png" name="Y100968E01" alt="Y100968E01" border="1" class="full"></div><br clear="all"><div class="full"><br><img src="../../img/y100969e01.png" name="Y100969E01" alt="Y100969E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Servomotor</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">In contrast to the previous type that detects the position by way of a potentiometer voltage, the pulse pattern type servomotor detects the relative position by way of the 2-bit on/off signals.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The forward and reverse revolutions of this motor are detected by way of 2 phases, A and B, which output 4 types of patterns. The air conditioning amplifier assembly counts the number of pulse patterns in order to determine the stopped position.</font><br><div class="full"><br><img src="../../img/y100515e01.png" name="Y100515E01" alt="Y100515E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Clean Air Filter</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">A pollen removal type clean air filter is used to remove dust, pollen, and other micron particles from air entering from outside the vehicle to provide a comfortable cabin of clean air. The clean air filter is installed in the upper section of the blower fan.</font><br><div class="full"><br><img src="../../img/y105903e01.png" name="Y105903E01" alt="Y105903E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Clean Air Filter<br></td><td align="center">-<br></td><td>-<br></td></tr></table><br clear="all"><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The replacement interval for the clean air filter is shown in the table below. However, observation of these guidelines should depend on the usage conditions (or environment).</dd></dl><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="86%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><tr><td class="atten4" colspan="2" width="40%
+
+			" align="center">Destination<br></td><td class="atten4" align="center">Cleaning Interval<br></td><td class="atten4" align="center">Replacement Interval<br></td></tr><tr><td class="atten4" rowspan="2" align="center">Europe<br></td><td class="atten4" align="center">Normal Condition<br></td><td class="atten4" align="center">15000 km (9000 miles)<br></td><td class="atten4" align="center">30000 km (18000 miles)<br></td></tr><tr><td class="atten4" align="center">Dusty or Severe Condition<br></td><td class="atten4" align="center">7500 km (5000 miles)<br></td><td class="atten4" align="center">15000km (9000 miles)<br></td></tr><tr><td class="atten4" rowspan="2" align="center">China and G.C.C. Countries<br></td><td class="atten4" align="center">Normal Condition<br></td><td class="atten4" align="center">Each 10000 km (Each 6000 miles)<br></td><td class="atten4" align="center">30000 km (18000 miles)<br></td></tr><tr><td class="atten4" align="center">Dusty or Severe Condition<br></td><td class="atten4" align="center">Each 5000 km (Each 3000 miles)<br></td><td class="atten4" align="center">15000 km (9000 miles)<br></td></tr></table></p></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Condenser Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The sub-cool condenser is used. This is a multi-flow condenser consisting of 3 portions: a condensing portion, a super-cooling portion and a gas-liquid separator (modulator) all integrated together. This condenser assembly uses a sub-cool cycle for its cooling cycle system to improve heat-exchanging efficiency.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">In the sub-cool cycle, after the refrigerant passes through the condensing portion of the condenser assembly, both the liquid refrigerant and the gaseous refrigerant that could not be liquefied are cooled again in the super-cooling portion. Thus, the refrigerant is sent to the No. 1 cooler evaporator sub-assembly in an almost completely liquefied state.</font><br><div class="full"><br><img src="../../img/y104177e01.png" name="Y104177E01" alt="Y104177E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Condensing Portion<br></td><td align="center">*2<br></td><td>Modulator<br></td></tr><tr><td align="center">*3<br></td><td>Desiccant<br></td><td align="center">*4<br></td><td>Filter<br></td></tr><tr><td align="center">*5<br></td><td>Super-cooling Portion<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center"><img src="../../img/v100135.png" name="V100135" alt="V100135" class="none"><br></td><td>Gaseous Refrigerant<br></td><td align="center"><img src="../../img/v100136.png" name="V100136" alt="V100136" class="none"><br></td><td>Liquid Refrigerant<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The point at which the air bubbles disappear in the refrigerant of the sub-cool cycle is lower than the proper amount of refrigerant with which the system must be filled. Therefore, if the system is recharged with refrigerant based on the point at which the air bubbles disappear, the amount of refrigerant would be insufficient. As a result, the cooling performance of the system will be affected. If the system is overcharged with refrigerant, this will also lead to reduced performance. For the proper method of verifying the amount of the refrigerant and to recharge the system with refrigerant, refer to the corresponding Repair Manual for this model.</dd></dl></p><div class="full"><br><img src="../../img/y100972e01.png" name="Y100972E01" alt="Y100972E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Cooler Compressor Assembly</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">A 10SR19 cooler compressor assembly has been provided, which features a compact, lightweight and low-noise swash plate design.</font><br></p></li>
+<li><p><font class="ptxt">The cooler compressor assembly consists of the air conditioning pulley, shaft, lug plate, swash plate, piston, shoe, crank chamber, cylinder, and lock sensor.</font><br></p></li>
+<li><p><font class="ptxt">The lock sensor sends a cooler compressor assembly speed signal to the air conditioning amplifier assembly. The air conditioning amplifier assembly compares this signal with an engine speed signal sent from the crankshaft position sensor. If the air conditioning amplifier assembly determines that the air conditioning pulley has locked, the air conditioning amplifier assembly turns the magnetic clutch off.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">A rotary valve capable of directing suction refrigerant into the cylinder has been provided.</font><br><div class="full"><br><img src="../../img/y105902.png" name="Y105902" alt="Y105902" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Rotary Valve</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">In order to eliminate suction loss, the rotary valve has been replaced with a conventional suction valve.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">A hollow shaft is used in the valve so as to allow refrigerant to be sucked into the compressing section of the cylinder through the hollow section. Holes individually arranged on the shaft and cylinder are designed to align during the rotation of the shaft. When the holes are aligned, refrigerant is sucked into the compressing section.</font><br><div class="full"><br><img src="../../img/y105901e01.png" name="Y105901E01" alt="Y105901E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Piston<br></td><td align="center">*2<br></td><td>Shaft<br></td></tr><tr><td align="center">*3<br></td><td>Lug Plate<br></td><td align="center">*4<br></td><td>Housing<br></td></tr><tr><td align="center">*5<br></td><td>Suction Section<br></td><td align="center">*6<br></td><td>Compressing Section<br></td></tr><tr><td align="center">*7<br></td><td>Cylinder<br></td><td align="center">*8<br></td><td>Cylinder Bore<br></td></tr><tr><td align="center">*9<br></td><td>Cylinder Suction Passage<br></td><td align="center">*10<br></td><td>Rotary Valve Suction Port<br></td></tr><tr><td align="center">*a<br></td><td>Refrigerant Flow<br></td><td align="center">*b<br></td><td>Position where Rotary Valve Suction Port and Cylinder Suction Passage Become Aligned<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">Cooler (Front Room Temperature Sensor) Thermistor</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The cooler (front room temperature sensor) thermistor detects the front room temperature based on changes in the resistance of its built-in thermistor. This signal is used by the air conditioning amplifier assembly.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Cooler (Rear Room Temperature Sensor) Thermistor</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The cooler (rear room temperature sensor) thermistor detects the rear room temperature based on changes in the resistance of its built-in thermistor. This signal is used by the air conditioning amplifier assembly.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Cooler (Ambient Temperature Sensor) Thermistor</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The cooler (ambient temperature sensor) thermistor detects the ambient temperature based on changes in the resistance of its built-in thermistor. This signal is used by the air conditioning amplifier assembly.</font><br></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Cooler (Solar Sensor) Thermistor</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The cooler (solar sensor) thermistor consists of a photo diode, 2 amplifier circuits for the cooler (solar sensor) thermistor, and a frequency converter circuit for the automatic light control sensor.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The cooler (solar sensor) thermistor detects (in the form of changes in the current that flows through the built-in photo diode) the changes in the amount of sunlight from its LH and RH sides (2 directions) and outputs these sunlight strength signals to the air conditioning amplifier assembly.</font><br><div class="full"><br><img src="../../img/y101520e01.png" name="Y101520E01" alt="Y101520E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Sub-cool Accelerator Type Tube</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">A sub-cool accelerator type tube is used to enhance air conditioning cooling performance. It functions as a heat exchanger by making use of the temperature difference between the gaseous refrigerant and liquid refrigerant.</font><br></p></li>
+<li><p><font class="ptxt">The sub-cool accelerator type tube has a double-pipe construction. Helical grooves are embossed into the outer wall of the inner tube. Low-temperature and low-pressure gaseous refrigerant passes through the inner tube. High-temperature and high-pressure liquid refrigerant circulates between the inner tube and outer tube in the gap created by the grooves. Because of the temperature difference, heat exchange occurs.</font><br></p></li>
+<li><p><font class="ptxt">The high-temperature and high-pressure liquid refrigerant circulate along the helical grooves causing the refrigerant to remain in contact with the outer wall of the inner tube for a longer period of time. This achieves an ample exchange of heat.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">By lowering the temperature of the refrigerant that has passed through the cooler condenser, more liquid refrigerant is supplied to the evaporator and the evaporator is also kept cooler. This enables an enhanced air conditioning cooling effect.</font><br><div class="full"><br><img src="../../img/y104738e01.png" name="Y104738E01" alt="Y104738E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Cool Box</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The cool box consists primarily of a cool box amplifier, an evaporator (for cool box), a cool box blower motor, a cool box switch, and an expansion valve. The connected refrigerant circuit of the front air conditioning cools the cool box.</font><br><div class="full"><br><img src="../../img/y106285e01.png" name="Y106285E01" alt="Y106285E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Condenser Assembly<br></td><td align="center">*2<br></td><td>Cooler Compressor Assembly<br></td></tr><tr><td align="center">*3<br></td><td>Check Valve<br></td><td align="center">*4<br></td><td>No. 1 Cooler Evaporator Sub-assembly<br></td></tr><tr><td align="center">*5<br></td><td>No. 1 Cooler Evaporator Sub-assembly No.2<br></td><td align="center">*6<br></td><td>Cool Box<br></td></tr><tr><td align="center">*7<br></td><td>Magnetic Valve<br></td><td align="center">*8<br></td><td>Cooler Expansion Valve<br></td></tr><tr><td align="center">*9<br></td><td>Rear Evaporator Sub-assembly<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___000002D0000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Front Air Conditioning Mode Position and Damper Operation</font><br><div class="full"><br><img src="../../img/y106288e01.png" name="Y106288E01" alt="Y106288E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="13%
+
+			"><col align=""></colgroup><colgroup align="" width="12%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="30%
+
+			"><col align=""></colgroup><tr><td align="center">Control Damper<br></td><td colspan="2" width="28%
+
+			" align="center">Operation Position<br></td><td colspan="2" width="27%
+
+			" align="center">Damper Position<br></td><td align="center">Operation<br></td></tr><tr><td rowspan="2">Air Inlet Control Damper<br></td><td colspan="2" width="28%
+
+			">FRESH<br></td><td colspan="2" width="27%
+
+			" align="center">A<br></td><td>Brings in fresh air.<br></td></tr><tr><td colspan="2" width="28%
+
+			">RECIRC<br></td><td colspan="2" width="27%
+
+			" align="center">B<br></td><td>Recirculates internal air.<br></td></tr><tr><td>Air Mix Control Damper<br></td><td colspan="2" width="28%
+
+			">MAX COLD to MAX HOT Temp. Setting<br></td><td colspan="2" width="27%
+
+			" align="center">E - D - C (E' - D' - C')<br></td><td>Varies the mixture ratio of the cold air and the hot air in order to regulate the temperature continuously from HOT to COLD<br></td></tr><tr><td rowspan="2">Max Cool Damper<br></td><td colspan="2" width="28%
+
+			">Max Cool<br></td><td colspan="2" width="27%
+
+			" align="center">V<br></td><td>Open in the MAX COOL position<br></td></tr><tr><td colspan="2" width="28%
+
+			">Except Max Cool<br></td><td colspan="2" width="27%
+
+			" align="center">W<br></td><td>Closed in all positions except MAX COOL position<br></td></tr><tr><td rowspan="2">Max Hot Damper<br></td><td colspan="2" width="28%
+
+			">Max Hot<br></td><td colspan="2" width="27%
+
+			" align="center">Y<br></td><td>Open in the MAX HOT position<br></td></tr><tr><td colspan="2" width="28%
+
+			">Except Max Hot<br></td><td colspan="2" width="27%
+
+			" align="center">X<br></td><td>Closed in all positions except MAX HOT position<br></td></tr><tr><td rowspan="8">Mode Control Damper<br></td><td align="center"><img src="../../img/y100677.png" name="Y100677" alt="Y100677" class="none"><br></td><td>DEF<br></td><td colspan="2" width="27%
+
+			" align="center">H, I, S, U, X<br></td><td>Defrosts the windshield through the center defroster, and side defroster<br></td></tr><tr><td rowspan="2" align="center"><img src="../../img/y100676.png" name="Y100676" alt="Y100676" class="none"><br></td><td rowspan="2">FOOT / DEF<br></td><td>Max Hot Position<br></td><td align="center">H, K, R, T, W, Y<br></td><td rowspan="2">Defrosts the windshield through the center defroster, side defroster, front and rear footwell register ducts while air is also blown out from the front and rear center registers and side register.<br></td></tr><tr><td>Except Max Hot Position<br></td><td align="center">H, M, Q, T, X<br></td></tr><tr><td rowspan="2" align="center"><img src="../../img/y100675.png" name="Y100675" alt="Y100675" class="none"><br></td><td rowspan="2">FOOT<br></td><td>Max Hot Position<br></td><td align="center">H, M, P, T, W, Y<br></td><td rowspan="2">Air blows out of the front and rear footwell register duct. In addition, air blows out slightly from the center register, side register, center defroster and side defroster.<br></td></tr><tr><td>Except Max Hot Position<br></td><td align="center">H, M, O, T, X<br></td></tr><tr><td align="center"><img src="../../img/y100674.png" name="Y100674" alt="Y100674" class="none"><br></td><td>BI-LEVEL<br></td><td colspan="2" width="27%
+
+			" align="center">G, L, N, T, X<br></td><td>Air blows out of the front center registers, side register, and front and rear footwell register ducts.<br></td></tr><tr><td rowspan="2" align="center"><img src="../../img/y100673.png" name="Y100673" alt="Y100673" class="none"><br></td><td rowspan="2">FACE<br></td><td>Auto Mode<br></td><td align="center">F, J, N, T, X<br></td><td rowspan="2">Air blows out of the front center registers and side register.<br></td></tr><tr><td>Manual Mode<br></td><td align="center">F, I, N, T, X<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Rear Air Conditioning Mode Position and Damper Operation</font><br><div class="full"><br><img src="../../img/y104695e01.png" name="Y104695E01" alt="Y104695E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">Control Damper<br></td><td colspan="2" width="30%
+
+			" align="center">Operation Position<br></td><td align="center">Damper Position<br></td><td align="center">Operation<br></td></tr><tr><td rowspan="3">Mode Control Door<br></td><td align="center"><img src="../../img/y100673.png" name="Y100673" alt="Y100673" class="none"><br></td><td>FACE<br></td><td align="center">A<br></td><td>Air blows out of the rear roof side register.<br></td></tr><tr><td align="center"><img src="../../img/y100674.png" name="Y100674" alt="Y100674" class="none"><br></td><td>BI-LEVEL<br></td><td align="center">B<br></td><td>Air blows out of the rear roof side register and the rear footwell register.<br></td></tr><tr><td align="center"><img src="../../img/y100675.png" name="Y100675" alt="Y100675" class="none"><br></td><td>FOOT<br></td><td align="center">C<br></td><td>Air blows out of the rear footwell register.<br></td></tr><tr><td>Air Mix Control Damper<br></td><td colspan="2" width="30%
+
+			">MAX COLD to MAX HOT Temp. Setting<br></td><td align="center">D - E<br></td><td>Varies the mixture ratio of the cold air and the hot air in order to regulate the temperature continuously from HOT to COLD.<br></td></tr></table></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Front Air Outlets and Airflow Volume</font><br><div class="full"><br><img src="../../img/y106262e01.png" name="Y106262E01" alt="Y106262E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="13%
+
+			"><col align=""></colgroup><colgroup align="" width="12%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><colgroup align="" width="11%
+
+			"><col align=""></colgroup><tr><td rowspan="2" align="center">Indication<br></td><td rowspan="2" align="center">Mode<br></td><td colspan="2" width="20%
+
+			" align="center">Section<br></td><td align="center">A<br></td><td align="center">B<br></td><td align="center">C<br></td><td align="center">D<br></td><td align="center">E<br></td></tr><tr><td align="center">Auto<br></td><td align="center">Manual<br></td><td align="center">Center<br></td><td align="center">Side<br></td><td align="center">Front Footwell<br></td><td align="center">Rear Footwell<br></td><td align="center">Defroster<br></td></tr><tr><td rowspan="2" align="center"><img src="../../img/y100673.png" name="Y100673" alt="Y100673" class="none"><br></td><td>FACE-U<br></td><td align="center">●<br></td><td align="center">●<br></td><td align="center"><img src="../../img/y104728.png" name="Y104728" alt="Y104728" class="none"><br></td><td align="center"><img src="../../img/y104728.png" name="Y104728" alt="Y104728" class="none"><br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td></tr><tr><td>FACE-L*<br></td><td align="center">●<br></td><td align="center">-<br></td><td align="center"><img src="../../img/y104729.png" name="Y104729" alt="Y104729" class="none"><br></td><td align="center"><img src="../../img/y104729.png" name="Y104729" alt="Y104729" class="none"><br></td><td align="center"><img src="../../img/y104734.png" name="Y104734" alt="Y104734" class="none"><br></td><td align="center"><img src="../../img/y104735.png" name="Y104735" alt="Y104735" class="none"><br></td><td align="center">-<br></td></tr><tr><td align="center"><img src="../../img/y100674.png" name="Y100674" alt="Y100674" class="none"><br></td><td>BI-LEVEL<br></td><td align="center">●<br></td><td align="center">●<br></td><td align="center"><img src="../../img/y104731.png" name="Y104731" alt="Y104731" class="none"><br></td><td align="center"><img src="../../img/y104731.png" name="Y104731" alt="Y104731" class="none"><br></td><td align="center"><img src="../../img/y104731.png" name="Y104731" alt="Y104731" class="none"><br></td><td align="center"><img src="../../img/y104732.png" name="Y104732" alt="Y104732" class="none"><br></td><td align="center">-<br></td></tr><tr><td align="center"><img src="../../img/y100675.png" name="Y100675" alt="Y100675" class="none"><br></td><td>FOOT<br></td><td align="center">●<br></td><td align="center">●<br></td><td align="center"><img src="../../img/y104733.png" name="Y104733" alt="Y104733" class="none"><br></td><td align="center"><img src="../../img/y104733.png" name="Y104733" alt="Y104733" class="none"><br></td><td align="center"><img src="../../img/y104728.png" name="Y104728" alt="Y104728" class="none"><br></td><td align="center"><img src="../../img/y104730.png" name="Y104730" alt="Y104730" class="none"><br></td><td align="center"><img src="../../img/y104731.png" name="Y104731" alt="Y104731" class="none"><br></td></tr><tr><td align="center"><img src="../../img/y100676.png" name="Y100676" alt="Y100676" class="none"><br></td><td>FOOT/DEF<br></td><td align="center">●<br></td><td align="center">●<br></td><td align="center"><img src="../../img/y104735.png" name="Y104735" alt="Y104735" class="none"><br></td><td align="center"><img src="../../img/y104733.png" name="Y104733" alt="Y104733" class="none"><br></td><td align="center"><img src="../../img/y104729.png" name="Y104729" alt="Y104729" class="none"><br></td><td align="center"><img src="../../img/y104731.png" name="Y104731" alt="Y104731" class="none"><br></td><td align="center"><img src="../../img/y104729.png" name="Y104729" alt="Y104729" class="none"><br></td></tr><tr><td align="center"><img src="../../img/y100677.png" name="Y100677" alt="Y100677" class="none"><br></td><td>DEF<br></td><td align="center">-<br></td><td align="center">●<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center">-<br></td><td align="center"><img src="../../img/y104728.png" name="Y104728" alt="Y104728" class="none"><br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: The airflow volume is set to be greater than that of FACE-U mode.</dd></dl><dl class="reference"><dd class="reference">The size of the circle ○ indicates the proportion of airflow volume.</dd></dl></p></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Rear Air Outlets and Airflow Volume</font><br><div class="full"><br><img src="../../img/y104164e01.png" name="Y104164E01" alt="Y104164E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="25%
+
+			"><col align=""></colgroup><tr><td align="center">Indication<br></td><td align="center">Mode<br></td><td align="center">A<br></td><td align="center">B<br></td></tr><tr><td align="center"><img src="../../img/y100673.png" name="Y100673" alt="Y100673" class="none"><br></td><td align="center">FACE<br></td><td align="center"><img src="../../img/y104728.png" name="Y104728" alt="Y104728" class="none"><br></td><td align="center">-<br></td></tr><tr><td align="center"><img src="../../img/y100674.png" name="Y100674" alt="Y100674" class="none"><br></td><td align="center">BI-LEVEL<br></td><td align="center"><img src="../../img/y104731.png" name="Y104731" alt="Y104731" class="none"><br></td><td align="center"><img src="../../img/y104733.png" name="Y104733" alt="Y104733" class="none"><br></td></tr><tr><td align="center"><img src="../../img/y100675.png" name="Y100675" alt="Y100675" class="none"><br></td><td align="center">FOOT<br></td><td align="center">-<br></td><td align="center"><img src="../../img/y104728.png" name="Y104728" alt="Y104728" class="none"><br></td></tr></table></p></li></ol><br clear="all"><a name="NM14K0E___000002D0000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">DIAGNOSIS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">Diagnostic Trouble Code (DTC)</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The air conditioning amplifier assembly has a self-diagnosis function. It stores any operation failures in the air conditioning system memory in the form of DTCs. For details, refer to the corresponding Repair Manual for this model.</font><br></p></li></ol></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

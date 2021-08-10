@@ -1,0 +1,308 @@
+BODY, INPUT, TABLE, TH, TD, A{
+	font-size: 10pt;
+	font-family: "Verdana", sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.listTable{
+	margin-top:0px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.repairHeaderPage{
+	background-color:#FFFFFF;
+}
+
+.headerTable{
+	margin-top:0px;
+	margin-bottom : 0px;
+	background-color:#FFFFFF;
+}
+
+.listHeader {
+	background-color: #C7D0D6;
+	color: #666666;	font-size: 10pt;
+	vertical-align: middle;
+}
+
+.terminalHeader {
+	background-color: #C7D0D6;
+	color: #666666;	font-size: 9pt;
+	vertical-align: middle;
+	padding:1px;
+}
+
+.repairHeader {
+	background-color: #C7D0D6;
+	color: #666666;	font-size: 10pt;
+	vertical-align: middle;
+	font-family:		sans-serif;
+	height: 10px;
+}
+
+.repair_inner {
+	margin: 4px 4px;
+}
+.wireHeader {
+	background-color: #C7D0D6;
+	color: #666666;	font-size: 10pt;
+	vertical-align: middle;
+	font-weight: bold;
+	font-family:		sans-serif;
+}
+
+.wireHeader-inner{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+.listHeader_padding {
+	padding: 4px 6px;
+}	
+
+.maleHeader {
+	background-color: #C7D0D6;
+	color: #666666;	font-size: 9pt;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: bold;
+	height: 20px;
+}
+
+.connNo {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+	text-align: center;
+	vertical-align: top;
+	padding: 4px 2px 0px 2px; 
+}
+.colMale {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+	text-align: center;
+}
+
+.colTerm {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+	text-align: center;
+}
+.sealing {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+	text-align: center;
+}
+.RWNo {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+}
+
+.RW_in {
+	margin: 2px 4px 2px 6px;
+}
+.sleeve {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+	text-align: center;
+}
+
+.colSleeve_inner {
+	padding: 6px 6px;
+}
+
+.col_in {
+	margin: 4px 2px;
+}
+
+td.colPicture {
+	background-color:	#FFFFFF;
+}
+
+.gray4_ {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+}
+
+.gray4Picture {
+	background-color: #EEEEEE;
+	color: #666666;	font-size: 10pt;
+	padding: 5px 2px;
+}
+
+.gray4_inner {
+	padding: 10px 2px;
+}
+
+.terminal_inner {
+	padding: 4px 2px;
+}
+
+.normalColumn {
+	background-color: #EEEEEE;
+}
+
+.housingTermType {
+	background-color: #EEEEEE;
+	vertical-align: top;
+	text-align: center;
+	font-size: 10pt;
+	padding: 2px 2px
+}
+
+.housingConnID {
+	background-color: #EEEEEE;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 4px;
+	font-size: 11pt;
+	margin: 2px 2px;
+}
+
+.housingMale {
+	background-color: #EEEEEE;
+	vertical-align: top;
+	text-align: center;
+	padding: 1px 1px;
+}
+
+td.loads-title {
+	font-size:		14pt;
+	font-weight:	bold;
+	color:			#000000;
+}
+
+div.titleString {
+	font-size: 10pt;
+	font-family: "Verdana", sans-serif;
+}
+
+a.ewdlink:link {
+	font-size:10pt;
+	color:#1B6384;
+	text-decoration:underline;
+}
+
+a.ewdlink:visited {
+	font-size:10pt;
+	color:#1B6384;
+	text-decoration:underline;
+}
+
+a.ewdlink:hover {
+	font-size:10pt;
+	color:#DC883D;
+	text-decoration:none;
+}
+
+a.ewdlink:active {
+	font-size:       10pt;
+	text-decoration: underline;
+}
+
+
+div.repairTitleString {
+	font-size: 10pt;
+	font-family: "Verdana", sans-serif;
+	font-weight: bold;
+}
+
+a.terminalType {
+	font-size:       11pt;
+}
+
+td.window-control-button {
+	background-color: #a82e2e;
+	text-align:       center;
+}
+
+td.window-control-button-hover {
+	background-color: #cd5c5c;
+	text-align:       center;
+}
+
+a.window-control-button {
+	color:            #ffffff;
+	font:				bold 9pt sans-serif;
+	text-decoration:	none;
+}
+
+a.window-control-button:hover {
+	color:            #ffff99;
+}
+
+
+
+
+
+td.popup-button {
+	background-color: #3f8495;
+	text-align:       center;
+	font:				bold 9pt sans-serif;
+	text-decoration:	none;
+}
+
+td.popup-button-hover {
+	background-color: #0099aa;
+	text-align:       center;
+}
+
+a.popup-button {
+	color:            #ffffff;
+	font-family:  sans-serif;
+}
+
+div.terminalType {
+	font-size:       12pt;
+	color: #C7D0D6;
+}
+
+div.sealingfigfake {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+
+a.popup-button:hover {
+	color:            #ccffff;
+}
+.headerBody {
+	/*/*/ margin-top: 14px; /* */   /* Without NN4 */
+	margin-right: 25px;
+	margin-bottom:0px;
+	margin-left: 8px;
+}
+
+
+div.sealingImage {
+	width: 120px;
+	height: 71px;
+}
+
+
+div.hideString {
+	visibility: hidden;
+	height: 1px;
+	color: #C7D0D6;
+	font-family: "Verdana", sans-serif;
+	font-weight: normal;
+	margin: 0px;
+	padding: 0px;
+}
+
+td.hcs-cell {
+	padding: 0px;
+	margin:	0px;
+}
+
+@media print{
+	div.hideString {
+		display: none;
+		overflow: hidden;
+		height: 1px;
+	}
+}

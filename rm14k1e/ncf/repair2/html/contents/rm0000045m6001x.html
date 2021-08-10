@@ -1,0 +1,577 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000045M6001X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>ENTRY AND START SYSTEM &gt; DETAILS</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000045M6001X_z0"></a><br clear="all"><a name="NM14K0E___000001W0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FUNCTION OF MAIN COMPONENTS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The main components of the start function have the following functions:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="35%
+
+			"><col align=""></colgroup><colgroup align="" width="65%
+
+			"><col align=""></colgroup><tr><td align="center">Component<br></td><td align="center">Function<br></td></tr><tr><td>Engine Switch<br><ol style="list-style-type: disc"><li class="itm">Transponder Key Amplifier<br></li></ol></td><td><ol style="list-style-type: disc"><li class="itm">Transmits the engine switch signal to the power management control ECU.<br></li><li class="itm">Informs the driver of a power source mode or system abnormality by illuminating the indicator light.<br></li><li class="itm">Receives the ID code and transmits it to the certification ECU when the key battery is low.<br></li></ol></td></tr><tr><td>Key<br></td><td><ol style="list-style-type: disc"><li class="itm">Receives signals from the antennas and returns the ID code to the door control receiver.<br></li><li class="itm">When receiving the radio wave that is output by the transponder key amplifier in the engine switch, the key outputs information such as the key ID and vehicle ID.<br></li></ol></td></tr><tr><td>Indoor Electrical Key Antenna<br></td><td>Receives the request signal from the certification ECU, and forms an actuation area inside the interior of the vehicle.<br></td></tr><tr><td>Door Control Receiver<br></td><td>Receives the ID code from the key and transmits it to the certification ECU.<br></td></tr><tr><td>Power Management Control ECU<br></td><td><ol style="list-style-type: disc"><li class="itm">Turns the power source to off, on (ACC), on (IG), or START in accordance with the shift lever position and the state of the stop light switch assembly,<br></li><li class="itm">Controls the start function in accordance with the signals received from the switches and each ECU.<br></li></ol></td></tr><tr><td>Certification ECU<br></td><td><ol style="list-style-type: disc"><li class="itm">Certifies the ID code received from the door control receiver and transmits the certification results to the ID code box and steering lock ECU.<br></li><li class="itm">Transmits steering lock/unlock request signals.<br></li><li class="itm">Transmits engine immobiliser set/unset request signals.<br></li><li class="itm">Records the ID codes between the certification ECU, ID code box, and steering lock ECU.<br></li></ol></td></tr><tr><td>Stop Light Switch Assembly<br></td><td>Outputs the state of the brake pedal to the power management control ECU.<br></td></tr><tr><td>ID Code Box<br></td><td>Receives the steering unlock or engine immobiliser unset request signal from the certification ECU, certifies it, and transmits each unset signal to the steering lock ECU or ECM.<br></td></tr><tr><td>ECM<br></td><td><ol style="list-style-type: disc"><li class="itm">Receives the engine start request signal from the power management control ECU, turns on the starter relay assembly, and starts the engine.<br></li><li class="itm">Receives the signal from the ID code box and performs engine ignition and injection.<br></li></ol></td></tr></table></p></li>
+<li><p><font class="ptxt">The main components of the entry function have the following functions:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="15%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="30%
+
+			" align="center">Component<br></td><td align="center">Function<br></td></tr><tr><td colspan="2" width="30%
+
+			">Key<br></td><td><ol style="list-style-type: disc"><li class="itm">When receiving the request signals that are output by the indoor electrical key antennas, door electrical key antennas, and outside luggage compartment electrical key antenna, the key outputs information such as the key ID and vehicle ID.<br></li><li class="itm">When a driver pushes the lock, unlock button or glass hatch opener button on the key, the key outputs a request signal.<br></li><li class="itm">Integrates with the mechanical key in order to unlock the doors when the key battery is low.<br></li></ol></td></tr><tr><td colspan="2" width="30%
+
+			">Certification ECU<br></td><td><ol style="list-style-type: disc"><li class="itm">Judges and certifies the key.<br></li><li class="itm">Controls the indoor electrical key antennas, door electrical key antennas, outside luggage compartment electrical key antenna.<br></li><li class="itm">Transmits door lock/unlock request signals during the entry function.<br></li><li class="itm">Receives a glass hatch opener switch operation signal from the body ECU, checks that the key is in the exterior actuation area around the back door, and sends a glass hatch open signal to the main body ECU when the key identification is confirmed.<br></li></ol></td></tr><tr><td colspan="2" width="30%
+
+			">Main Body ECU<br></td><td><ol style="list-style-type: disc"><li class="itm">Receives the request signal from the certification ECU and actuates the door lock motors to unlock or lock all the doors, and the back door.<br></li><li class="itm">Receives a glass hatch opener switch operation signal, and sends it to the certification ECU. When the certification ECU has confirmed the key identification, the main body ECU receives a glass hatch open signal from the certification ECU and drives the glass hatch opener motor.<br></li><li class="itm">Transmits the condition of each door and glass hatch to the certification ECU.<br></li></ol></td></tr><tr><td colspan="2" width="30%
+
+			">ID Code Box<br></td><td>Receives the steering unlock or engine immobiliser unset request signal from the certification ECU, certifies it, and transmits each unset signal to the steering lock ECU or ECM.<br></td></tr><tr><td rowspan="3">Outside Door Handle Assembly<br></td><td>Touch Sensor<br></td><td>Transmits the door unlock request signal to the certification ECU.<br></td></tr><tr><td>Lock Sensor<br></td><td>Transmits the door lock request signal to the certification ECU.<br></td></tr><tr><td>Door Electrical Key Antenna<br></td><td>Receives the request signal from the certification ECU, and forms an actuation area around the driver's and front passenger's doors.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Indoor Electrical Key Antenna<br></td><td>Receives the request signal from the certification ECU, and forms an actuation area inside the interior of the vehicle.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Outside Luggage Compartment Electrical Key Antenna<br></td><td>Receives the request signal from the certification ECU, and forms an actuation area around the luggage compartment.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Door Control Receiver<br></td><td>Receives the ID code from the key in the actuation area and transmits it to the certification ECU.<br></td></tr><tr><td rowspan="2">Back Door<br></td><td>Unlock Switch<br></td><td>Transmits the door unlock request signal to the certification ECU.<br></td></tr><tr><td>Lock Switch<br></td><td>Transmits the door lock request signal to the certification ECU.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Glass Hatch Opener Switch<br></td><td>Transmits the glass hatch opener switch operation signal to the main body ECU.<br></td></tr><tr><td colspan="2" width="30%
+
+			">Wireless Door Lock Buzzer<br></td><td>Sounds as an answerback for entry lock or unlock to inform the driver.*<br></td></tr><tr><td rowspan="3">Combination Meter Assembly<br></td><td>Multi-information Display<br></td><td rowspan="3">When the certification ECU detects human errors, it warns the driver by sounding the wireless door lock buzzer, illuminating the master warning light, displaying the multi-information display, and sounding the multi buzzer in the combination meter assembly in accordance with the request signal from the ECU.<br></td></tr><tr><td>Multi Buzzer<br></td></tr><tr><td>Master Warning Light<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*: Models for G.C.C. countries<br></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___000001W0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OPERATING CONDITION</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The special functions of the entry and start system only work when the key is in the actuation area formed by the 6 antennas.</font><br></p></li>
+<li><p><font class="ptxt">The No. 1, No. 2 and No. 3 indoor electrical key antenna assemblies form the actuation area of the start function.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The door electrical key antenna assemblies and the outside luggage compartment electrical key antenna form the actuation area of the entry function.</font><br><div class="full"><br><img src="../../img/y105273e01.png" name="Y105273E01" alt="Y105273E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>No. 1 Indoor Electrical Key Antenna Assembly<br></td><td align="center">*2<br></td><td>Door Electrical Key Antenna LH<br></td></tr><tr><td align="center">*3<br></td><td>Door Electrical Key Antenna RH<br></td><td align="center">*4<br></td><td>No. 2 Indoor Electrical Key Antenna Assembly<br></td></tr><tr><td align="center">*5<br></td><td>No. 3 Indoor Electrical Key Antenna Assembly<br></td><td align="center">*6<br></td><td>Outside Luggage Compartment Electrical Key Antenna<br></td></tr><tr><td align="center">*a<br></td><td>Approx. 0.7 m to 1.0 m (2.3 ft. to 3.3 ft.)<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center"><img src="../../img/v100144.png" name="V100144" alt="V100144" class="none"><br></td><td>Interior Actuation Area<br></td><td align="center"><img src="../../img/v100145.png" name="V100145" alt="V100145" class="none"><br></td><td>Exterior Actuation Area<br></td></tr></table><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="93%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td align="center">Actuation Area<br></td><td align="center">Details<br></td></tr><tr><td>Interior<br></td><td>The interior actuation area of the indoor electrical key antennas is formed when the driver door is closed when the brake pedal is depressed, when the engine switch is pressed, when a warning is activated, or when the lock sensor or lock switch is on.<br></td></tr><tr><td>Exterior<br></td><td>The exterior actuation area formed by the electrical key antennas and outside luggage compartment electrical key antenna is approx. 0.7 m to 1.0 m (27.6 in. to 39.4 in.) from the outside door handle of the front doors, or the outside luggage compartment electrical key antenna.<br></td></tr><tr><td>Around Front Door<br></td><td>The exterior actuation area of the electrical key antennas is formed by transmitting a request signal every 0.25 seconds while the engine switch is off and each door is locked. In this way the proximity of a key can be detected. When locking the door using the lock sensor on the outside door handle, the actuation area is formed when the lock sensor is touched.<br></td></tr><tr><td>Around Back Door<br></td><td>The exterior actuation area of the outside luggage compartment electrical key antenna is formed when the back door lock, unlock or glass hatch opener switch is on.<br></td></tr></table></p></li></ol><br clear="all"><a name="NM14K0E___000001W0000013step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">FUNCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Start Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The start function has different power source modes to suit the brake pedal condition and shift lever position.</font><br></p></li>
+<li><p><font class="ptxt">When a driver who is carrying a key enters the vehicle while the power source mode is off, and presses the engine switch without depressing the brake pedal, the power source mode turns on (ACC), causing the engine switch indicator light to illuminate amber. With each pressing of the engine switch, the power source mode switches as follows: off &rarr; on (ACC) &rarr; on (IG) &rarr; off.</font><br></p></li>
+<li><p><font class="ptxt">When a driver who is carrying a key enters the vehicle while the power source mode is off, and depresses the brake pedal while the shift lever is in P or N, the engine switch indicator light will illuminate green. Pressing the engine switch with the indicator light illuminated green will cause the engine to start.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When starting the engine with the vehicle stopped, pressing the engine switch while the shift lever is in P will cause the power source mode to turn off. Pressing the engine switch when the shift lever is in any position other than P will cause the mode to turn on (ACC).</font><br><div class="full"><br><img src="../../img/y105249e02.png" name="Y105249E02" alt="Y105249E02" border="1" class="full"></div><br clear="all"></p></li>
+<li><p><font class="ptxt">Transition of the power source mode when the key battery is low or the key is not operating normally due to an electromagnetic interference:</font><br><ol style="list-style-type: decimal"><li class="itm">The driver uses the mechanical key (which is built into the key) to unlock the door, and enters the vehicle while carrying the key.<br></li><li class="itm">The driver places the LEXUS mark of the key in contact with the front of the engine switch while depressing the brake pedal.<br></li><li class="itm">Within approximately 10 seconds after the buzzer sounds, the driver releases the brake pedal and presses the engine switch.<br></li><li class="itm">With each pressing of the engine switch, the power source mode switches as follows: off &rarr; on (ACC) &rarr; on (IG) &rarr; off.<br></li></ol></p></li>
+<li><p><font class="ptxt">Starting the engine when the key battery is low or the key is not operating normally due to an electromagnetic interference:</font><br><ol style="list-style-type: decimal"><li class="itm">The driver uses the mechanical key (which is built into the key) to unlock the door, and enters the vehicle while carrying the key.<br></li><li class="itm">The driver places the LEXUS mark of the key in contact with the front of the engine switch while depressing the brake pedal while the shift lever is in P or N.<br></li><li class="itm">Within approximately 10 seconds after the buzzer sounds and the engine switch indicator light illuminates green, the driver presses the engine switch while depressing the brake pedal.<br><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><ol style="list-style-type: disc"><li class="atten4">Normally, the operation of the engine switch is disabled while the vehicle is being driven. However, if the engine must be stopped in an emergency while the vehicle is in motion, the driver can press the engine switch for approximately 3 seconds or more to stop the engine.<br></li><li class="atten4">If no signals are transmitted to the power management control ECU due to a malfunction in the stop light switch assembly, park/neutral position switch assembly, the engine will not start even if the driver presses the engine switch while depressing the brake pedal. In this case, the driver can start the engine by carrying out the following operations. Press the engine switch to turn the power source mode from off to on (ACC), and press the engine switch again and hold it for 15 seconds or more.<br></li><li class="atten4">The above two operations must be carried out only in emergency situations. Under normal conditions, the engine must not be stopped by pressing the engine switch during driving or started without depressing the brake pedal when the shift lever is in any position other than P or N.<br></li></ol></p></li></ol></p></li></ol></p></li>
+<li><p><font class="ptxt">Entry Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The entry function consists of the following functions:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td align="center">Function<br></td><td align="center">Outline<br></td></tr><tr><td>Wireless Door Lock Control<br></td><td>This function is a convenient system for locking and unlocking all the doors at a distance.<br></td></tr><tr><td>Entry Illumination<br></td><td>When a key enters the exterior actuation area of the door electrical key antenna, each interior light and engine switch illumination light will illuminate.<br></td></tr><tr><td>Entry Unlock Mode Switching<br></td><td>Allows switching between 2 modes that can be operated with the entry unlock function.<br><ol style="list-style-type: disc"><li class="itm">All Door Mode<br></li><li class="itm">Driver Door Mode (Default Setting)<br></li></ol></td></tr><tr><td>Entry Unlock<br></td><td>When a key is located in the exterior actuation area, the door will unlock after the either front outside door handle is gripped.<br><ol style="list-style-type: disc"><li class="itm">The driver outside door handle unlocks the driver door.<br></li><li class="itm">The front passenger outside door handle unlocks all doors.<br></li></ol></td></tr><tr><td>Entry Lock<br></td><td>All doors are locked by touching the lock sensor of the driver or front passenger outside door handle or by pressing the lock switch of the back door.<br></td></tr><tr><td>Entry Glass Hatch Opener<br></td><td>The glass hatch is opened by pressing the glass hatch opener switch.<br></td></tr><tr><td>Prevention of Key Confinement<br></td><td>This function will operate in the following 3 different situations when the key is inside the cabin: when the lock knob is used (keyless lock), when an outside door handle lock sensor or lock switch is used (lock sensor), and when the glass hatch has been closed while the all doors are locked.<br></td></tr><tr><td>Key Cancel<br></td><td>The following key functions can be canceled by following certain procedures:<br><ol style="list-style-type: disc"><li class="itm">Entry unlock/lock<br></li><li class="itm">Back door open<br></li><li class="itm">Prevention of key confinement<br></li><li class="itm">Warning<br></li></ol></td></tr><tr><td>Battery Saving<br></td><td>To prevent the key battery and the vehicle battery from becoming discharged, the battery saving function activates when the vehicle remains unused for a long period of time or the key has been detected in the exterior actuation area for more than 10 minutes.<br></td></tr><tr><td>Warning<br></td><td>The entry and start system causes the certification ECU to sound the multi buzzer in the combination meter assembly and wireless door lock buzzer, illuminate the master warning light and display the multi-information display in order to alert the driver.<br></td></tr><tr><td>Key Code Registration Function<br></td><td>A total of 7 keys can be registered. Key registration enables the registration (writing and storing) of transmitter recognition codes in the EEPROM that is contained in the certification ECU.<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">Wireless Door Lock Control Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The wireless door lock control function has the following functions:</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="30%
+
+			"><col align=""></colgroup><colgroup align="" width="70%
+
+			"><col align=""></colgroup><tr><td align="center">Function<br></td><td align="center">Outline<br></td></tr><tr><td>All Doors Lock<br></td><td>Pressing the lock button of the key locks all doors and back door.<br></td></tr><tr><td>All Doors Unlock<br></td><td>Pressing the unlock button of the key unlocks all doors and back door.<br></td></tr><tr><td>All Doors Unlock (2-step Unlock)<br></td><td>Pressing the unlock button on the key once unlocks the driver door, and pressing it again within 3 seconds unlocks all the doors.<br></td></tr><tr><td>Glass Hatch Opener<br></td><td>Pressing and holding the glass hatch opener button opens the glass hatch.<br></td></tr><tr><td>Automatic Lock<br></td><td>If none of the doors are opened within 30 seconds after they have been unlocked by the wireless door lock control, all the doors will be locked again automatically. The starting time of the automatic lock function can be changed to 120, 60, or 30 seconds.<br></td></tr><tr><td>Answer Back<br></td><td><ol style="list-style-type: disc"><li class="itm">When the doors are being locked or unlocked using the key, the wireless door lock buzzer sounds*1 and the hazard warning lights blink once while locking and twice while unlocking.<br></li><li class="itm">When the glass hatch is being opened using the key, the wireless door lock buzzer sounds*1 twice as an answer back.<br></li></ol></td></tr><tr><td>Panic Alarm*1<br></td><td>Keeping the panic button on the key pressed for longer than 0.8 seconds causes the following alarm functions to be activated.<br><ol style="list-style-type: disc"><li class="itm">Sounds the horn and security horn.<br></li><li class="itm">Flashes the hazard lights, headlights, and taillights.<br></li><li class="itm">Illuminates the interior lights (if the interior light switch is in the DOOR position).<br></li></ol></td></tr><tr><td>Door Ajar Warning*2<br></td><td>If any door is open or ajar, pressing the lock button of the transmitter will cause the wireless door lock buzzer to sound for about 10 seconds.<br></td></tr><tr><td>Customization<br></td><td>Some functions can be customized. For details, refer to the corresponding Repair Manual for this model.<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*1: Models for G.C.C. countries<br></li><li class="itm">*2: Except models for China<br></li></ol></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Entry Unlock Mode Switching</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The entry unlock mode can be switched between the following 2 modes in accordance with the driver's intention:</font><br><ol style="list-style-type: disc"><li class="itm">All Door Mode<br></li><li class="itm">Driver Door Mode (Default Setting)<br></li></ol></p></li>
+<li><p><font class="ptxt">In all door mode, all doors are unlocked by touching the driver or front passenger touch sensor, or by pressing the unlock switch of the back door. In driver door mode, only the driver door is unlocked by touching the driver side touch sensor, and all doors are unlocked by touching the front passenger side touch sensor or by pressing the unlock switch of the back door.</font><br></p></li>
+<li><p><font class="ptxt">The switching of the entry unlock mode is performed when the power source mode is off and the key indicator light is not illuminated. Within a distance range of 1 meter from the vehicle, press and hold both the lock and unlock buttons of the key for approximately 5 seconds.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">During the switching of the entry unlock mode, the wireless door lock buzzer, multi-information display, or the multi buzzer combination meter assembly will sound to inform the driver of the state of the entry unlock mode.</font><br><div class="full"><br><img src="../../img/y106280e01.png" name="Y106280E01" alt="Y106280E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li>
+<li><p><font class="ptxt">Entry Unlock Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the key is in the actuation area surrounding the driver seat, gripping the driver side outside door handle will unlock the driver door only, and gripping the passenger side outside door handle or pressing the back door unlock switch will unlock all doors.*1</font><br></p></li>
+<li><p><font class="ptxt">When the key is in any of the exterior actuation areas, all doors are unlocked by grabbing the driver or front passenger outside door handle or by pressing the unlock switch of the back door.*2</font><br></p></li>
+<li><p><font class="ptxt">After all doors have been unlocked, the wireless door lock buzzer sounds twice*3 as an answer back and the hazard lights flash twice at the same time.</font><br><ol style="list-style-type: none"><li class="itm">*1: Driver door mode<br></li><li class="itm">*2: All door mode<br></li><br clear="all"><li class="itm">*3: Models for G.C.C. countries<br><br clear="all"><div class="full"><br><img src="../../img/y105910e01.png" name="Y105910E01" alt="Y105910E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Touch Sensor<br></td><td align="center">*2<br></td><td>Unlock Switch<br></td></tr></table></li></ol></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Entry Lock Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the key is in any of the exterior actuation areas, all doors are locked by touching the lock sensor of the driver or front passenger outside door handle or by pressing the lock switch of the back door.</font><br></p></li>
+<li><p><font class="ptxt">After all doors have been locked, the wireless door lock buzzer sounds once* as an answer back and the hazard lights flash once at the same time.</font><br><ol style="list-style-type: none"><li class="itm">*: Models for G.C.C. countries<br></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">If the doors do not lock when the lock sensor on the topside of an outside door handle is touched, touch the lock sensors on the top and bottom sides simultaneously by pinching the handle.</font><br><div class="full"><br><img src="../../img/y105911e01.png" name="Y105911E01" alt="Y105911E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*1<br></td><td>Lock Sensor<br></td><td align="center">*2<br></td><td>Lock Switch<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">Entry Glass Hatch Opener Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When the key is in the exterior actuation area around the back door, the glass hatch is opened by pressing the glass hatch opener switch.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">Memory Call Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The key linked memory call function uses the ID of a key to automatically restore the seat position (using the driving position memory system) and tilt and telescopic position, increasing driver convenience.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="35%
+
+			"><col align=""></colgroup><colgroup align="" width="65%
+
+			"><col align=""></colgroup><tr><td align="center">Condition<br></td><td align="center">Outline<br></td></tr><tr><td>Memory Registration<br></td><td>When all the following conditions are met, the key ID will be recorded.<br><ol style="list-style-type: disc"><li class="itm">The engine switch is on (IG).<br></li><li class="itm">The memory switch (M1 or M2) button is pushed and held.<br></li><li class="itm">The lock or unlock side of the driver door lock switch is pushed.<br></li></ol></td></tr><tr><td>Memory Call Operation<br></td><td>The memory call function operates when the driver door is opened after the door is unlocked using the entry and start system or wireless door lock control function.<br></td></tr><tr><td>Memory Call Cancel<br></td><td><ol style="list-style-type: disc"><li class="itm">When all the following conditions are met, the memory call function can be disabled.<br></li><li class="itm">The engine switch is on (IG).<br></li><li class="itm">The driver door is closed.<br></li><li class="itm">The SET button is pushed and held.<br></li><li class="itm">The lock or unlock button on the key is pushed and held.<br></li></ol></td></tr></table></p></li>
+<li><p><font class="ptxt">The key linked memory call function uses the ID of a key to automatically restore the last settings used for the air conditioning system. The function is available for vehicles without the driving position memory system. For details, refer to the corresponding Repair Manual for this model.</font><br></p></li>
+<li><p><font class="ptxt">Memory Registration</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="80%
+
+			"><col align=""></colgroup><tr><td align="center">Step<br></td><td align="center">System Operation<br></td></tr><tr><td align="center">(a)<br></td><td>Carrying the key to be linked to the seat position memory system, close the door and turn the engine switch on (IG). Push the memory switch that is to be linked to the key.<br></td></tr><tr><td align="center">(b)<br></td><td>While continuing to the memory switch, push the lock or unlock side of the driver door lock switch.<br></td></tr><tr><td align="center">(c)<br></td><td>During key ID detection, the buzzer in the position control ECU and switch assembly sounds continuously.<br></td></tr><tr><td align="center">(d)<br></td><td>The main body ECU registers the key ID and each position into memory.<br></td></tr><tr><td align="center">(e)<br></td><td>When the main body ECU completes recording, it beeps the buzzer in the position control ECU assembly and switch assembly for 0.5 seconds as an answer back. If recording malfunctions, the main body ECU beeps the buzzer in the position control ECU assembly and switch assembly for 3 seconds as an answer back.<br></td></tr></table></p></li></ol></p></li>
+<li><p><font class="ptxt">Warning Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">When any of the situations below occur, the entry and start system causes the certification ECU to sound a multi buzzer in the combination meter assembly and the wireless door lock buzzer* and illuminate the multi-information display in order to alert the driver.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="80%
+
+			"><col align=""></colgroup><tr><td align="center">Situation<br></td><td align="center">Condition<br></td></tr><tr><td align="center">A<br></td><td>The shift lever is in any position other than P and the power source mode is anything other than off.<br></td></tr><tr><td align="center">B<br></td><td>The driver door is opened while the steering is unlocked.<br></td></tr><tr><td align="center">C<br></td><td>The shift lever is in P and power source mode is anything other than off.<br></td></tr><tr><td align="center">D<br></td><td>The occupant leaves with the key.<br></td></tr><tr><td align="center">E<br></td><td>The engine switch is operated while the key is outside the actuation area.<br></td></tr><tr><td align="center">F<br></td><td>The entry lock is operated while the key is inside the vehicle.<br></td></tr><tr><td align="center">G<br></td><td>The entry lock is operated while any of the doors are open.*<br></td></tr><tr><td align="center">H<br></td><td>A key is confined inside the vehicle interior.<br></td></tr><tr><td align="center">I<br></td><td>The key battery is low.<br></td></tr><tr><td align="center">J<br></td><td>The steering lock cannot be released.<br></td></tr><tr><td align="center">K<br></td><td>A steering lock ECU malfunction has been detected.<br></td></tr><tr><td align="center">L<br></td><td>A power management control ECU malfunction has been detected.<br></td></tr><tr><td align="center">M<br></td><td>An engine start method is displayed.<br></td></tr><tr><td align="center">N<br></td><td>The system assumes that the driver is unfamiliar with the proper way to start the engine.<br></td></tr><tr><td align="center">O<br></td><td>An engine start method is displayed.<br></td></tr><tr><td align="center">P<br></td><td>An attempt is made to turn off the vehicle with the shift lever in any position other than P or N.<br></td></tr><tr><td align="center">Q<br></td><td>Automatic power off operation occurs.<br></td></tr><tr><td align="center">R<br></td><td>The driver holds the key against the engine switch.<br></td></tr><tr><td align="center">S<br></td><td>The vehicle is driven without the key.<br></td></tr></table><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li>
+<li><p><font class="ptxt">There are two patterns for situation A.</font><br><ol style="list-style-type: none"><li class="itm">When power source mode is anything other than off and the shift lever is in any position other than P, the driver opens the door and attempts to get out of the vehicle. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Sudden vehicle start, vehicle theft, vehicle roll-away<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is anything other than off.<br></li><li class="itm">Shift lever is in any position other than P.<br></li><li class="itm">Driver door is opened.<br></li><li class="itm">Vehicle speed is 5 km/h (3 mph) or less.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Continuously sounds<br></td></tr><tr><td>Multi-information Display<br></td><td>SHIFT TO P POSITION WHEN ALIGHTING<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">Shift lever is in P.<br></li><li class="itm">Driver door is closed.<br></li><li class="itm">Vehicle speed is above 5 km/h (3 mph).<br></li></ol></td></tr></table></li><li class="itm">Under the conditions of pattern 1, the driver closes the door and attempts to leave the vehicle while holding the key. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Sudden vehicle start, vehicle theft, vehicle roll-away<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is anything other than off.<br></li><li class="itm">Shift lever is in any position other than P.<br></li><li class="itm">The state of the driver door is changed from open to closed.<br></li><li class="itm">There is no key in the cabin or in the luggage compartment.<br></li><li class="itm">Vehicle speed is 0.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Continuously sounds<br></td></tr><tr><td>Multi-information Display<br></td><td>Alternately shows "SHIFT TO P POSITION WHEN ALIGHTING" and "KEY NOT DETECTED".<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Continuously sounds*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">There is a key in the cabin or in the luggage compartment.<br></li><ol style="list-style-type: disc"><li class="itm">Multi buzzer and wireless door lock buzzer stop sounding.<br></li><li class="itm">Multi-information display only shows "SHIFT TO P POSITION WHEN ALIGHTING".<br></li></ol><li class="itm">Vehicle speed is available or shift lever is P.<br></li><ol style="list-style-type: disc"><li class="itm">Multi buzzer and wireless door lock buzzer stop sounding.<br></li><li class="itm">Multi-information display only shows "KEY NOT DETECTED".<br></li></ol><li class="itm">Power source mode is off.<br></li><ol style="list-style-type: disc"><li class="itm">All warnings stop.<br></li></ol></ol></td></tr></table></li></ol><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li>
+<li><p><font class="ptxt">In situation B</font><br><ol style="list-style-type: none"><li class="itm">If the driver door is opened while the steering is unlocked, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Vehicle theft<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">The power source mode is on (ACC) and the driver's door is opened.<br></li><li class="itm">The power source mode is off while the steering is unlocked and driver door is opened.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Intermittently sounds<br></td></tr><tr><td>Multi-information Display<br></td><td>-<br></td></tr><tr><td>Master Warning Light<br></td><td>-<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">The power source mode is on (IG) or the driver's door is closed.<br></li><li class="itm">The power source mode is off and steering is locked.<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">There are two patterns for situation C.</font><br><ol style="list-style-type: none"><li class="itm">When power source mode is anything other than off and the shift lever is in P, the driver closes the driver door and attempts to leave the vehicle while holding the key. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Vehicle theft<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is anything other than off.<br></li><li class="itm">Shift lever is in P.<br></li><li class="itm">The state of the driver door changed from open to closed.<br></li><li class="itm">Vehicle speed is 0.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>KEY NOT DETECTED<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Sounds 3 times*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">There is a key in the cabin or in the luggage compartment.<br></li></ol></td></tr></table>*: Except models for China<br></li><li class="itm">Under the conditions of pattern 1, the driver touches the lock sensor. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Vehicle theft<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is anything other than off.<br></li><li class="itm">Shift lever is in P.<br></li><li class="itm">All doors are closed.<br></li><li class="itm">There is no key in the cabin or in the luggage compartment.<br></li><li class="itm">There is the key in any of the exterior actuation areas.<br></li><li class="itm">Lock sensor is touched or lock switch is pressed.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>Alternately shows "TURN POWER OFF" and "KEY NOT DETECTED".<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Continuously sounds*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">There is a key in the cabin or in the luggage compartment. (stop only the wireless door lock buzzaer)<br></li><li class="itm">Shift lever is in any position other than P.<br></li><li class="itm">Vehicle speed is above 0.<br></li><li class="itm">Any door is opened (stops only the wireless door lock buzzer).<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started (stops only the wireless door lock buzzer).<br></li><li class="itm">Approx. 60 seconds have elapsed from the time the warning started (the multi-information display only shows "KEY NOT DETECTED").<br></li></ol></td></tr></table></li></ol><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li>
+<li><p><font class="ptxt">In situation D</font><br><ol style="list-style-type: none"><li class="itm">If power source mode is anything other than off when a passenger gets out of the vehicle while holding the key, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Engine cannot be restarted<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Engine switch is in any mode other than off.<br></li><li class="itm">The state of a door other than the driver door is changed from open to closed.<br></li><li class="itm">There is no key in the cabin or in the luggage compartment.<br></li><li class="itm">Vehicle speed is 0.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>KEY NOT DETECTED<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Sounds 3 times*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">There is a key in the cabin or in the luggage compartment.<br></li></ol></td></tr></table></li></ol><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li>
+<li><p><font class="ptxt">In situation E</font><br><ol style="list-style-type: none"><li class="itm">If the key is not within the actuation areas, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Driver confusion<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Engine switch is pushed.<br></li><li class="itm">There is no key in the cabin.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>KEY NOT DETECTED<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Approx. 15 seconds have elapsed from the time the warning started.<br></li><li class="itm">There is a key in the cabin or in the luggage compartment.<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation F</font><br><ol style="list-style-type: none"><li class="itm">If the key is left in the vehicle interior and the lock sensor is touched, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Driver confusion<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">All doors are closed.<br></li><li class="itm">There is a key in the cabin or in the luggage compartment.<br></li><li class="itm">Lock sensor is touched or lock switch is pressed.<br></li><li class="itm">Any door is unlocked.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>KEY DETECTED IN VEHICLE<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Continuously sounds*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is anything other than off.<br></li><li class="itm">Doors are locked through the manual lock, wireless door lock function, or key-linked lock operation.<br></li><li class="itm">Any door is opened (stops only the wireless door lock buzzer).<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started (stops only the wireless door lock buzzer).<br></li><li class="itm">Approx. 60 seconds have elapsed from the time the warning started (stops only the indication on the multi-information display).<br></li><li class="itm">Vehicle speed is above 0.<br></li></ol></td></tr></table></li></ol><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li>
+<li><p><font class="ptxt">In situation G</font><br><ol style="list-style-type: none"><li class="itm">Any door is ajar, and the locking of the doors is attempted through the entry lock function by touching the lock sensor of an outside door handle or pressing the lock switch of the back door. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Vehicle theft<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The main body ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">Any door (other than the one performing the entry lock operation) is open.<br></li><li class="itm">Lock sensor is touched or lock switch is pressed.<br></li><li class="itm">There is no key in the cabin.<br></li><li class="itm">There is the key in any of the exterior actuation areas.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>-<br></td></tr><tr><td>Multi-information Display<br></td><td>-<br></td></tr><tr><td>Master Warning Light<br></td><td>-<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Continuously sounds*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is anything other than off.<br></li><li class="itm">Doors are unlocked through the wireless door lock control function.<br></li><li class="itm">An entry unlock operation is performed.<br></li><li class="itm">All doors are closed.<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started.<br></li></ol></td></tr></table></li></ol><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li>
+<li><p><font class="ptxt">There are two patterns for situation H.</font><br><ol style="list-style-type: none"><li class="itm">A key is confined inside the vehicle interior. In this situation, the following control is performed (pattern 1):<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Vehicle theft<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">All doors are locked.<br></li><li class="itm">There is a key in the cabin or in the luggage compartment.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>-<br></td></tr><tr><td>Multi-information Display<br></td><td>KEY DETECTED IN VEHICLE<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Continuously sounds*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">The power source mode is switched.<br></li><li class="itm">Doors are locked through the manual lock, wireless door lock function, or key-linked lock operation.<br></li><li class="itm">Vehicle speed is above 0.<br></li><li class="itm">Any door is opened (stops only the wireless door lock buzzer).<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started (stops only the wireless door lock buzzer).<br></li><li class="itm">Approx. 60 seconds have elapsed from the time the warning started.<br></li></ol></td></tr></table></li><li class="itm">*: Except models for China<br></li><li class="itm">A key is confined inside the vehicle interior. In this situation, the following control is performed (pattern 2):<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Vehicle theft<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Vehicle speed is 0.<br></li><li class="itm">All doors are locked.<br></li><li class="itm">There is a key in the cabin or in the luggage compartment.<br></li><li class="itm">The glass hatch has been closed.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>-<br></td></tr><tr><td>Multi-information Display<br></td><td>-<br></td></tr><tr><td>Master Warning Light<br></td><td>-<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>Continuously sounds*<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Vehicle speed is above 0.<br></li><li class="itm">Glass hatch is opened.<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started.<br></li></ol></td></tr></table></li></ol><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li>
+<li><p><font class="ptxt">In situation I</font><br><ol style="list-style-type: none"><li class="itm">The key battery is low. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Entry and start system does not function.<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The certification ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">After the power source mode has been on (IG) continuously for approx. 20 minutes or more, it is changed from on (IG) to off.<br></li><li class="itm">Key battery is low.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>KEY BATTERY LOW<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">Approx. 15 seconds have elapsed from the time the warning started.<br></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation J</font><br><ol style="list-style-type: none"><li class="itm">The steering lock cannot be released. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Entry and start system does not function.<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The steering lock does not release when performing the release operation, preventing the engine from starting.<br></td></tr><tr><td rowspan="5">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>STEERING LOCK ACTIVE<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Engine Switch<br></td><td>Indicator<br></td><td>Blinks green in 1-second cycles.<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Steering lock is unlocked.<br></li><li class="itm">Steering lock is malfunctioning.<br></li><li class="itm">Approx. 15 seconds have elapsed from the time the warning started (stops only the indication on the multi-information display).<br></li><li class="itm">Approx. 30 seconds have elapsed from the time the warning started (stops only the blinking of the indicator).<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation K</font><br><ol style="list-style-type: none"><li class="itm">A malfunction of the steering lock ECU is detected. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Malfunction detection<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">Steering lock actuator assembly or power management control ECU malfunction, or steering lock/unlock switch failure.<br></td></tr><tr><td rowspan="5">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>CHECK STEERING LOCK SYSTEM<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Engine Switch<br></td><td>Indicator<br></td><td>Blinks amber in 2-second cycles.<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">	Power source mode is off, and approx. 15 seconds have elapsed from the time the warning started (stops only the blinking of the indicator).<br></li><li class="itm">The steering lock actuator assembly or power management control ECU malfunction has been resolved.<br></li><li class="itm">Approx. 15 seconds have elapsed from the time the warning started (stops only the "CHECK STEERING LOCK SYSTEM" indication).<br></li><li class="itm">A failure of the lock/unlock detection switch in the steering lock actuator assembly has been resolved.<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation L</font><br><ol style="list-style-type: none"><li class="itm">A malfunction is detected in the power management control ECU. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Malfunction detection<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">Malfunction detected in power management control ECU.<br></td></tr><tr><td>Warning Method<br></td><td>Engine Switch<br></td><td>Indicator<br></td><td>Blinks amber in 2-second cycles.<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Approx. 15 seconds have elapsed from the time the warning started.<br></li><li class="itm">The malfunction in the power management control ECU has been resolved.<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation M</font><br><ol style="list-style-type: none"><li class="itm">The driver uses a mechanical key to open the door and presses the engine switch, but no key is detected in the vehicle interior. Or, the driver presses the engine switch, but no key is detected 2 consecutive times in the vehicle interior. In these situations, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Usability function<br></td></tr><tr><td>Prerequisite<br></td><td colspan="3" width="75%
+
+			"><ol style="list-style-type: disc"><li class="itm">Engine immobiliser function is on.<br></li><li class="itm">No key is located inside the vehicle interior.<br></li><li class="itm">Unlocking with a mechanical key or operating the engine switch has resulted in a certification failure 2 consecutive times.<br></li></ol></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">Engine switch is pushed.<br></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>"DEPRESS BRAKE PEDAL, TOUCH ENGINE SWITCH WITH KEY"<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">The key is detected in the cabin.<br></li><li class="itm">Approx. 60 seconds have elapsed from the time the warning started.<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation N</font><br><ol style="list-style-type: none"><li class="itm">The multi-information display will show how to start the engine if the system assumes that the driver does not know how to start the engine:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Usability function<br></td></tr><tr><td>Prerequisite<br></td><td colspan="3" width="75%
+
+			">Power source mode is off and driver door is changed from closed to open.<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">Power source mode is turned from on (ACC) &rarr; on (IG) &rarr; off &rarr; on (ACC).<br></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>-<br></td></tr><tr><td>Multi-information Display<br></td><td>"DEPRESS BRAKE PEDAL AND PUSH ENGINE SWITCH TO START"<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">Power source mode is on (IG).<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started.<br></li></ol></td></tr><tr><td>Warning Start Clear Condition<br></td><td colspan="3" width="75%
+
+			">Engine starting operation is detected.<br></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation O</font><br><ol style="list-style-type: none"><li class="itm">If the shift lever is in a position in which the engine cannot be started, the display will show a shift position in which the engine can be started:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Usability function<br></td></tr><tr><td>Prerequisite<br></td><td colspan="3" width="75%
+
+			">Shift lever is in any position other than P or N.<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">The power management control ECU gives a warning when all the following conditions are satisfied:<br><ol style="list-style-type: disc"><li class="itm">Engine is stopped (starter is not cranking).<br></li><li class="itm">Vehicle speed is 0.<br></li><li class="itm">After the power source mode has turned on (IG), more than 0.5 seconds have elapsed.<br></li></ol></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>-<br></td></tr><tr><td>Multi-information Display<br></td><td>SHIFT TO P POSITION TO START<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode turns to anything other than on (IG).<br></li><li class="itm">Engine is started.<br></li><li class="itm">Vehicle speed is above 0.<br></li><li class="itm">Shift lever is moved to P or N.<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation P</font><br><ol style="list-style-type: none"><li class="itm">A warning message appears on the multi-information display when the driver attempts to turn the engine switch off with the shift lever in any position other than P or N.<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Usability function<br></td></tr><tr><td>Prerequisite<br></td><td colspan="3" width="75%
+
+			">Shift lever is in any position other than P or N.<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">Power source mode is turned from on (IG) to on (ACC).<br></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>The following warning message is displayed for 10 seconds (and then automatically turned off).<br><ol style="list-style-type: disc"><li class="itm">SHIFT TO P RANGE AND PUSH ENGINE SWITCH TO TURN POWER OFF<br></li></ol></td></tr><tr><td>Master Warning Light<br></td><td>Blinks for 10 seconds<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Shift lever is in P.<br></li><li class="itm">Power source mode is turned to anything other than on (ACC).<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation Q</font><br><ol style="list-style-type: none"><li class="itm">An automatic power off operation is detected. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Battery saving function<br></td></tr><tr><td>Prerequisite<br></td><td colspan="3" width="75%
+
+			"><ol style="list-style-type: disc"><li class="itm">Shift lever is in P.<br></li><li class="itm">Power source mode is on (ACC) or on (IG).*<br></li></ol></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">Power source mode is turned from on (IG) or on (ACC) to off through the activation of the automatic power off operation.<br></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>-<br></td></tr><tr><td>Multi-information Display<br></td><td>AUTO POWER OFF TO CONSERVE BATTERY<br></td></tr><tr><td>Master Warning Light<br></td><td>-<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is turned to anything other than off.<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started.<br></li></ol></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: Engine is stopped and vehicle speed is 0.</dd></dl></p></li></ol></p></li>
+<li><p><font class="ptxt">In situation R</font><br><ol style="list-style-type: none"><li class="itm">The driver holds a key against the engine switch. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Usability function<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">ID code certification is completed.<br></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>"DEPRESS BRAKE PEDAL AND PUSH ENGINE SWITCH TO START"<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">A key is inside the vehicle interior.<br></li><li class="itm">Engine speed is 500 rpm or more.<br></li><li class="itm">Engine immobiliser function is on.<br></li><li class="itm">Approx. 10 seconds have elapsed from the time the warning started.<br></li></ol></td></tr></table></li></ol></p></li>
+<li><p><font class="ptxt">In situation S</font><br><ol style="list-style-type: none"><li class="itm">The driver started driving without having a key in the vehicle interior. In this situation, the following control is performed:<br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="82.5%"><colgroup align="" width="25%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="22%
+
+			"><col align=""></colgroup><colgroup align="" width="31%
+
+			"><col align=""></colgroup><tr><td>Possible Effects without Warning<br></td><td colspan="3" width="75%
+
+			">Restarting prevention<br></td></tr><tr><td>Prerequisite<br></td><td colspan="3" width="75%
+
+			">In situation A (pattern 2), C (pattern 1) or D<br></td></tr><tr><td>Warning Condition<br></td><td colspan="3" width="75%
+
+			">Vehicle speed is present while no key is in vehicle interior. (at first time only)<br></td></tr><tr><td rowspan="4">Warning Method<br></td><td rowspan="3">Combination Meter Assembly<br></td><td>Multi Buzzer<br></td><td>Sounds once<br></td></tr><tr><td>Multi-information Display<br></td><td>KEY NOT DETECTED<br></td></tr><tr><td>Master Warning Light<br></td><td>Blinks<br></td></tr><tr><td colspan="2" width="44%
+
+			">Wireless Door Lock Buzzer<br></td><td>-<br></td></tr><tr><td>Warning Stop Condition<br></td><td colspan="3" width="75%
+
+			">The warning is stopped when one of the following conditions is met:<br><ol style="list-style-type: disc"><li class="itm">Power source mode is off.<br></li><li class="itm">A key is inside the vehicle interior.<br></li></ol></td></tr></table></li></ol></p></li></ol></p></li>
+<li><p><font class="ptxt">Battery Saving Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">Vehicle Battery Saving</font><br><ol style="list-style-type: disc"><li class="itm">Control<br></li><ol style="list-style-type: disc"><li class="itm">2 stages of control are conducted in accordance with the length of time for which the engine is not started.<br></li><li class="itm">If the engine is not started for 5 days or longer, this function stops the request signals transmitted by the electrical key antenna (the lock and touch sensors at the driver and front passenger doors the lock switch and unlock switch at the back door remain active, therefore, these doors can be locked or unlocked by touching the sensors or pressing the switches).<br></li><li class="itm">If the engine is not started for 14 days or longer, this function prohibits the locking or unlocking operation of the doors other than the driver door.<br></li></ol><li class="itm">Revert Condition<br></li><ol style="list-style-type: disc"><li class="itm">Power source mode is on (IG).<br></li><li class="itm">Doors are locked or unlocked through the wireless door lock control function.*<br></li><li class="itm">Doors are locked or unlocked by touching the lock or touch sensor on the driver door.*<br></li><li class="itm">Doors are locked or unlocked with a mechanical key.*<br></li><li class="itm">The state of any door is changed from open to closed.*<br></li></ol></ol><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: Reverts from Control 2 to Control 7.</dd></dl></p></p></li>
+<li><p><font class="ptxt">Key Battery Saving</font><br><ol style="list-style-type: disc"><li class="itm">Control<br></li><ol style="list-style-type: disc"><li class="itm">If a key is located in the exterior actuation area for 10 minutes or longer, this function stops the request signals transmitted by the electrical key antenna.<br></li></ol></ol><ol style="list-style-type: disc"><li class="itm">Revert Condition<br></li><ol style="list-style-type: disc"><li class="itm">Doors are locked or unlocked through the wireless door lock control function.<br></li><li class="itm">Doors are locked or unlocked by touching the lock or touch sensor of any door.<br></li><li class="itm">Doors are locked or unlocked with a mechanical key.<br></li></ol></ol></p></li></ol></p></li>
+<li><p><font class="ptxt">Key Cancel Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">A key cancel function is provided to make it possible to disable the entry and start system. Key cancel can be operated when certain operations are performed when the vehicle is in the following condition:</font><br><ol style="list-style-type: disc"><li class="itm">Engine switch is off.<br></li><li class="itm">Driver door is closed.<br></li><li class="itm">Driver door is unlocked.<br></li></ol><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The operation procedure is as follows:</dd></dl><dl class="reference"><dd class="reference">1. Unlock once with the unlock button of the key.</dd></dl><dl class="reference"><dd class="reference">2. Open the driver door within 5 seconds.</dd></dl><dl class="reference"><dd class="reference">3. Unlock twice with the unlock button of the key within 5 seconds.</dd></dl><dl class="reference"><dd class="reference">4. Repeat open &rarr; close twice for the driver door within 30 seconds, and open again. (Driver door: open &rarr; close &rarr; open &rarr; close &rarr; open)</dd></dl><dl class="reference"><dd class="reference">5. Unlock twice with the unlock button of the key within 30 seconds.</dd></dl><dl class="reference"><dd class="reference">6. Repeat open &rarr; close once for the driver door within 30 seconds, and open again. (Driver door: open &rarr; close &rarr; open)</dd></dl><dl class="reference"><dd class="reference">7. Close the driver door within 5 seconds.</dd></dl><dl class="reference"><dd class="reference">8. When key cancel is activated, the wireless door lock buzzer sounds twice.*</dd></dl><dl class="reference"><dd class="reference">9. To return to the original condition, perform the procedures again. When key cancel is returned, the wireless door lock buzzer sounds once.*</dd></dl></p><ol style="list-style-type: none"><li class="itm">*: Except models for China<br></li></ol></p></li></ol></p></li>
+<li><p><font class="ptxt">Key Code Registration Function</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The table below shows the 4 special ID code registration function modes through which up to 7 different codes can be registered. The codes are electronically registered (written and stored) in the EEPROM. For details, refer to the corresponding Repair Manual for this model.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="80%
+
+			"><col align=""></colgroup><tr><td align="center">Mode<br></td><td align="center">Function<br></td></tr><tr><td>Rewrite<br></td><td>Clears all previously registered codes and registers only the newly received codes. This mode is used whenever a transmitter or an integration relay is replaced.<br></td></tr><tr><td>Add<br></td><td>Adds a newly received code while preserving previously registered codes. This mode is used when adding a new transmitter. If the number of codes exceeds 7, the oldest registered code is cleared first.<br></td></tr><tr><td>Confirm<br></td><td>Confirms how many codes are currently registered. When adding a new code, this mode is used to check how many codes already exist.<br></td></tr></table></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___000001W0000014step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">CONSTRUCTION</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Key</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The key consists of a mechanical key, a transmitter for the wireless door lock control and a transceiver for the entry and start system.</font><br></p></li>
+<li><p><font class="ptxt">The transceiver for the entry and start system receives the signals from the electrical key antennas and returns the ID code to the door control receiver.</font><br></p></li>
+<li><p><font class="ptxt">The transmitter for the wireless door lock control has a lock button, unlock button, glass hatch opener button and panic button*.</font><br><ol style="list-style-type: none"><li class="itm">*: Models for G.C.C. countries<br></li></ol></p></li>
+<li><p><font class="ptxt">When the key battery is low, the radio wave response received from the engine switch is returned to the engine switch by the key.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">This mechanical key works for the driver's door, but cannot be used to start the engine.</font><br><div class="full"><br><img src="../../img/y105282e02.png" name="Y105282E02" alt="Y105282E02" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><caption class="tbl-title"><span>Text in Illustration&nbsp;
+					</span></caption><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><colgroup align="" width="10%
+
+			"><col align=""></colgroup><colgroup align="" width="40%
+
+			"><col align=""></colgroup><tr><td align="center">*A<br></td><td>Models for G. C. C. Courtiers<br></td><td align="center">-<br></td><td>-<br></td></tr><tr><td align="center">*1<br></td><td>Lock Button<br></td><td align="center">*2<br></td><td>Unlock Button<br></td></tr><tr><td align="center">*3<br></td><td>Glass Hatch Opener Button<br></td><td align="center">*4<br></td><td>Panic Button<br></td></tr><tr><td align="center">*5<br></td><td>Mechanical Key<br></td><td align="center">-<br></td><td>-<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Engine Switch</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The engine switch consists of a momentary type switch, 2 color (amber, green) Light Emitting Diodes (LEDs), and a transponder key amplifier.</font><br></p></li>
+<li><p><font class="ptxt">The amber and green LEDs are used for the indicator light.</font><br></p></li>
+<li><p><font class="ptxt">The driver can check the present power source mode and whether the engine can start or not by looking at the indicator light.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">When the power management control ECU detects an abnormality in the start system while the engine is running, the amber indicator light will flash. If the engine is stopped in this state, restarting may not be possible.</font><br><div class="full"><br><img src="../../img/y100660e01.png" name="Y100660E01" alt="Y100660E01" border="1" class="full"></div><br clear="all"><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="24%
+
+			"><col align=""></colgroup><colgroup align="" width="38%
+
+			"><col align=""></colgroup><colgroup align="" width="38%
+
+			"><col align=""></colgroup><tr><td rowspan="2" align="center">Power Source Mode/Condition<br></td><td colspan="2" width="76%
+
+			" align="center">Indicator Light Condition<br></td></tr><tr><td align="center">Brake pedal not depressed<br></td><td align="center">Brake pedal depressed with shift lever in P or N<br></td></tr><tr><td align="center">Off<br></td><td align="center">Turns off<br></td><td align="center">Turns on (Green)<br></td></tr><tr><td align="center">On (ACC), On (IG)<br></td><td align="center">Turns on (Amber)<br></td><td align="center">Turns on (Green)<br></td></tr><tr><td align="center">Engine Running<br></td><td align="center">Turns off<br></td><td align="center">Turns off<br></td></tr><tr><td align="center">Steering Lock Not Unlocked<br></td><td align="center">Flashes (Green) for 15 seconds<br></td><td align="center">Flashes (Green) for 15 seconds<br></td></tr><tr><td align="center">Start System Malfunction<br></td><td align="center">Flashes (Amber) for 15 seconds<br></td><td align="center">Flashes (Amber) for 15 seconds<br></td></tr></table></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Power Management Control ECU</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The power management control ECU consists of the IG1 and IG2 relay actuation circuits, CPU, and hold circuit.</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">The hold circuit is installed to prevent the power supply to the relays from being cut off when an abnormality occurs in the IG1 and/or IG2 relay actuation circuits during driving.</font><br><div class="full"><br><img src="../../img/y100661e01.png" name="Y100661E01" alt="Y100661E01" border="1" class="full"></div><br clear="all"><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">The power management control ECU constantly stores the present power source mode in its memory. Therefore, if the power to the power management control ECU is interrupted due to the removal of the battery, the power management control ECU restores the power source mode after the battery is reconnected. For this reason, if the battery is removed when the engine switch is in any position other than off, the power will be restored to the vehicle at the same time the power is restored to the power management control ECU (by reconnecting the battery). Therefore, before removing or disconnecting the battery, make sure to turn the engine switch off.</dd></dl></p></p></li></ol></p></li></ol><br clear="all"><a name="NM14K0E___000001W0000015step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">DIAGNOSIS</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The power management control ECU can detect malfunctions in the start function when the power source mode is on (IG). When the ECU detects a malfunction, the amber indicator light of the engine switch flashes to warn the driver. At the same time, the ECU stores the 5-digit DTC in the memory.</font><br></p></li>
+<li><p><font class="ptxt">The indicator light warning continues for 15 seconds even when the power source mode is turned off.</font><br></p></li>
+<li><p><font class="ptxt">The DTC can be read by connecting an intelligent tester II to the DLC3.</font><br></p></li>
+<li><p><font class="ptxt">The start function cannot be operated again if a malfunction occurs.</font><br></p></li>
+<li><p><font class="ptxt">For details, refer to the corresponding Repair Manual for this model.</font><br></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>

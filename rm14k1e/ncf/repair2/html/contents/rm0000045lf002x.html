@@ -1,0 +1,51 @@
+<html>
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Lexus TechDoc</title>
+  <link href ="../../css/contents.css" rel="stylesheet" type="text/css"></link>
+  <link href ="../../css/contents_p.css" rel="stylesheet" type="text/css" media="print"></link>
+  <script src="../../js/jaspa.js"></script>
+  </head>
+		<body onload="seePageAnchor()"><a name="RM0000045LF002X"></a><table width="100%" cellspacing="0"><tr><td width="93%"><h1>MULTIPLEX COMMUNICATION SYSTEM &gt; GENERAL</h1></td><td style="display:none; vertical-align:top;" id="print_button" align="right"><a onClick="window.print();" href="#" class="printIcon"><img border="0" src="../../../../image/print.png"></a></td></tr></table><br clear="all" class="beforePng"><a name="RM0000045LF002X_z0"></a><br clear="all"><a name="NM14K0E___000001H0000011step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">OUTLINE</td></tr></table><font class="ptxt"></font>
+<ol class="s2">
+<li><p><font class="ptxt">The multiplex communication system uses the following 4 communication protocols:</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The Controller Area Network (CAN) is used for communication between the engine, chassis, and body electrical system.</font><br></p></li>
+<li><p><font class="ptxt">The Local Interconnect Network (LIN) is used for communication within the body electrical system.</font><br></p></li>
+<li><p><font class="ptxt">The AVC-LAN is used for communication only between the Audio Visual (AV) system components.</font><br></p></li>
+<li><p><font class="ptxt">The Media Orientated System Transport (MOST) is used for communication within the Audio Visual (AV) system components.</font><br></p></li></ol></p></li>
+<li><p><font class="ptxt">The CAN has 2 types, with different communication speeds: the HS-CAN (high speed) and the MS-CAN (medium speed).</font><br></p></li>
+<li><p><font class="ptxt">The power management control ECU and main body ECU are used as gateways to transmit data between the buses.</font><br></p></li></ol><br clear="all"><a name="NM14K0E___000001H0000012step"></a><table cellspacing="0" border="1" width="100%"><tr><td class="s1">MAIN FEATURES</td></tr></table><font class="ptxt"></font>
+<ol class="s2"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Multiplex communication uses serial communication data that consists of bits and frames in order to exchange information between the various ECUs. This allows a reduction of the amount of wiring used in the vehicle.</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">A bit is the basic unit of communication used to represent the information. A bit is represented by binary values of "0" or "1".</font><br></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">A frame is a body of data transmitted together. A frame contains a header that indicates the beginning, and an end message that indicates the end.</font><br><div class="full"><br><img src="../../img/y100473e01.png" name="Y100473E01" alt="Y100473E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li>
+<li><p><font class="ptxt">Differences between CAN, LIN, AVC-LAN and MOST</font><br><br>
+<ol class="s3">
+<li><p><font class="ptxt">The protocols, which are the rules for establishing data communication, differ between CAN, LIN, AVC-LAN and MOST. If the ECUs in the networks use different data frameworks such as communication speed, communication wire or signals, they will be unable to understand each other. Therefore, protocols (rules) must be established among them.</font><br></p></li>
+<li><p><font class="ptxt">Compared to LIN and AVC-LAN, CAN features high-speed data transmission. Therefore, CAN is able to transmit larger amounts of data faster than other protocols. This feature makes it possible to transmit data accurately for the powertrain and chassis control systems. These systems require large amounts of data to be transmitted in short periods of time.</font><br></p></li>
+<li><p><font class="ptxt">MOST is used to transmit control information, audio, video, and data in real time.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="20%
+
+			"><col align=""></colgroup><tr><td align="center">Protocol<br></td><td align="center">CAN (ISO Standard)<br></td><td align="center">LIN (LIN Consortium)<br></td><td align="center">AVC-LAN (TOYOTA Original)<br></td><td align="center">MOST<br></td></tr><tr><td>Communication Speed<br></td><td align="center">500 kbps*/HS-CAN<br>250 kbps*/MS-CAN<br>(Max. 1 Mbps*)<br></td><td align="center">9.6 kbps* <br>(Max. 20 kbps*)<br></td><td align="center">Max. 17.8 kbps*/AVC-LAN<br>7.5 Mbps*/AVC-LAN plus<br></td><td align="center">Max. 50 Mbps*<br></td></tr><tr><td>Communication Wire<br></td><td align="center">Twisted-pair Wire<br></td><td align="center">AV Single Wire<br></td><td align="center">Twisted-pair Wire<br></td><td align="center">Shielded Twisted-pair Wire<br></td></tr><tr><td>Drive Type<br></td><td align="center">Differential Voltage Drive<br></td><td align="center">Single Wire Voltage Drive<br></td><td colspan="2" width="40%
+
+			" align="center">Differential Voltage Drive<br></td></tr><tr><td>Data Length<br></td><td align="center">1-8 Bytes (Variable)<br></td><td align="center">2, 4, 8 Bytes<br>(Variable)<br></td><td align="center">0-32 Byte(s)<br>(Variable)<br></td><td align="center">0-128 Byte (Variable)<br></td></tr></table><p><dl class="reference"><dt class="referenceTitle">HINT:</dt><dt class="referenceTitle"></dt></dl><dl class="reference"><dd class="reference">*: bps is an abbreviation of "Bits Per Second", indicating the number of bits that can be transmitted per second.</dd></dl></p></p></li></ol></p></li><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">Communication Wire</font><br><br>
+<ol class="s3"><br clear="all" class="beforePng"><br clear="all" class="beforePng">
+<li><p><font class="ptxt">A twisted pair of wires is used for CAN and AVC-LAN communication. A single Automobile Vinyl (AV) wire is used for LIN communication.</font><br><br class="beforePng" clear="all"><table border="1" cellspacing="0" cellpadding="2" width="89.5%"><colgroup align="" width="20%
+
+			"><col align=""></colgroup><colgroup align="" width="35%
+
+			"><col align=""></colgroup><colgroup align="" width="45%
+
+			"><col align=""></colgroup><tr><td colspan="2" width="55%
+
+			" align="center">Communication Wire<br></td><td align="center">Outline<br></td></tr><tr><td>Twisted-pair Wire<br></td><td align="center"><img src="../../img/y100474.png" name="Y100474" alt="Y100474" class="none"><br></td><td>This communication wire is a pair of twisted wires. Communication is driven by applying different voltages to the 2 lines in order to send a single signal. This system, which is called a "Differential Voltage Drive", reduces noise.<br></td></tr><tr><td>AV Single Wire<br></td><td align="center"><img src="../../img/y100475.png" name="Y100475" alt="Y100475" class="none"><br></td><td>This is a lightweight single communication wire that consists of a single core line surrounded by insulation. Voltage is applied to this line in order to drive communication, and this system is called a "Single Wire Voltage Drive".<br></td></tr><tr><td>Shield Twisted-pair Wire<br></td><td align="center"><img src="../../img/y101616.png" name="Y101616" alt="Y101616" class="none"><br></td><td>This communication wire is a shielded pair of twisted wires. Communication is driven by applying different voltages to the 2 lines in order to send a single signal. This system, which is called a "Differential Voltage Drive", reduces noise.<br></td></tr></table><div class="full"><br><img src="../../img/y100476e01.png" name="Y100476E01" alt="Y100476E01" border="1" class="full"></div><br clear="all"></p></li></ol></p></li></ol><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></body></html>
